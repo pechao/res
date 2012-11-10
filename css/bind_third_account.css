@@ -1,0 +1,108 @@
+.bind-third {
+	margin: 30px auto 0;
+	width: 664px;
+}
+.bind-title {
+	margin-bottom: 20px;
+}
+.bind-title .photo,.bind-title h2 {
+	float: left;
+}
+.bind-title h2 {
+	margin-left: 15px;
+	line-height: 48px;
+	color: #889097;
+	font-size: 18px;
+}
+	.bind-title h2 span {
+		padding: 0 5px;
+	}
+.bind-tab1, .bind-tab2 {
+	height: 56px;
+}
+.bind-to-new {
+	background: url(/bundles/zuoweb/images/bind_tab_bg1.png) no-repeat;
+	_background: url(/bundles/zuoweb/images/bind_tab_bg1.jpg) no-repeat;
+}
+.bind-to-already {
+	background: url(/bundles/zuoweb/images/bind_tab_bg2.png) no-repeat;
+	_background: url(/bundles/zuoweb/images/bind_tab_bg2.jpg) no-repeat;
+}
+.bind-tab-l, .bind-tab-r {
+	display: inline-block;
+	width: 330px;
+	_width: 329px;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+	font-size: 20px;
+}
+.bind-to-new .bind-tab-l,.bind-to-already .bind-tab-r {
+	color: #535353;
+}
+.bind-to-new .bind-tab-r, .bind-to-already .bind-tab-l {
+	color: #889097;
+	cursor: pointer;
+}
+
+#bind-new,#bind-already {
+	float: none;
+	padding: 30px 0 30px 180px;
+	background: url(/bundles/zuoweb/images/bind_body_bg.png) repeat-y;
+	_background: url(/bundles/zuoweb/images/bind_body_bg.jpg) repeat-y;
+}
+
+.bind-body .next-btn {
+	margin-left: 56px;
+}
+
+.bind-body .form-data li.warn {
+	/*margin: 15px 0 30px 0;*/
+}
+
+.bind-foot {
+	height: 5px;
+	background: url(/bundles/zuoweb/images/bind_foot_bg.png) no-repeat;
+	_background: url(/bundles/zuoweb/images/bind_foot_bg.jpg) no-repeat;
+}
+
+.find-pass .form-data li.send-email button ,.find-pass .form-data .send-newpass button {
+	margin-left: 55px;
+}
+
+
+
+
+.form-data {
+	width: auto !important;
+}
+	.form-data li .tips {
+		width: 160px !important;
+	}
+#reg-step1 {
+	margin-top: 20px;
+}
+
+#agreeid {
+	margin-left: 100px !important;
+}
+	
+.bind-to-new #bind-already, .bind-to-already #bind-new {
+	display: none;
+}
+
+#bind-already label {
+	left: 38px;
+}
+#bind-already .email input,#bind-already .password_re input  {
+	padding-left: 40px;
+	width: 215px;
+	background-position: 12px 16px;
+	background-repeat: no-repeat;
+}
+#bind-already .email input {
+	background-image: url(/bundles/zuoweb/images/input_icon_uname.jpg);
+}
+#bind-already .password_re input {
+	background-image: url(/bundles/zuoweb/images/input_icon_pass.jpg);
+}

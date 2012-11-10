@@ -1,0 +1,126 @@
+/*=================================== welcom page begin =========================================*/
+body{ 
+	background:url(/bundles/zuoweb/images/bg.png) repeat;
+}
+
+.say-hello{ 
+	width:426px; 
+	height:11px; 
+	background:url(/bundles/zuoweb/images/say_hello.png) no-repeat; 
+	margin:50px auto;
+}
+.welcom-paint{ 
+	width:405px; 
+	height:324px; 
+	background:url(/bundles/zuoweb/images/welcom_paint.png) no-repeat; 
+	margin:0 auto;
+}
+
+.job{ 
+	width:676px; 
+	height:96px; 
+	margin:50px auto 30px; 
+	background:url(/bundles/zuoweb/images/job.png) no-repeat;
+}
+.job div{ 
+	float:left; 
+	margin:16px 0 0 118px;
+	position:relative;
+}
+.job div a{
+	display:block; 
+	height:60px; 
+}
+.job .php{ 
+	_margin-left:59px;
+}
+.job .ios{  
+	_margin-left:118px;
+}
+.job .php a{ 
+	width:162px; 
+	background:url(/bundles/zuoweb/images/job_php.png) no-repeat;
+}
+.job .php:hover a{ 
+	background-image:url(/bundles/zuoweb/images/job_php_hover.png);
+}
+.job .ios a{ 
+	width:219px; 
+	background:url(/bundles/zuoweb/images/job_ios.png) no-repeat;
+}
+.job .ios:hover a{ 
+	background-image:url(/bundles/zuoweb/images/job_ios_hover.png);
+}
+
+.job div dl{ 
+	width:300px; 
+	border:2px solid #008eca; 
+	position:absolute; 
+	bottom:80px; 
+	left:-100px; 
+	background-color:#fff; 
+	padding:6px 6px 22px 19px; 
+	font-family:'Microsoft YaHei','SimHei'; 
+	display:none;
+}
+.job .ios dl{
+	border-color:#ca0050;
+}
+.job div dt{ 
+	font-weight:bold; 
+	font-size:14px; 
+	line-height:180%; 
+	margin:15px 0 10px 0;
+}
+.job div dt.no-margin-top{ 
+	margin-top:0px;
+}
+.job div dd{ 
+	font-size:14px; 
+	color:#888; 
+	line-height:150%;
+}
+.job div.ios dl{ 
+	left:0px;
+}
+/*.job .close-btn{ 
+	width:10px; 
+	height:10px; 
+	display:block; 
+	background:url(/bundles/zuoweb/images/close.png) no-repeat; 
+	float:right; 
+	cursor:pointer;
+}*/
+
+.job .hover-area{
+	width:329px;
+	height:25px;
+	position:absolute;
+	bottom:57px;
+	left:-100px;
+	display:none;
+}
+.job .pointer-arrow{ 
+	width:14px; 
+	height:10px; 
+	background:url(/bundles/zuoweb/images/pointer_arrow.png) no-repeat; 
+	display:block; 
+	margin-left:160px;
+}
+.job .ios .pointer-arrow{
+	background-image:url(/bundles/zuoweb/images/pointer_arrow_ios.png);
+}
+.job .ios .hover-area{
+	left:0px;
+}
+.job .ios .pointer-arrow{ 
+	left:155px;
+}
+
+.contact{ 
+	width:494px; 
+	height:14px; 
+	background:url(/bundles/zuoweb/images/contact.png) no-repeat; 
+	margin:0 auto;
+}
+/*=================================== welcom page end =========================================*/

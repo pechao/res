@@ -1,0 +1,435 @@
+/*发布图片---新建相册弹出窗 ================ begin */
+#pop-create-common {
+	position: absolute;
+	top: 25px;
+	left: -50px;
+	width: 218px;
+	z-index: 100;
+}
+	#pop-create-common .top {
+		height: 18px;
+		background: url(/bundles/zuoweb/images/pop_2_top.png) no-repeat;
+	}
+	#pop-create-common .middle {
+		position: relative;
+		padding: 3px 0 10px 15px;
+		background: url(/bundles/zuoweb/images/pop_1_middle.png) repeat-y;
+	}
+		#pop-create-common .middle label {
+			position: absolute;
+			top: 6px;
+			left: 22px;
+			line-height: 30px;
+			color: #a0a0a0;
+		}
+		#pop-create-common .middle input {
+			width: 176px;
+			height: 30px;
+			line-height: 30px\9;
+			padding: 0 5px;
+			margin-bottom: 10px;
+			background: #fff url(/bundles/zuoweb/images/reply_box_repeat.jpg) repeat-x;
+			border: 1px solid #dbe1e5;
+			border-radius: 3px;
+			color: #535353;
+		}
+		#pop-create-common .middle button {
+			width: 60px;
+			height: 30px;
+			border: none;
+			text-indent: -9999em;
+			cursor: pointer;
+		}
+		#pop-create-common .middle .save {
+			margin-left: 30px;
+			background: url(/bundles/zuoweb/images/button_save.gif) no-repeat;
+		}
+		#pop-create-common .middle .cancel {
+			margin-left: 8px;
+			background: url(/bundles/zuoweb/images/group_remove_no.jpg) no-repeat;
+		}
+	#pop-create-common .bottom {
+		height: 9px;
+		background: url(/bundles/zuoweb/images/pop_1_bottom.png) no-repeat;
+	}
+	/*发布图片---新建相册弹出窗 ================ end */
+	
+	
+	
+	
+	/* xq.widget.js 时间选择器 ================ begin */
+#time-picker {
+	position: absolute;
+	width: 238px;
+	height: 127px;
+	background-color: #f7fbff;
+	border: 1px solid #bdc3c7;
+	border-radius: 3px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	z-index: 100;
+}
+
+#time-picker h3 {
+	text-align: center;
+	font-size: 12px;
+	color: #889097;
+	height: 37px;
+	line-height: 37px;
+}
+
+	#time-picker .date {
+		padding-left: 24px;
+	}
+
+	#time-picker .date div {
+		position: relative;
+		float: left;
+		margin-right: 5px;
+		color: #535353;
+	}
+
+		#time-picker .date .year {
+			width: 80px;
+		}
+
+			#time-picker .date .year ul {
+				width: 78px;
+			}
+
+		#time-picker .date .month,#time-picker .date .day {
+			width: 50px;
+		}
+
+			#time-picker .date .month ul, #time-picker .date .day ul {
+				width: 48px;
+			}
+
+	#time-picker .date h4 {
+		font-weight: bold;
+		font-size: 14px;
+		border: 1px solid #DBE1E5;
+		cursor: pointer;
+	}
+
+		#time-picker .date h4 a {
+			display: block;
+			height: 26px;
+			line-height: 26px;
+			text-align: center;
+			border: 1px solid #fff;
+			background: url(/bundles/zuoweb/images/repeat_x_1.png) repeat-x 0 -135px;
+		}
+
+			#time-picker .date h4 a:hover {
+				background: #fff;
+			}
+
+	#time-picker ul {
+		position: absolute;
+		display: none;
+		top: 30px;
+		left: 0;
+		_height: 150px;
+		max-height: 150px;
+		text-align: center;
+		background-color: #fff;
+		border: 1px solid #dbe1e5;
+		border-top: 0;
+		overflow-y: auto;
+	}
+	#time-picker li a {
+		display: block;
+		line-height: 20px;
+	}
+
+		#time-picker li a:hover {
+			background-color: #EDF0F2;
+		}
+
+	#time-picker .btns {
+		padding-left: 45px;
+		margin-top: 15px;
+	}
+	
+	#time-picker .btns a {
+		float: left;
+		height: 26px;
+		line-height: 26px;
+		text-align: center;
+		border-style: solid;
+		border-top-width: 0;
+		border-bottom-width: 4px;
+		border-left-width: 1px;
+		border-right-width: 1px;
+	}
+
+		#time-picker .btns a:active {
+			border-top-width: 3px;
+			border-bottom-width: 1px;
+		}
+
+	#time-picker .ok {
+		width: 78px;
+		margin-right: 5px;
+		background-color: #74c15a;
+		border-color: #5d9a48;
+		color: #fff;
+	}
+		#time-picker .ok:hover {
+			background-color: #67b84e;
+		}
+
+	#time-picker .cancel {
+		width: 58px;
+		background-color: #fff;
+		color: #889097;
+		border-color: #dbe1e5;
+	}
+		#time-picker .cancel:hover {
+			background-color: #f8f9fa;
+		}
+	
+	
+	/* xq.widget.js 时间选择器 ================ end */
+	
+	
+	
+/* xq.widget.js 弹出窗 ================ BEGIN */
+
+.pop-position {
+	position: absolute;
+	position: fixed;
+	z-index: 80;
+}
+
+.pop-up-outer {
+	padding:10px;
+	background-repeat:repeat;
+	background-image: url(/bundles/zuoweb/images/pop_bg.png) !important;
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/bundles/zuoweb/images/pop_bg.png',sizingMethod='crop') !important;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
+}
+
+.pop-up {
+	padding: 10px 15px;
+	*width: 230px;
+	background-color: #f7fbff;
+	border: 1px solid #b0b0b0;
+	border-radius: 3px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+	font-size: 14px;
+}
+	.pop-up .arrow {
+		position: absolute;
+		width: 10px;
+		height: 6px;
+		top: -6px;
+		right: 20px;
+		background: url(/bundles/zuoweb/images/widget.png) no-repeat;
+	}
+
+	.pop-up .title {
+		font-size:12px;
+		color: #a0a0a0;
+	}
+
+	.pop-up .close {
+		float:right;
+		width: 14px;
+		height:14px;
+		background: url(/bundles/zuoweb/images/group_close.gif) no-repeat;
+		cursor:pointer;
+	}
+
+	.pop-up .message-box {
+		width: 100%;
+		color:#666;
+		padding:3px 0px;
+		border: 1px solid #e0e0e0;
+		font-size:12px;
+	}
+
+	.pop-up .message {
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: #889097;
+	}
+
+		.pop-up .message span {
+			padding-left: 22px;
+			background-repeat:no-repeat;
+			background-position:0 3px;
+		}
+		.pop-up .message .warn {
+			background-image: url(/bundles/zuoweb/images/icon_tan_red.gif);
+		}
+		.pop-up .message .success {
+			background-image: url(/bundles/zuoweb/images/icon_success_green.gif);
+		}
+
+	.pop-up .btns {
+		margin: 10px auto 0;
+		width: 150px;
+	}
+
+	.pop-up .btns a {
+		height: 26px;
+		line-height: 30px;
+		text-align: center;
+		font-weight: bold;
+		border-width: 1px;
+		border-top-width: 0;
+		border-bottom-width: 4px;
+		border-style: solid;
+	}
+		.pop-up .btns a:active {
+			border-top-width: 3px;
+			border-bottom-width: 1px;
+		}
+	.pop-up .ok {
+		float:left;
+		width: 78px;
+		color: #fff;
+		background-color: #74c15a;
+		border-color: #5d9a48;
+	}
+		.pop-up .ok:hover {
+			background-color: #67b84e;
+		}
+	.pop-up .cancel {
+		float: right;
+		width: 58px;
+		color: #889097;
+		background-color:  #fff;
+		border-color: #dbe1e5;
+		letter-spacing: 4px;
+	}
+		.pop-up .cancel:hover {
+			background-color: #f8f9fa;
+		}
+
+
+#line_check .message {
+	width:200px;
+	height:auto;
+	line-height:normal;
+}
+
+
+/* xq.widget.js 弹出窗 ================ BEGIN */
+
+
+/* xq.widget.js Tip ================ BEGIN */
+.pop-tip {
+	position:relative;
+	color:#535353;
+}
+	.pop-tip .arrow {
+		position:absolute;
+		background-image: url(/bundles/zuoweb/images/arrow_tip2.gif);
+		background-repeat:no-repeat;
+	}
+	/* pop body 位于 左侧，箭头指向右面 */
+	.pop-tip .arrow-left{
+		width:5px;
+		height:10px;
+		right:-4px;
+		background-position:-5px 0;
+	}
+	/* pop body 位于 右侧，箭头指向左面 */
+	.pop-tip .arrow-right{
+		width:5px;
+		height:10px;
+		left:-4px;
+		background-position:0 0;
+	}
+	/* pop body 位于 上面，箭头指向下面 */
+	.pop-tip .arrow-top{
+		width:10px;
+		height:5px;
+		bottom:-4px;
+		background-position:0 -5px;
+	}
+	/* pop body 位于 下面，箭头指向上面 */
+	.pop-tip .arrow-bottom{
+		width:10px;
+		height:5px;
+		top:-4px;
+		background-position:0 0;
+	}
+
+	.pop-tip .inner {
+		padding:3px 5px;
+		background-color:#fff;
+		border:1px solid #000;
+	}
+	.pop-tip-big .inner{
+		padding: 12px 15px;
+		border-color: #666;
+	}
+
+	.pop-tip .title{
+		font-size:14px;
+		font-weight:bold;
+		color:#535353;
+	}
+
+	.pop-tip .title,.pop-tip .message{
+		margin-bottom:10px;
+	}
+
+	.pop-tip .button{
+		padding: 3px 8px;
+		color: #fff;
+		background-color: #559ad8;
+	}
+	
+
+/* xq.widget.js Tip ================ END */
+
+/* xq.widget.js Wrapper ================ BEGIN */
+.function_guide {
+	position:absolute;
+}
+
+.function_guide .arrow {
+	width: 8px;
+	height:8px;
+	background-repeat:no-repeat;
+	background-image:url(/bundles/zuoweb/images/func_guide_border.png);
+}
+.function_guide .lt{
+	background-position:0 0;
+}
+.function_guide .lb{
+	background-position:0 -8px;
+}
+.function_guide .rt{
+	background-position:-8px 0;
+}
+.function_guide .rb{
+	background-position:-8px -8px;
+}
+
+.function_guide .line_left{
+	width:8px;
+	background: url(/bundles/zuoweb/images/func_guide_line.png) repeat-y left top;
+}
+.function_guide .line_right{
+	width:8px;
+	background: url(/bundles/zuoweb/images/func_guide_line.png) repeat-y right top;
+}
+.function_guide .line_top{
+	height:8px;
+	background: url(/bundles/zuoweb/images/func_guide_line.png) repeat-x left top;
+}
+.function_guide .line_bottom{
+	height:8px;
+	background: url(/bundles/zuoweb/images/func_guide_line.png) repeat-x left bottom;
+}
+
+/* xq.widget.js Wrapper ================ END */

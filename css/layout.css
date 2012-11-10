@@ -1,0 +1,46 @@
+/*
+	HTML 结构必须是：div(.container)
+						div(.header)
+						div(.body, .clear-net)
+							div(.left-part)
+							div(.main-part)
+							div(.right-part)
+*/
+.body {
+	background:url(/bundles/zuoweb/images/main_line_dotted.png) repeat-y 154px 0;
+}
+.left-part{
+	float:left;
+	
+	width:120px;
+	margin-top:10px;
+}
+.main-part{
+	float:left;
+	width: 535px;
+	margin: 10px 0 100px 70px;
+}
+.right-part{
+	float:right;
+	width:200px;
+	margin-top:10px;
+}
+
+
+
+/*
+	比如“私信.psd” 那个页面
+	只是把中右两部分合并了，左侧跟三列的完全一样
+	那就：
+		给 <div class="body"> 标签添加一个class“col_3_2”
+	*/
+/*.col_3_2 .main-part {
+	width: 745px;
+}*/
+
+
+body.col2 .main-part{
+	float:left;
+	margin-left:70px;
+	width: 750px;
+}

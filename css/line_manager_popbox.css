@@ -1,0 +1,278 @@
+/*线路管理的弹出窗，如，注册第二步，城内线路的“加入线路” 等弹出管理线路*/
+.add-stations-popobx {
+	/*position: fixed;*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 70;
+	width: 736px;
+	display: none;
+}
+
+	.add-stations-popobx .relative {
+	}
+
+		.add-stations-popobx .relative .tl, .add-stations-popobx .relative .tr, .add-stations-popobx .relative .bl, .add-stations-popobx .relative .br {
+			position: absolute;
+			display: none;
+			display: block\9;
+			width: 1px;
+			height: 1px;
+			_overflow: hidden;
+			background-color: #ddd;
+		}
+
+		.add-stations-popobx .relative .tl {
+			top: 0;
+			left: 0;
+			border-right: 1px solid #bdc3c7;
+			border-bottom: 1px solid #bdc3c7;
+		}
+
+		.add-stations-popobx .relative .tr {
+			top: 0;
+			right: 0;
+			border-left: 1px solid #bdc3c7;
+			border-bottom: 1px solid #bdc3c7;
+		}
+
+		.add-stations-popobx .relative .bl {
+			bottom: 0;
+			left: 0;
+			border-right: 1px solid #bdc3c7;
+			border-top: 1px solid #bdc3c7;
+		}
+
+		.add-stations-popobx .relative .br {
+			bottom: 0;
+			right: 0;
+			border-top: 1px solid #bdc3c7;
+			border-left: 1px solid #bdc3c7;
+		}
+
+	.add-stations-popobx .container {
+		border: 1px solid #bdc3c7;
+		border-radius: 3px;
+		width: 740px;
+		width: 734px;
+		_width: 735px;
+		/*height:330px;*/
+		background-color: #fff;
+		box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	}
+		/*.add-stations-popobx .container .title{
+	height:50px;
+}
+.add-stations-popobx .container .title span,.add-stations-popobx .container p.title i{
+	display:block;
+}
+.add-stations-popobx .container .title span{
+	float:left;
+	margin-left:20px;
+	line-height:50px;
+	font-size:14px;
+	color:#535353;
+}
+.add-stations-popobx .container .title b{
+	margin:0 3px;
+	font-weight:bold;
+	color:#448aca;
+}
+.add-stations-popobx .container .title i{
+	float:right;
+	width:17px;
+	height:17px;
+	margin:16px 20px 0 0;
+	background:url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -224px -464px;
+	cursor:pointer;
+}*/
+		.add-stations-popobx .container .title {
+			position: relative;
+			height: 50px;
+			line-height: 50px;
+			padding-left: 20px;
+			font-size: 14px;
+			color: #535353;
+		}
+
+			.add-stations-popobx .container .title b {
+				font-size: 16px;
+				margin: 0 3px;
+				font-weight: bold;
+				color: #448aca;
+			}
+
+			.add-stations-popobx .container .title i {
+				position: absolute;
+				width: 17px;
+				height: 17px;
+				top: 16px;
+				right: 20px;
+				background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -224px -464px;
+				cursor: pointer;
+			}
+
+	.add-stations-popobx .main {
+		height: 214px;
+		background: url(/bundles/zuoweb/images/repeat_x_2.png) repeat-x 0 -225px;
+	}
+
+		.add-stations-popobx .main .not-familiar, .add-stations-popobx .main .interested-stations, .add-stations-popobx .main .haunt-stations {
+			float: left;
+		}
+
+		.add-stations-popobx .main .interested-stations, .add-stations-popobx .main .haunt-stations {
+			width: 187px;
+		}
+
+		.add-stations-popobx .main .not-familiar {
+			width: 360px;
+		}
+
+		.add-stations-popobx .main h3 {
+			line-height: 36px;
+			text-align: center;
+			text-shadow: 0px 1px 0px #fff;
+			color: #666;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		.add-stations-popobx .main .not-familiar h3 {
+			border-right: 1px solid #bdc3c7;
+		}
+
+		.add-stations-popobx .main .interested-stations h3 {
+			border-left: 1px solid #dfe2e4;
+			border-right: 1px solid #bdc3c7;
+		}
+
+		.add-stations-popobx .main .haunt-stations h3 {
+			border-left: 1px solid #dfe2e4;
+		}
+
+		.add-stations-popobx .main .stations-wrap {
+			height: 177px;
+			overflow: hidden;
+		}
+
+		.add-stations-popobx .main .not-familiar .stations-wrap {
+			border-right: 1px solid #dbe1e5;
+		}
+
+		.add-stations-popobx .main .interested-stations .stations-wrap {
+			border-right: 1px solid #dbe1e5;
+			border-left: 1px solid #f6f8f9;
+		}
+
+		.add-stations-popobx .main .haunt-stations .stations-wrap {
+			border-left: 1px solid #f6f8f9;
+		}
+
+		.add-stations-popobx .main .stations-wrap ul {
+			float: left;
+			width: 175px;
+		}
+
+	.add-stations-popobx .not-familiar .stations-wrap ul {
+		width: 345px;
+		/*margin-left:5px;*/
+	}
+
+	.add-stations-popobx .main .stations-wrap li {
+		_display: inline;
+		float: left;
+		width: 78px;
+		height: 28px;
+		margin: 5px 0 0 5px;
+		line-height: 28px;
+		text-align: center;
+		border: 1px solid #bdc3c7;
+		background-color: #fff;
+		box-shadow: 0 1px 5px #ccc;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		cursor: move;
+	}
+
+	.add-stations-popobx .container .footer {
+		padding-bottom: 20px;
+	}
+
+		.add-stations-popobx .container .footer p.tips {
+			float: left;
+			padding: 20px 0 0 18px;
+			font-size: 14px;
+			color: #bdc3c7;
+		}
+
+		.add-stations-popobx .container .footer p.btns {
+			float: right;
+		}
+
+		.add-stations-popobx .container .footer p.tips i {
+			float: left;
+			width: 20px;
+			height: 29px;
+			margin-right: 20px;
+			background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -304px -152px;
+		}
+
+		.add-stations-popobx .container .footer p.tips span {
+			line-height: 29px;
+		}
+
+	.add-stations-popobx .footer p.btns span, .add-stations-popobx .footer p.btns strong, .add-stations-popobx .footer p.btns b {
+		display: block;
+		float: left;
+	}
+
+	.add-stations-popobx .footer p.btns b {
+		width: 90px;
+		height: 30px;
+		line-height: 30px;
+		margin-top: 2px;
+		color: #EB6877;
+		text-align: center;
+		text-shadow: 0 1px 0px white;
+		letter-spacing: 1px;
+		font-weight: bold;
+		background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -88px -120px;
+		cursor: pointer;
+	}
+
+	.add-stations-popobx .container .footer p.btns {
+		padding: 15px 20px 0 0;
+	}
+
+		.add-stations-popobx .container .footer p.btns span {
+		}
+
+			.add-stations-popobx .container .footer p.btns span a {
+				display: block;
+				width: 55px;
+				text-align: center;
+				line-height: 34px;
+				color: #448aca;
+				cursor: pointer;
+			}
+
+				.add-stations-popobx .container .footer p.btns span a:hover {
+					text-decoration: underline;
+				}
+
+		.add-stations-popobx .container .footer p.btns strong {
+			width: 100px;
+			height: 34px;
+			line-height: 34px;
+			text-align: center;
+			text-shadow: 0 -1px #194F81;
+			background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -88px -80px;
+			color: #fff;
+			font-size: 16px;
+			font-weight: bold;
+			letter-spacing: 5px;
+			cursor: pointer;
+		}
+

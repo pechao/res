@@ -1,0 +1,398 @@
+(function (xq, $, _, win, doc) {
+
+	var _Image_ = xq.namespace('Image');
+	var __tmpl_editImg = '<div><div class="top-left"></div><div class="top"></div><div class="top-right"></div><div class="right"></div><div class="bottom-right"></div>' +
+						'<div class="bottom"></div><div class="bottom-left"></div><div class="left"></div></div>';
+
+	Point = $.inherit({
+		__constructor: function (x, y) {
+			this.__cacheHandler = {};
+			this.setXY(x, y);
+		},
+		setX: function (x) {
+			this.fire('setX', x);
+			this.x = x;
+		},
+		setY: function (y) {
+			this.fire('setY', y);
+			this.y = y;
+		},
+		setXY: function (x, y) {
+			this.fire('setXY', x, y);
+			x && x.x && (y = x.y, x = x.x);
+			this.x = x;
+			this.y = y;
+		}
+	});
+	xq.Event.mixTo(Point);
+
+	//DOM结构：node:<div style="position:relative"><img /></div>
+	//
+	//参数：
+	//	node: jqNode
+	//	[ canReDraw = fasle Boolean ] 是否可以重新绘制编辑区域
+	//	[ canResizeOnGray = false Boolean ] 是否可以在编辑区域外（点击）缩放大小
+	//	[ fixedScale = false Boolean | Number ] 是否比例缩放，宽：高
+	//
+	//属性：
+	// node, img, editImg, 
+	//
+	//方法：
+	//	
+	//
+	//
+	_Image_.Crop = $.inherit(xq._Base, {
+
+		__constructor: function (options) {
+			this.node = options.node;
+			this.canReDraw = _.isUndefined(options.canReDraw) ? true : options.canReDraw;
+			this.canResizeOnGray = options.canResizeOnGray;
+			this.fixedScale = options.fixedScale;
+
+			this.img = this.node.find('img');
+			this._isImgLoaded = !!this.img.height();
+
+			if (!this._isImgLoaded) {
+				this.img.on('load', _.bind(function (e) {
+					this._init();
+				}, this));
+			} else {
+				this._init();
+			}
+		},
+		pointStart: new Point,
+		pointEnd: new Point,
+		pointTL: new Point,
+		_tmpPointTL: new Point,
+		pointBR: new Point,
+		offset: null,
+		disToBorder: null,
+		_isImgLoaded: null,
+		_hasAnEditArea: false,
+		_hadBindNodeMousemove: false,
+		_hadBindEditImgMousemove: false,
+		_isDraging: false,
+		_init: function () {
+			this.setBgColor('#000');
+			this.width = this.img.width();
+			this.height = this.img.height();
+			this.src = this.img.attr('src');
+
+			this.node.css({
+				'position': 'relative',
+				'user-select': 'none',
+				'-webkit-user-select': 'none',
+				'-ms-user-select': 'none',
+				'-moz-user-select': 'none'
+			});
+
+			this.img.css({
+				display: 'block'
+			});
+
+			var editImgCss = {
+				position: 'absolute',
+				display: 'none',
+				width: this.width,
+				height: this.height,
+				backgroundImage: this._genBgUrl(this.src),
+				backgroundRepeat: 'no-repeat',
+				cursor: 'crosshair',
+				zIndex: 100
+			};
+			var blockSize = 8;
+			var blockSize2 = blockSize / 2;
+			var blockSize4 = blockSize / 4;
+			var blockCss = {
+				position: 'absolute',
+				width: blockSize,
+				height: blockSize,
+				background: '#000',
+				opacity: '0.3',
+				zIndex: 120
+			};
+			var barCss = {
+				position: 'absolute',
+				width: blockSize2,
+				height: blockSize2,
+				zIndex: 110
+			}
+
+			var editImg = $(__tmpl_editImg).css(editImgCss);
+			this.editImg = editImg;
+			this.editTL = editImg.find('.top-left').css(_.extend({}, blockCss, { top: -blockSize2, left: -blockSize2, cursor: 'nwse-resize' }));
+			this.editT = editImg.find('.top').css(_.extend({}, barCss, { top: -blockSize4, cursor: 'n-resize' }));
+			this.editTR = editImg.find('.top-right').css(_.extend({}, blockCss, { top: -blockSize2, right: -blockSize2, cursor: 'nesw-resize' }));
+			this.editR = editImg.find('.right').css(_.extend({}, barCss, { right: -blockSize4, cursor: 'e-resize' }));
+			this.editBR = editImg.find('.bottom-right').css(_.extend({}, blockCss, { bottom: -blockSize2, right: -blockSize2, cursor: 'nwse-resize' }));
+			this.editB = editImg.find('.bottom').css(_.extend({}, barCss, { bottom: -blockSize4, cursor: 'n-resize' }));
+			this.editBL = editImg.find('.bottom-left').css(_.extend({}, blockCss, { bottom: -blockSize2, left: -blockSize2, cursor: 'nesw-resize' }));
+			this.editL = editImg.find('.left').css(_.extend({}, barCss, { left: -blockSize4, cursor: 'e-resize' }));
+			this.editImgCopy = $('<div>').css(_.extend(editImgCss, { 'background': 'none', 'zIndex': 80 }));
+
+			this.img.before(this.editImg);
+			this.img.before(this.editImgCopy);
+
+			this.node.on('mousedown', _.bind(this._nodeMousedownHandler, this));
+			this.node.on('mouseup', _.bind(this._nodeMouseupHandler, this));
+			this.editImg.on('mousedown', _.bind(this._editImgMousedownHandler, this));
+			this.editImg.on('mouseup', _.bind(this._editImgMouseupHandler, this));
+			this.editImg.on('mousedown', 'div', _.bind(this._editBorderMousedownHandler, this));
+			this.editImg.on('mouseup', 'div', _.bind(this._editBorderMouseupHandler, this));
+
+			this._bindedNodeMousemoveHandler = _.bind(this._nodeMousemoveHandler, this);
+			this._bindedEditImgMousemoveHandler = _.bind(this._editImgMousemoveHandler, this);
+			this._bindedEditBorderMousemoveHandler = _.bind(this._nodeMousemoveHandler, this);//注意这个绑定
+		},
+		_nodeMousedownHandler: function (e) {
+			if (!this.canResizeOnGray && this._hasAnEditArea) return;
+			if (this._isDraging || this._isWantToDrag) return;
+			this.editImg.show();
+
+			this.setOpacity(0.6);
+			//node左上角相对于页面左上角的距离
+			this.offset = this.node.offset();
+
+			(this.canReDraw || !this.pointStart.x) && this.pointStart.setXY(this._getOffset(e, 'x'), this._getOffset(e, 'y'));
+
+			this._hadBindNodeMousemove || this.node.on('mousemove', this._bindedNodeMousemoveHandler);
+		},
+		_nodeMouseupHandler: function (e) {
+			this._isResizing = false;
+
+			if (!this.canResizeOnGray && this._hasAnEditArea) return;
+			if (this._isDraging) return;
+			if (!this.canResizeOnGray) this.editImgCopy.css('cursor', 'default');
+
+			this.node.off('mousemove', this._bindedNodeMousemoveHandler);
+			this._hadBindNodeMousemove = false;
+			this._hasAnEditArea = true;
+			this.updateCursor();
+
+			var offsetX = this._getOffset(e, 'x');
+			var offsetY = this._getOffset(e, 'y');
+
+			if (this.canReDraw && offsetX == this.pointStart.x && offsetY == this.pointStart.y) {
+				this.reset();
+			}
+		},
+		_bindedNodeMousemoveHandler: null,
+		_nodeMousemoveHandler: function (e) {
+			//这个if是相当于 _editBorderMousemoveHandler
+			if (this._isResizing) {
+				var offsetX = this._getOffset(e, 'x');
+				var offsetY = this._getOffset(e, 'y');
+
+				if (this._matchLeft) this.pointTL.setX(offsetX);
+				if (this._matchRight) this.pointBR.setX(offsetX);
+				if (this._matchBottom) this.pointBR.setY(offsetY);
+				if (this._matchTop) this.pointTL.setY(offsetY);
+				//console.log(this._matchLeft, this._matchRight, this._matchBottom, this._matchTop);
+
+				//this.pointStart.setXY(this.pointTL);
+				//this.pointEnd.setXY(this.pointBR);
+				var width, height;
+				if (this.fixedScale) {
+					if (this._matchLeft || this._matchRight) {
+						width = this.pointBR.x - this.pointTL.x;
+						height = width / this.fixedScale;
+						this._matchBottom ? this.pointBR.setY(this.pointTL.y + height) : this.pointTL.setY(this.pointBR.y - height);
+					} else if (this._matchTop || this._matchBottom) {
+						height = this.pointBR.y - this.pointTL.y;
+						width = height * this.fixedScale;
+						this._matchLeft ? this.pointTL.setX(this.pointBR.x - width) : this.pointBR.setX(this.pointTL.x + width);
+					}
+				}
+				//console.log(this.pointTL.y, this.pointBR.y);
+				this.updateArea(this.pointTL, this.pointBR);
+				return;
+			}
+
+
+			if (!this.canResizeOnGray && this._hasAnEditArea) return;
+			if (this._isDraging) return;
+
+			this._hadBindNodeMousemove = true;
+			//console.log(e);
+			this.pointEnd.setXY(this._getOffset(e, 'x'), this._getOffset(e, 'y'));
+
+			if (this.fixedScale) {
+				var width = this.pointEnd.x - this.pointStart.x;
+				var height = width / this.fixedScale;
+				this.pointEnd.setY(this.pointStart.y + height);
+			}
+
+			var tlx = Math.min(this.pointStart.x, this.pointEnd.x);
+			var tly = Math.min(this.pointStart.y, this.pointEnd.y);
+			var brx = Math.max(this.pointStart.x, this.pointEnd.x);
+			var bry = Math.max(this.pointStart.y, this.pointEnd.y);
+
+			if (tlx <= 0 || tly <= 0 || brx >= this.width || bry >= this.height) return;
+
+			this.pointTL.setXY(tlx, tly);
+			this.pointBR.setXY(brx, bry);
+
+			this.updateArea(this.pointTL, this.pointBR);
+		},
+		_editImgMousedownHandler: function (e) {
+			if (!this._hasAnEditArea) return;
+			this._isWantToDrag = true;
+
+			var offsetX = this._getOffset(e, 'x');
+			var offsetY = this._getOffset(e, 'y');
+			this.disToBorder = {
+				left: offsetX - this.pointTL.x,
+				top: offsetY - this.pointTL.y,
+				right: this.pointBR.x - offsetX,
+				bottom: this.pointBR.y - offsetY
+			};
+			this._tmpPointTL.setXY(this.pointTL);
+
+			this._hadBindEditImgMousemove || this.editImg.on('mousemove', this._bindedEditImgMousemoveHandler);
+		},
+		_editImgMouseupHandler: function (e) {
+			this._isDraging = false;
+			this._isWantToDrag = false;
+			this.editImg.off('mousemove', this._bindedEditImgMousemoveHandler);
+
+			var moveX = this._tmpPointTL.x - this.pointTL.x;
+			var moveY = this._tmpPointTL.y - this.pointTL.y;
+
+			this.pointStart.setXY(this.pointStart.x - moveX, this.pointStart.y - moveY);
+			this.pointEnd.setXY(this.pointEnd.x - moveX, this.pointEnd.y - moveY);
+
+			this._hadBindEditImgMousemove = false;
+		},
+		_bindedEditImgMousemoveHandler: null,
+		_editImgMousemoveHandler: function (e) {
+			if (this._isResizing) return;
+
+			this._isDraging = true;
+			var offsetX = this._getOffset(e, 'x');
+			var offsetY = this._getOffset(e, 'y');
+
+			var tlx = offsetX - this.disToBorder.left;
+			var tly = offsetY - this.disToBorder.top;
+			var brx = offsetX + this.disToBorder.right;
+			var bry = offsetY + this.disToBorder.bottom;
+
+			if (tlx <= 0 || tly <= 0 || brx >= this.width || bry >= this.height) return;
+
+			this.pointTL.setXY(tlx, tly);
+			this.pointBR.setXY(brx, bry);
+
+			this.updateArea(this.pointTL, this.pointBR);
+		},
+		_leftRe: /left/,
+		_rightRe: /right/,
+		_bottomRe: /bottom/,
+		_topRe: /top/,
+		_editBorderMousedownHandler: function (e) {
+			e.stopPropagation();
+			this._isResizing = true;
+
+			var className = e.target.className;
+			this._matchLeft = className.match(this._leftRe);
+			this._matchRight = className.match(this._rightRe);
+			this._matchBottom = className.match(this._bottomRe);
+			this._matchTop = className.match(this._topRe);
+
+			this.node.on('mousemove', this._bindedEditBorderMousemoveHandler);
+			//this.editImg.on('mousemove', 'div', this._bindedEditBorderMousemoveHandler);
+		},
+		_editBorderMouseupHandler: function (e) {
+			//e.stopPropagation();
+			this._isResizing = false;
+			this.node.off('mousemove', this._bindedEditBorderMousemoveHandler);
+			//this.editImg.off('mousemove', 'div', this._bindedEditBorderMousemoveHandler);
+		},
+		_bindedEditBorderMousemoveHandler: null,
+		_editBorderMousemoveHandler: function (e) {
+			//e.stopPropagation();
+		},
+		_genBgUrl: function (url) {
+			return 'url(' + url + ')';
+		},
+		_getOffset: function (e, direction) {
+			if (direction == 'x') return e.pageX - this.offset.left;
+			if (direction == 'y') return e.pageY - this.offset.top;
+		},
+		reset: function () {
+			this._hasAnEditArea = false;
+			this.updateCursor();
+
+			this.pointStart.setXY();
+			this.pointEnd.setXY();
+			this.pointTL.setXY();
+			this._tmpPointTL.setXY();
+			this.pointBR.setXY();
+
+			this.editImg.css({
+				display: 'none',
+				top: 0,
+				left: 0,
+				width: this.width,
+				height: this.height,
+				backgroundPosition: '0 0'
+			});
+
+			this.img.css({ opacity: 1 });
+		},
+		updateSrc: function (src) {
+			this.img.attr('src', src);
+			this.editImg.css({ backgroundImage: this._genBgUrl(src) });
+		},
+		updateCursor: function () {
+			var cursor;
+			if (this._hasAnEditArea) {
+				cursor = 'move';
+			} else {
+				cursor = 'crosshair'
+			}
+			this.editImg.css({
+				cursor: cursor
+			});
+		},
+		updateArea: function (pointTL, pointBR) {
+			var width = pointBR.x - pointTL.x;
+			var height = pointBR.y - pointTL.y;
+			var left = pointTL.x;
+			var top = pointTL.y;
+			var right = left + width;
+			var bottom = top + height;
+
+			//(left < 0) && (left = 0);
+			//(top < 0) && (top = 0);
+			//(right > this.width) && (width = this.width - left);
+			//(bottom > this.height) && (height = this.height - top);
+
+			this.editImg.css({
+				top: top,
+				left: left,
+				width: width,
+				height: height,
+				backgroundPosition: '-' + left + 'px -' + top + 'px'
+			});
+			this.editT.css('width', width);
+			this.editB.css('width', width);
+			this.editR.css('height', height);
+			this.editL.css('height', height);
+		},
+		setOpacity: function (opacity) {
+			this.img.css('opacity', opacity);
+		},
+		setBgColor: function (colorStr) {
+			this.node.css('background-color', colorStr);
+		},
+		setSize: function (width, height) {
+			var css = {
+				width: width,
+				height: height
+			};
+			this.node.css(css);
+			this.img.css(css);
+		}
+	});
+
+
+})(xq, jQuery, _, window, document);

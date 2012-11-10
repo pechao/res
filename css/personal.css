@@ -1,0 +1,544 @@
+a {
+	color: #448aca;
+}
+.main-part {
+	width: 535px;
+	margin-left: 70px;
+	margin-top: 10px;
+	z-index: 10;
+}
+
+	.main-part .icon30 {
+		position: absolute;
+		top: 10px;
+		left: -51px;
+	}
+
+.icon-personal {
+	background: url(/bundles/zuoweb/images/icon_personal_blue.gif) no-repeat;
+}
+.icon-circle {
+	background: url(/bundles/zuoweb/images/icon_circle_blue.gif) no-repeat;
+}
+.icon-label {
+	background: url(/bundles/zuoweb/images/icon_label_blue.gif) no-repeat;
+}
+.icon-album {
+	background: url(/bundles/zuoweb/images/icon_album_blue.gif) no-repeat;
+}
+
+.personal-info-main {
+	position: relative;
+	width: 535px;
+	height: 188px;
+	border: 1px solid #dbe1e5;
+	background: url(/bundles/zuoweb/images/person_bg_1.jpg) repeat-x;
+}
+
+	.personal-info-main .photo {
+		float: left;
+		margin: 10px 0px 0 10px;
+		width: 160px;
+		height: 160px;
+		padding: 3px;
+		background-color: #fff;
+		box-shadow: 0 0 3px #ddd;
+		border-radius: 6px;
+		border: 1px solid #ddd;
+	}
+		.personal-info-main .photo img {
+			display: block;
+			border-radius: 6px;
+		}
+		.personal-info-main .photo .inner {
+			position: relative;
+			overflow: hidden;
+			width: 160px;
+			height: 160px;
+		}
+
+		.personal-info-main .photo .avatar-btn {
+			position: absolute;
+			top: 120px;
+			left: 10px;
+			width: 140px;
+			height: 30px;
+			cursor: pointer;
+			opacity: 0;
+			filter: alpha(opacity=0);
+			z-index: 10;
+		}
+		
+		.personal-info-main .photo .change-photo {
+			position: absolute;
+			top: 120px;
+			left: 10px;
+			width: 140px;
+			height: 30px;
+			line-height: 30px;
+			color: #fff;
+			background-color: #535353;
+			background-color: rgba(83,83,83,0.8);
+			border-radius: 3px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+.per-all-info {
+	float: right;
+	width: 335px;
+	padding: 10px 10px 0 0;
+}
+
+	.personal-info-main .title {
+		/*float: left;
+		margin-top: 10px;
+		color: #a0a0a0;*/
+	}
+
+		.personal-info-main .title h3 {
+			float:left;
+			overflow:hidden;
+			font-size: 16px;
+			font-weight: bold;
+			color: #535353;
+		}
+
+			.personal-info-main .title h3 span {
+				display:block;
+				max-width:135px;
+				_width: 135px;
+				height: 25px;
+				padding-right: 30px;
+				background-position: right 3px;
+				background-repeat: no-repeat;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+
+			.personal-info-main .title h3.male span {
+				background-image: url(/bundles/zuoweb/images/sex_male_1.jpg);
+			}
+
+			.personal-info-main .title h3.female span {
+				background-image: url(/bundles/zuoweb/images/sex_female_1.jpg);
+			}
+
+		.personal-info-main p {
+			line-height: 20px;
+			font-size: 14px;
+			vertical-align: top;
+			color: #a0a0a0;
+		}
+			.personal-info-main p span {
+				/*color: #448aca;*/ 
+			}
+
+			.personal-info-main p img {
+				padding-top: 5px;
+			}
+
+		.personal-info-main .sign {
+			padding-top: 10px;
+			margin-bottom: 3px;
+			height: 87px;
+			overflow:hidden;
+			clear: both;
+		}
+			.personal-info-main .sign .txt {
+				/*height: 70px;*/
+			}
+			.personal-info-main .sign input {
+				float: left;
+				padding: 0 3px;
+				width: 280px;
+				height: 24px;
+				line-height: 24px\9;
+				background: url(/bundles/zuoweb/images/reply_box_repeat.jpg) repeat-x;
+				border: 1px solid #dbe1e5;
+				border-right: 0;
+				color: #535353;
+			}
+			.personal-info-main .sign button {
+				float: left;
+				width: 45px;
+				height: 27px;
+				color: #fff;
+				background: url(/bundles/zuoweb/images/btn_style9.gif) no-repeat;
+				border: 0;
+				cursor: pointer;
+			}
+			.personal-info-main .sign span {
+				color: #a0a0a0;
+				width: 330px;
+				max-height: 70px;
+				line-height:17px;
+				overflow: hidden;
+			}
+
+	.personal-info-main .option {
+		float: right;
+		/*margin-left:10px;*/
+	}
+
+		.personal-info-main .option .setting {
+			display: block;
+			padding-left: 20px;
+			/*margin: 17px 5px 0 0;*/
+			line-height: 20px;
+			color: #448aca;
+			background: url(/bundles/zuoweb/images/icon_setting.gif) no-repeat 0 1px;
+		}
+
+		.personal-info-main .option .follow {
+			float:left;
+			/*margin-bottom: 8px;
+			width: 100px;*/
+			margin-right:5px;
+			text-align: center;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+			.personal-info-main .follow a {
+				display: block;
+				width: 90px;
+				height:20px;
+				line-height: 20px;
+				color: #fff;
+			}
+				.personal-info-main .follow a:hover {
+					text-decoration: none;
+				}
+
+			.personal-info-main .option .follow .go-follow {
+				/*text-shadow: 0 -1px #346899;
+				background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -88px -80px;*/
+			}
+				.personal-info-main .option .follow .go-follow:hover {
+					/*background: url(/bundles/zuoweb/images/btn_style4_hover.gif) no-repeat;*/
+				}
+
+	.personal-info-main .go-follow a {
+		background-color: #67aae7;
+		border:1px solid #447bad;
+		border-width: 0 1px 4px;
+		-webkit-user-select:none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+		.personal-info-main .go-follow a:hover {
+			background-color: #559ad8;
+		}
+		.personal-info-main .go-follow a:active {
+			border-width:3px 1px 1px;
+		}
+
+			.personal-info-main .option .follow .hide {
+				display: none;
+			}
+
+			.personal-info-main .go-unfollow {
+				/*text-shadow: 0 -1px #4b9f5f;
+				background: url(/bundles/zuoweb/images/btn_style10.gif) no-repeat;*/
+			}
+				.personal-info-main .go-unfollow a {
+					cursor: text;
+					background-color: #fff;
+					border: 1px solid #dbe1e5;
+					border-width: 0px 1px 4px;
+					color:#448aca;
+				}
+					.personal-info-main .go-unfollow a span {
+						cursor: pointer;
+					}
+
+				.personal-info-main .option .follow .go-unfollow:hover {
+					/*background: url(/bundles/zuoweb/images/btn_style10_hover.gif) no-repeat;*/
+				}
+
+			.personal-info-main .option .follow .go-unfollow span {
+				text-shadow: none;
+				font-size: 12px;
+				font-weight: normal;
+				color: #adceeb;
+			}
+
+		.personal-info-main .option .mail {
+			float:left;
+			width: 60px;
+			height: 20px;
+			line-height: 20px;
+			color: #eb6877;
+			text-align: center;
+			font-weight: bold;
+			/*background: url(/bundles/zuoweb/images/btn_bg_6.png) no-repeat;*/
+			background-color: #fff;
+			border: 1px solid #dbe1e5;
+			border-width: 0 1px 4px;
+			cursor: pointer;
+			-webkit-user-select:none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+			.personal-info-main .option .mail:hover {
+				background-color: #f8f9fa;
+			}
+			.personal-info-main .option .mail:active {
+				border-width: 3px 1px 1px;
+			}
+
+			.personal-info-main .option .mail span {
+				/*padding-left: 26px;
+				background: url(/bundles/zuoweb/images/mail_send_icon_4.png) no-repeat 0 2px;*/
+			}
+
+
+.personal-circle h2 {
+	margin: 8px 0;
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #535353;
+}
+.personal-circle .wrap {
+	border: 1px solid #dbe1e5;
+	border-radius: 8px;
+}
+	.personal-circle .left {
+		float: left;
+		border-right: 1px solid #dbe1e5;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+		background: #edf0f2 url(/bundles/zuoweb/images/person_circle_bg.jpg) repeat-x;
+	}
+		.personal-circle .left .title {
+			position: relative;
+			height: 30px;
+			line-height: 30px;
+		}    
+	.personal-circle .wrap .left .title h3 {
+		position: absolute;
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		text-align: center;
+		color: #a0a0a0;
+	}
+		.personal-circle .left .title h3 b {
+			padding-right: 6px;
+			color: #535353;
+		}
+		.personal-circle .left .title p{
+			float: left;
+			padding: 0 10px 0 23px;
+			font-size: 12px;
+			color: #bdc3c7;
+			background: url(/bundles/zuoweb/images/bg_slide_1.jpg) no-repeat right 0;
+		}
+			.personal-circle .left .title p.next {
+				float: right;
+				padding: 0 23px 0 10px;
+				background-position: left 0;
+			}
+.personal-circle #canvas {
+	margin: 3px;
+	border-bottom: 1px solid #fff;
+	border-radius: 8px;
+}
+.personal-circle #canvas .inner2{
+	width: 358px;
+	height: 258px;
+	background-color: #fff;
+	border: 1px solid #dbe1e5;
+	box-shadow: inset 0 0 10px #eee;
+	border-radius: 8px;
+}
+	.personal-circle .right {
+		float: left;
+		
+	}
+		.personal-circle .right .title {
+			height: 58px;
+			/*background: url(/bundles/zuoweb/images/)*/
+		}
+			.personal-circle .right .title p {
+				float: left;
+			}
+
+
+
+
+
+.main-part .p-w {
+	position: relative;
+	margin-top: 10px;
+	border: 1px solid #dbe1e5;
+}
+.main-part .p-title {
+	padding-top:15px;
+	padding-bottom:5px;
+	background-color:white;
+}
+
+	.main-part .p-title h3 {
+		float: left;
+		padding-left: 15px;
+		font-size: 14px;
+	}
+		.main-part .p-title h3 span {
+			padding: 0 3px;
+			font-weight: normal;
+		}
+		.main-part .p-title h3 a:hover {
+			background-color: #448aca;
+			color: #fff;
+		}
+	.main-part .p-title p {
+		float: right;
+		padding-right: 15px;
+		color: #a0a0a0;
+	}
+
+		.main-part .p-title p a {
+			color: #448aca;
+		}
+			.main-part .p-title p a:hover {
+				background-color: #448aca;
+				color: #fff;
+			}
+
+		.main-part .p-title p .back {
+			padding-left: 12px;
+			background: url(/bundles/zuoweb/images/arrow_left_2.gif) no-repeat 0 4px;
+		}
+
+.main-part i.more {
+	position: absolute;
+	display: block;
+	_display: none;
+	width: 20px;
+	height: 20px;
+	right: 0px;
+	bottom: 0px;
+	background: url(/bundles/zuoweb/images/arrow_user_card_more.jpg) no-repeat 10px 10px;
+	cursor: pointer;
+	z-index: 10;
+}
+.main-part i.opened {
+	background-image: url(/bundles/zuoweb/images/arrow_user_card_more2.jpg);
+}
+
+.main-part .p-cnt {
+	padding: 10px 6px 8px 6px;
+	background-color: #fff;
+}
+.main-part .msg-info .msg-txt h2 .bold a {
+	padding: 0;
+}
+
+.personal-published .msg-info .bold, .personal-published .msg-info .normal {
+	display:block;
+	width:420px;
+	height: 20px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+
+.main-part .p-w .msg-info .msg-txt {
+	width: auto;/*你没啊！这个只有 personal.css 用*/
+	padding-right: 0;
+}
+
+.main-part .empty {
+	text-align: center;
+	background-color: #fff;
+	padding:10px;
+	color: #a0a0a0;
+	border-top:1px solid #DBE1E5;
+}
+
+.personal-circle .p-inner .line {
+	max-height: 93px;
+	overflow: hidden;
+}
+
+.personal-interest .p-inner{
+	max-height: 90px;
+	overflow: hidden;
+}
+	.personal-interest .p-inner .label {
+		margin-bottom: 0;
+	}
+
+.personal-album .p-cnt {
+	padding: 0;
+}
+	.personal-album .p-cnt ul {
+		margin-top: 10px;
+	}
+	.personal-album .p-cnt .msg-panel ul {
+		margin-top: 0;
+	}
+	.personal-album .p-cnt .msg-panel li {
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+
+.msg-form .ul-area {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+.personal-album .p-cnt .album-show li {
+	float: left;
+	margin-left: 9px;
+	margin-bottom: 9px;
+	width: 120px;
+	height: 120px;
+	border: 1px solid #dbe1e5;
+}
+	.personal-album .p-cnt .album-show li.first {
+		margin-left: 0;
+	}
+	.personal-album .p-cnt .album-show li img {
+		width: 120px;
+		height: 120px;
+		background-color: #EDF0F2;
+		background-repeat: no-repeat;
+		background-position: center 25%;
+	}
+
+.personal-published .p-cnt,.personal-replied .p-cnt  {
+	padding: 0;
+	border-top: 0;
+}
+
+.personal-published .icon-here,.personal-replied .icon-here{
+	position: static;
+}
+.personal-published .news-wrapper, .personal-replied .news-wrapper {
+	border-top: 1px solid #dbe1e5;
+}
+
+
+.page-msg .sex-female {
+	padding-left: 25px;
+	background: url(/bundles/zuoweb/images/sex_female_1.jpg) no-repeat 0 10px;
+}
+.page-msg .sex-male {
+	padding-left: 25px;
+	background: url(/bundles/zuoweb/images/sex_male_1.jpg) no-repeat 0 10px;
+}
+
+
+/*相片详细页*/
+.personal-album .btn-area {
+	padding-top: 0;
+}
+	.personal-album .btn-area ul {
+		border-top: 0;
+	}

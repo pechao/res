@@ -1,0 +1,25 @@
+/*
+	HTML 结构必须是：div(.container)
+						div(.header)
+						div(.body, .clear-net)
+							div(.left-part)
+							div(.main-part)
+*/
+/*
+.body {
+	background:url(/img/main_line_dotted.png) repeat-y 154px 0;
+}
+
+
+.left-part{
+	float:left;
+	
+	width:120px;
+	margin-top:10px;
+}
+.main-part{
+	float:left;
+	margin-left:70px;
+	width: 750px;
+}
+*/

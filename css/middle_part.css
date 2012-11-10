@@ -1,0 +1,73 @@
+
+/*==========================模块左侧 icon begin==============================*/
+.section-icon {
+	position: absolute;
+	top: 10px;
+	left: -50px;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite.png);
+	background-position: -64px -296px;
+	/*
+	float: left;
+	margin-top: 10px;
+	*/
+}
+
+.zhengren .section-icon {
+	background: url(/bundles/zuoweb/images/icon_peo_red.png) no-repeat;
+}
+
+.topic .section-icon {
+	background: url(/bundles/zuoweb/images/topicIcon.png) no-repeat;
+}
+
+.picture .section-icon {
+	background: url(/bundles/zuoweb/images/pictureIcon.png) no-repeat;
+}
+
+.xiehou .section-icon {
+	background: url(/bundles/zuoweb/images/xiehouIcon.png) no-repeat;
+}
+
+
+
+
+.post-news b.icon-news {
+	background: url(/bundles/zuoweb/images/icon_news.png) no-repeat;
+}
+.post-news b.icon-hangout {
+	background: url(/bundles/zuoweb/images/icon_peo_blue.gif) no-repeat;
+}
+.post-news b.icon-topic {
+	background: url(/bundles/zuoweb/images/icon_topic_blue.gif) no-repeat;
+}
+.post-news b.icon-album {
+	background: url(/bundles/zuoweb/images/icon_album_blue.gif) no-repeat;
+}
+.post-news b.icon-ouyu {
+	background: url(/bundles/zuoweb/images/icon_ouyu_blue.gif) no-repeat;
+}
+
+/*==========================模块左侧 icon end==============================*/
+
+
+/*==========================提供线索 等多字按钮 begin==============================*/
+.operates .more-text {
+	font-size: 14px !important;
+}
+/*==========================提供线索 等多字按钮 end==============================*/
+				
+/*==========================加载翻页页面 loading begin==============================*/
+.loading-page {
+	margin-top: 10px;
+	line-height: 50px;
+	background-color: #fff;
+	border: 1px solid #DBE1E5;
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #535353;
+}
+/*==========================加载翻页页面 loading end==============================*/

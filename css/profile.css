@@ -1,0 +1,58 @@
+.profile{
+	height:170px;
+	border:1px solid #333;
+	margin-bottom:10px;
+}
+
+.user-lines{
+	margin-bottom:10px;
+}
+.user-lines .title h3{
+	float:left;
+	width:100px;
+	height:30px;
+	line-height:30px;
+	border:1px solid #333;
+	text-align:center;
+}
+.user-lines .title a{
+	display:block;
+	float:right;
+}
+.user-lines .lines-detail{
+	border:1px solid #333;
+}
+.user-lines .lines-detail .line-canvas{
+	float:left;
+	width:350px;
+	height:210px;
+	margin:10px;
+	border:1px solid #333;
+}
+.user-lines .lines-detail .info-detail{
+	float:left;
+}
+.user-lines .lines-detail .city-count{
+	margin:10px 0;
+}
+.user-lines .lines-detail .city-count li{
+	float:left;
+	border:1px solid #333;
+	width:60px;
+	height:50px;
+	text-align:center;
+}
+.user-lines .lines-detail .each-line li{
+	border:1px solid #333;
+	line-height:30px;
+}
+
+.filter-catogaries li{
+	float:left;
+	padding:5px;
+	border:1px solid #333;
+}
+.filter-catogaries li img,.filter-catogaries li span{
+	display:block;
+	float:left;
+}

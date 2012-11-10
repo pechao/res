@@ -1,0 +1,270 @@
+.main-part {
+	position: relative;
+}
+
+
+.invite-pop {
+	position: relative;
+	width: 493px;
+	margin-top: 10px;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #bdc3c7;
+	border-radius: 3px;
+	box-shadow: 0px 1px 5px #ddd;
+}
+
+	.invite-pop b.close-btn {
+		position: absolute;
+		display: block;
+		width: 17px;
+		height: 18px;
+		top: 20px;
+		right: 20px;
+		background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -224px -464px;
+		cursor: pointer;
+	}
+
+	.invite-pop b.arrow {
+		position: absolute;
+		display: block;
+		width: 9px;
+		height: 16px;
+		right: -9px;
+		top: 12px;
+		background: url(/bundles/zuoweb/images/arrow_right_5.jpg) no-repeat;
+	}
+
+	.invite-pop h2 {
+		font-size: 12px;
+		color: #a0a0a0;
+	}
+
+		.invite-pop h2 b {
+			padding-right: 8px;
+			font-size: 14px;
+			color: #535353;
+		}
+
+	.invite-pop ul {
+	}
+
+	.invite-pop li {
+		margin-top: 15px;
+	}
+
+		.invite-pop li h3 {
+			line-height: 20px;
+			margin-bottom: 15px;
+			padding-left: 23px;
+			background-repeat: no-repeat;
+			background-position: 0 2px;
+			font-size: 12px;
+			color: #a0a0a0;
+		}
+
+		.invite-pop li.invite-link h3 {
+			background-image: url(/bundles/zuoweb/images/invite_link.jpg);
+		}
+
+		.invite-pop li.invite-mail h3 {
+			background-image: url(/bundles/zuoweb/images/invite_mail.jpg);
+		}
+
+		.invite-pop li.invite-weibo h3 {
+			background-image: url(/bundles/zuoweb/images/invite_weibo.jpg);
+		}
+
+		.invite-pop li h3 b {
+			padding-right: 8px;
+			font-size: 14px;
+			font-weight: normal;
+			color: #535353;
+		}
+
+		.invite-pop li div p {
+			float: left;
+			border: 1px solid #dbe1e5;
+			border-radius: 5px;
+			width: 360px;
+			padding: 8px 10px;
+			line-height: 20px;
+			background: #fff url(/bundles/zuoweb/images/reply_box_repeat.jpg) repeat-x;
+			color: #889097;
+		}
+
+			.invite-pop li div p input {
+			}
+
+		.invite-pop li div button {
+			display: block;
+			float: right;
+			width: 100px;
+			height: 34px;
+			line-height: 34px;
+			text-align: center;
+			text-shadow: 0 -1px #194F81;
+			background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -88px -80px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #fff;
+			border: 0;
+			cursor: pointer;
+		}
+
+.want-go-pop {
+	position: relative;
+	width: 348px;
+	margin-top: 10px;
+	background-color: #fff;
+	border: 1px solid #bdc3c7;
+	border-radius: 3px;
+	box-shadow: 0px 1px 5px #ddd;
+}
+
+	.want-go-pop .photo {
+		margin: 20px 16px 0 20px;
+	}
+
+	.want-go-pop .msg-info {
+		border-bottom: 1px solid #dbe1e5;
+		background: url(/bundles/zuoweb/images/wantGoPop_bg.jpg) repeat-x;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+	}
+
+		.want-go-pop .msg-info .msg-txt {
+			width: 230px;
+			padding: 0;
+			margin: 20px 0 18px 0;
+		}
+
+.feed-replies {
+	float: left;
+	width: 332px;
+	border-right: 1px solid #dae0e4;
+}
+
+	.feed-replies .photo {
+		float: left;
+		margin: 13px 8px 13px 13px;
+	}
+
+	.feed-replies .info {
+		float: left;
+		margin-top: 13px;
+	}
+
+	.feed-replies li {
+		_float: left;
+		_width: 333px;
+		_padding-bottom: 13px;
+	}
+
+		.feed-replies li.a-reply {
+			border-bottom: 1px solid #dbe1e5;
+		}
+
+	.feed-replies .info .username {
+		color: #448aca;
+	}
+
+	.feed-replies .info .time {
+		color: #a0a0a0;
+	}
+
+	.feed-replies .info p {
+		color: #535353;
+	}
+
+	.feed-replies .invite {
+		_padding-bottom: 15px;
+		background-color: #f8f9fa;
+	}
+
+		.feed-replies .invite .photo {
+			margin-right: 13px;
+		}
+
+		.feed-replies .invite .content {
+			margin-top: 13px;
+			_z-index: 10;
+		}
+
+.replies .scrollbar-wrap {
+	float: right;
+}
+
+.want-go-pop .reply-box {
+	_padding-bottom: 0;
+}
+
+	.want-go-pop .reply-box .photo {
+		position: relative;
+		margin: 0;
+		float: left;
+	}
+
+	.want-go-pop .reply-box .middle {
+		position: relative;
+		_display: inline;
+		margin-left: 5px;
+		float: left;
+		border: 1px solid #dbe1e5;
+		border-radius: 3px;
+		background: url(/bundles/zuoweb/images/reply_box_repeat.jpg) repeat-x;
+	}
+
+		.want-go-pop .reply-box .middle label {
+			position: absolute;
+			line-height: 30px;
+			left: 10px;
+			color: #a0a0a0;
+		}
+
+		.want-go-pop .reply-box .middle input {
+			border: 0;
+			background: none;
+			width: 203px;
+			padding-left: 5px;
+			height: 30px;
+			color: #535353;
+			_line-height: 30px;
+		}
+
+	.want-go-pop .reply-box .reply-btn {
+		float: right;
+	}
+
+.reply-box .reply-box-wrap .reply-box-inner {
+	width: 322px;
+}
+
+.invite .pop {
+	z-index: 20;
+}
+
+/*.alert-success {
+	margin: 20px 0 100px 300px;
+	width: 178px;
+	height: 87px;
+	border: 1px solid #bdc3c7;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px #ddd;
+	background-color: #f7fbff;
+}
+
+	.alert-success h3 {
+		margin: 10px 0 0 10px;
+		font-size: 12px;
+		color: #a0a0a0;
+	}
+
+	.alert-success p {
+		margin-top: 15px;
+		padding-left: 20px;
+		text-align: center;
+		color: #707070;
+		font-size: 14px;
+		background: url(/bundles/zuoweb/images/group_inthis.png) no-repeat 20px 3px;
+	}*/

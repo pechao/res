@@ -1,0 +1,38 @@
+#rocket-to-top  div{
+    width:149px;
+    overflow: hidden;
+    margin:0px;
+    padding:0px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+#rocket-to-top  .level-2{
+    background:url(/bundles/zuoweb/images/rocket_button_up.png) no-repeat -149px 0px;
+    opacity:0;
+    height:250px;
+    display:none;
+    z-index:1;
+}
+#rocket-to-top  .level-3{
+    background:transparent;
+    cursor:pointer;
+    display:block;
+    z-index:2;
+    height:150px;
+}
+#rocket-to-top{
+    z-index:11;
+    width:149px;
+    height:250px;
+    display:block;
+    overflow: hidden;
+    margin:0px;
+    padding:0px;
+    cursor:default;
+    position:fixed;
+    right:0;
+    top:80%;
+    margin-top:-125px;
+    background:url(/bundles/zuoweb/images/rocket_button_up.png) no-repeat 0 0;
+}

@@ -1,0 +1,496 @@
+
+
+.main-part .inner-container {
+	/*float: left;*/
+}
+
+.main-part .loading-page {
+	margin-top: 0;
+}
+
+.post-news .section-icon {
+	background-position: 0 -296px;
+}
+
+.new-notes .section-icon {
+	background-position: -32px -296px;
+}
+
+
+.news-container .loading {
+	background-color: #fff;
+	border: 1px solid #DBE1E5;
+	text-align: center;
+	font-size: 18px;
+	color: #535353;
+	line-height: 50px;
+	letter-spacing: 2px;
+}
+
+.post-news, .new-notes {
+	position: relative;
+	margin-bottom: 10px;
+}
+.main-info-part {
+	position: relative;
+}
+
+.post-news {
+	/*width:560px;
+	border:1px solid #333;*/
+}
+
+	.post-news .list {
+		border: 1px solid #dbe1e5;
+		/*border-bottom: 3px solid #dbe1e5;*/
+		border-bottom: 0;
+	}
+
+		.post-news .list li {
+			float: left;
+			padding-bottom: 5px;
+			/*border-bottom: 2px solid #dbe1e5;*/
+			background: #fff url(/bundles/zuoweb/images/home_tag_bg.gif) repeat-x 0 bottom;
+		}
+
+			.post-news .list li.active {
+				padding-bottom: 3px;
+				border-bottom-color: #fff;
+				background: url(/bundles/zuoweb/images/repeat_x_1.png) repeat-x;
+				background-color: #dbe1e5;
+			}
+				.post-news .list li.active a {
+					padding-top: 1px;
+					height: 81px;
+				}
+
+			.post-news .list li.last {
+				border-right: none;
+			}
+
+			.post-news .list li a {
+				display: block;
+				width: 87px;
+				height: 80px;
+				border-right: 1px solid #fff;
+				border-left: 1px solid #fff;
+			}
+			.post-news .list li.active a {
+				border-color: #dbe1e5;
+			}
+			.post-news .list li.first a {
+				border-left:0;
+			}
+			
+				.post-news .list li a:hover {
+					text-decoration: none;
+					background-color: #f8f9fa;
+				}
+
+				.post-news .list li .add-one {
+					background: url(/bundles/zuoweb/images/home_tag_addone.gif) no-repeat 28px 24px;
+					cursor: text;
+				}
+			
+				.post-news .list li a b, .post-news .list li a span, .post-news .list li a i {
+					display: block;
+				}
+
+				.post-news .list li a i {
+					height: 15px;
+					width: 30px;
+					*cursor:pointer;
+				}
+
+				.post-news .list li a b {
+					width: 32px;
+					height: 28px;
+					margin-left: 28px;
+					background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite.png);
+					background-repeat: no-repeat;
+					+cursor:pointer;
+				}
+
+				.post-news .list li a span {
+					line-height: 35px;
+					text-align: center;
+				}
+
+				.post-news .list li a b.travel-plan {
+					background-position: 0 -336px;
+				}
+
+				.post-news .list li a b.topic {
+					background-position: -80px -336px;
+				}
+
+				.post-news .list li a b.meeting {
+					background-position: 0 -376px;
+				}
+
+				.post-news .list li a b.need-person {
+					background-position: -40px -336px;
+				}
+
+				.post-news .list li a b.picture {
+					background-position: -40px -376px;
+				}
+
+				.post-news .list li a b.cheap {
+					background-position: -80px -376px;
+				}
+
+				.post-news .list li a b.bussiness {
+					background-position: -88px -447px;
+				}
+
+
+
+
+
+
+.new-notes ul {
+	border-bottom: 1px solid #dbe1e5;
+}
+
+.new-notes li {
+	width: 533px;
+	background-color: #f8f9fa;
+	border: 1px solid #dbe1e5;
+	border-bottom: 0;
+	margin-bottom: 0;
+	*float:left;
+}
+
+	.new-notes li:hover {
+		background-color: #fff;
+	}
+
+	.new-notes li .texts, .new-notes li .time, .new-notes li .close-btn {
+		display: block;
+		float: left;
+	}
+
+	.new-notes li .texts {
+		width: 394px;
+		height: 48px;
+		padding-left: 16px;
+		line-height: 48px;
+		font-size: 14px;
+		color: #535353;
+	}
+
+		.new-notes li .texts .username {
+			padding: 0 3px;
+			font-weight: bold;
+		}
+
+		.new-notes li .texts .con-type {
+			padding: 0 2px;
+			color: #448aca;
+		}
+		.new-notes li .texts span {
+			height: 48px;
+			line-height: 48px;
+			color: #D1C0A5;
+		}
+		.new-notes li .texts span.msg-catogary {
+			padding: 0 2px;
+			color: #eb6877;
+		}
+
+		.new-notes li .texts a {
+			color: #448ACA;
+		}
+			.new-notes li .texts a.user-card {
+				font-weight: bold;
+				color: #59493F;
+			}
+
+	.new-notes li .time {
+		height: 48px;
+		line-height: 48px;
+		color: #a0a0a0;
+	}
+
+	.new-notes li .close-btn {
+		display: none;
+		float: right;
+		margin: 16px 15px 0 0px;
+		width: 15px;
+		height: 15px;
+		background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -88px -48px;
+		cursor: pointer;
+	}
+	.new-notes li:hover .close-btn {
+		background: url(/bundles/zuoweb/images/close_style6.gif);
+	}
+
+.new-notes .function-line {
+	width: 535px;
+	color: #59493f;
+	background-color: #dbe1e5;
+}
+
+	.new-notes .function-line p {
+		line-height: 30px;
+	}
+
+		.new-notes .function-line p.msg-prompt {
+			float: left;
+			margin-left: 18px;
+		}
+
+		.new-notes .function-line p.btns {
+			float: right;
+			margin-right: 18px;
+		}
+
+			.new-notes .function-line p.btns a {
+				padding: 0 5px;
+				font-weight: bold;
+			}
+
+
+
+
+.news-gallary {
+}
+
+	.news-gallary ul {
+		border: 1px solid #dbe1e5;
+		border-bottom: 2px solid #dbe1e5;
+	}
+
+	.news-gallary li {
+		position:relative;
+		float: left;
+		border-right: 1px solid #dbe1e5;
+		text-align: center;
+	}
+
+		.news-gallary li a {
+			display: block;
+			width: 177px;
+			height: 36px;
+			line-height: 36px;
+			font-size: 14px;
+			color: #535353;
+			background-color: #fff;
+			border-bottom: 2px solid #dbe1e5;
+		}
+			.news-gallary li a:hover {
+				background-color: #f8f9fa;
+			}
+			.news-gallary li a span {
+				padding-left: 30px;
+			}
+
+		.news-gallary li .unread-item-count {
+			left:135px;
+			text-align:left;
+		}
+		.news-gallary li.tab_line .unread-item-count {
+			left: 150px;
+		}
+
+		.news-gallary li.tab_line a span {
+			background: url(/bundles/zuoweb/images/home_tab_line_gray.gif) no-repeat;
+		}
+		.news-gallary li.tab_friend a span {
+			background: url(/bundles/zuoweb/images/home_tab_friend_gray.gif) no-repeat;
+		}
+		.news-gallary li.tab_guang a span {
+			background: url(/bundles/zuoweb/images/home_tab_guang_gray.gif) no-repeat;
+		}
+		.news-gallary li.tab_line a.active span {
+			background: url(/bundles/zuoweb/images/home_tab_line.gif) no-repeat;
+		}
+		.news-gallary li.tab_friend a.active span {
+			background: url(/bundles/zuoweb/images/home_tab_friend.gif) no-repeat;
+		}
+		.news-gallary li.tab_guang a.active span {
+			background: url(/bundles/zuoweb/images/home_tab_guang.gif) no-repeat;
+		}
+
+		.news-gallary li a.active {
+			background-color: #fff;
+			font-weight: bold;
+			color: #535353;
+		}
+			.news-gallary li a.active {
+				padding-top: 1px;
+				background: #fefefe url(/bundles/zuoweb/images/home_tab_bg.gif) repeat-x;
+				border-bottom-width: 1px;
+				border-color: #fefefe;
+			}
+
+		.news-gallary li.last {
+			border-right: 0;
+		}
+
+.circle-news {
+	background-color: #dbe1e5;
+	padding-left: 10px;
+	width: 525px;
+	/*padding:10px 0 10px 10px;*/
+	/*margin-bottom:20px;
+	border:1px solid #333;*/
+}
+
+	.circle-news .lines {
+		position: relative;
+		height: 50px;
+		overflow: hidden;
+	}
+
+		.circle-news .lines li {
+			float: left;
+			margin: 10px 5px 0 0;
+		}
+
+			.circle-news .lines li span {
+				display: block;
+				width: 90px;
+				height: 30px;
+				line-height: 30px;
+				/*border:1px solid #333;*/
+				color: #535353;
+				background-color: #fff;
+				text-align: center;
+			}
+
+			.circle-news .lines li.disabled span {
+				color: #999;
+				background-color: #edf0f2;
+			}
+
+			.circle-news .lines li b {
+				display: block;
+				width: 80px;
+				height: 10px;
+				background-color: #cc66ff;
+				border: 1px solid #333;
+				border-top: none;
+			}
+
+			.circle-news .lines li.disabled b {
+				display: none;
+			}
+
+			.circle-news .lines li.arrow {
+				position: absolute;
+				height: 30px;
+				right: 0px;
+				cursor: pointer;
+			}
+
+		.circle-news .lines i {
+			display: block;
+			width: 14px;
+			height: 9px;
+			margin: 12px 10px 0 0;
+			background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -56px -135px;
+		}
+
+
+
+/*.msg-info{
+	margin-bottom:20px;
+}
+.msg-info .msg-txt h2{
+	font-size:16px;
+	font-weight:bold;
+}
+.msg-info .msg-txt a{
+	text-decoration:underline;
+	color:#06F;
+}
+.msg-info .operates{
+	float:right;
+}
+.msg-info .operates a{
+	display:block;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	margin-bottom:10px;
+	text-align:center;
+	border:1px solid #333;
+}
+.replies .msg-tips{
+	float:right;
+}
+.replies .msg-tips span{
+	padding:5px 10px;
+	line-height:26px;
+	border:1px solid #333;
+}
+
+.replies .first-level{
+	float:left;
+	
+	width:50px;
+	height:50px;
+	line-height:50px;
+	margin-left:10px;
+	margin-top:10px;
+	border:1px solid #333;
+	text-align:center;
+}
+.reply-box{
+	float:left;
+	
+	border:1px solid #333;
+}
+.reply-item{
+	width:454px;
+	padding:10px;
+	border-bottom:1px solid #333;
+}
+.reply-item .photo,.reply-item .reply-msg,.reply-item .operates{
+	float:left;
+}
+.reply-item .photo img{
+	width:30px;
+	height:30px;
+}
+.reply-item .reply-msg{
+	width:320px;
+}
+.reply-item .reply-msg p{
+	color:#999;
+}
+.reply-item .operates{
+	float:right;
+}
+.reply-item .operates a{
+	display:block;
+	
+	width:50px;
+	height:26px;
+	line-height:26px;
+	margin:5px 10px;
+	background-color:#00CCFF;
+	text-align:center;
+}
+
+.reply-box .show-more{
+	border-bottom:1px solid #333;
+}*/
+
+
+
+
+.travel-plane {
+	/*display: none;*/
+}
+
+
+.msg-wrap .msg-info .msg-txt h2 .bold a {
+	padding-left: 5px;
+}
+.msg-wrap .msg-info .msg-txt h2 .normal a {
+	/*padding-left: 15px;
+	background: url(/bundles/zuoweb/images/goods_intro_link_icon.jpg) no-repeat 0 4px;*/
+}

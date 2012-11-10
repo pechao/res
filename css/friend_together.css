@@ -1,0 +1,28 @@
+.main-part {
+	width: 535px;
+	margin-left: 70px;
+	z-index: 10;
+}
+	.main-part a {
+		color: #448aca;
+	}
+
+
+	.section-icon {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: 10px;
+		left: -50px;
+		background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite.png);
+	}
+
+
+.news-wrapper {
+	/*position: relative;
+	background-color: #fff;
+	border: 1px solid #dbe1e5;*/
+}
+	.news-wrapper .section-icon {
+		margin: 0;
+	}

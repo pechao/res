@@ -1,0 +1,428 @@
+.left-part, .left-part a {
+	color: #535353;
+}
+
+	.left-part .personal-info {
+		/*border: 1px solid #dbe1e5;*/
+	}
+
+	.left-part .my-traffic dl,
+	.left-part .friends ul,
+	.left-part .browse-history ul {
+		border: 1px solid #dbe1e5;
+		border-top: none;
+	}
+
+	.left-part h3 {
+		border: 1px solid #dbe1e5;
+		border-bottom: none;
+	}
+
+
+
+	.left-part .personal-info {
+		padding-top: 10px;
+		margin-bottom: 5px;
+		/*width: 118px;
+		height: 141px;*/
+	}
+
+		.left-part .personal-info .photo {
+			position: relative;
+			_display: inline;
+			margin: 0 auto;
+			width: 96px;
+			height: 96px;
+			/*margin: 11px 0 0 11px;*/
+		}
+
+		.left-part .personal-info .photo img{
+			width:96px;
+			height:96px;
+		}
+
+		.left-part .personal-info a.name {
+			display: block;
+			line-height: 32px;
+			text-align: center;
+			font-size: 14px;
+		}
+
+
+
+	.left-part h3 {
+		padding-left: 10px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 14px;
+		background: url(/bundles/zuoweb/images/repeat_x_2.png) repeat-x 0 0;
+		border-bottom: 1px solid #dbe1e5;
+	}
+
+		.left-part h3 a {
+			display: block;
+			background: url(/bundles/zuoweb/images/icon_setting.gif) no-repeat 84px 9px;
+		}
+
+			.left-part h3.active a,.left-part h3 a:hover {
+				text-decoration: none;
+				background-image: url(/bundles/zuoweb/images/icon_setting_blue.gif);
+			}
+
+	.left-part .my-traffic dt {
+		line-height: 20px;
+		background-color: #dbe1e5;
+		text-align: center;
+	}
+
+	.left-part .empty {
+		padding: 5px 15px;
+		text-align: center;
+		color: #a0a0a0;
+	}
+
+	.left-part .my-traffic dd.empty a {
+		display: inline;
+		line-height: normal;
+		color: #448aca;
+	}
+
+		.left-part .my-traffic dd.empty a:hover {
+			background-color: #448aca;
+			color: #fff;
+		}
+
+	.left-part .my-traffic dd, 
+	.left-part .friends li, 
+	.left-part .browse-history li {
+		position: relative;
+	}
+
+		.left-part .my-traffic dd a,
+		.left-part .friends li a,
+		.left-part .browse-history li a {
+			display: block;
+			height: 37px;
+			padding-top: 0;
+			/*height: 37px;*/
+			line-height: 37px;
+		}
+
+	.left-part .friends .be-followed {
+		position: relative;
+	}
+
+		.left-part .friends .be-followed .unread-item-count {
+			top: -9px;
+			left: 95px;
+		}
+
+		.left-part .friends .be-followed a {
+			padding-left: 10px;
+			height:30px;
+			line-height:30px;
+			border-top:1px solid #dce3e7;
+			border-bottom:1px solid #dce3e7;
+			background-color:#fbfbfb;
+			color: #535353;
+			font-size: 14px;
+		}
+
+		.left-part .friends .be-followed strong {
+			padding: 0 3px;
+			color: #448aca;
+			font-weight: bold;
+		}
+
+		.left-part .my-traffic a, 
+		.left-part .friends a,
+		.left-part .browse-history a {
+			/*border-bottom: 1px solid #f5f7f7;
+			border-top: 1px solid #f5f7f7;*/
+		}
+
+	.left-part .my-traffic a:hover,
+	.left-part .friends a:hover,
+	.left-part .browse-history a:hover {
+		text-decoration: none;
+	}
+
+	.left-part .my-traffic dd a:hover, .left-part .my-traffic dd.active a,
+	.left-part .friends li a:hover,.left-part .friends li.active a,
+	.left-part .browse-history li a:hover,.left-part .browse-history li.active a {
+		background-color: #ffffff;
+		/*border-top:1px #dce3e7 solid;
+		border-bottom:1px #dce3e7 solid;*/
+	}
+	/*.left-part .my-traffic dd:first-child a,
+	.left-part .friends li:first-child a,
+	.left-part .browse-history li:first-child a {
+		border-top:0 !important;
+	}
+	.left-part .my-traffic dd:last-child a,
+	.left-part .browse-history li:last-child a {
+		border-bottom:0 !important;
+	}*/
+	
+
+	.left-part .my-traffic dd a:hover i, .left-part .my-traffic dd.active i,
+	.left-part .friends li a:hover i,.left-part .friends li.active i,
+	.left-part .browse-history li a:hover i,.left-part .browse-history li.active i {
+		position:absolute;
+		display:block;
+		width:9px;
+		height:38px;
+		right:-9px;
+		top:0;
+		background:url(/bundles/zuoweb/images/left_part_v1.gif) no-repeat 0 0;
+	}
+
+	.left-part .my-traffic dd b,
+	.left-part .friends li b,
+	.left-part .browse-history li b {
+		position: absolute;
+		left: 8px;
+		top: 12px;
+	}
+
+	.left-part .my-traffic dd span,
+	.left-part .friends li span,
+	.left-part .browse-history li span {
+		display: block;
+		width: 80px;
+		height: 37px;
+		margin-top: 0px;
+		margin-left: 34px;
+		word-break: break-all;
+		*cursor: pointer;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.left-part .browse-history li.more {
+		border-top:1px solid #dce3e7;
+		background-color:#fbfbfb;
+		text-align: center;
+	}
+
+		.left-part .browse-history li.more a {
+			height: 25px;
+			line-height: 25px;
+			padding: 0;
+		}
+
+	.left-part .friends li.add-group {
+		border-bottom: none;
+	}
+
+	.left-part .friends li.find-person {
+		position: relative;
+		border-top: none;
+	}
+
+		.left-part .friends li.find-person label {
+			position: absolute;
+			top: 8px;
+			left: 10px;
+			color: #a0a0a0;
+		}
+
+		.left-part .friends li.find-person input {
+			width: 111px;
+			height: 30px;
+			padding-left: 5px;
+			line-height: 30px\9;
+			border: 1px solid #fbfbfb;
+			background-color:#fbfbfb;
+			outline: none;
+			font-size: 12px;
+			color: #666;
+		}
+
+
+/* 未登录 左侧栏*/
+.log-left {
+	margin-bottom: 10px;
+	padding: 0 0 9px 9px;
+	border: 1px solid #dbe1e5;
+}
+
+	.log-left h2 {
+		height: 34px;
+		line-height: 34px;
+		color: #889097;
+	}
+
+	.log-left .log, .log-left .reg {
+		display: block;
+		margin-bottom: 10px;
+		width: 100px;
+		height: 34px;
+		line-height: 34px;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	.log-left .log {
+		border: 1px solid #447bad;
+		border-width: 0 1px 4px;
+		background-color: #67aae7;
+	}
+
+		.log-left .log:hover {
+			background-color: #559ad8;
+		}
+
+		.log-left .log:active {
+			border-width: 3px 1px 1px;
+		}
+
+	.log-left .reg {
+		background-color: #74c15a;
+		border: 1px solid #5d9a48;
+		border-width: 0 1px 4px;
+	}
+
+		.log-left .reg:hover {
+			background-color: #67b84e;
+		}
+
+		.log-left .reg:active {
+			border-width: 3px 1px 1px;
+		}
+
+	.log-left .oauth-log, .log-left .ios {
+		width: 100px;
+		margin-bottom: 10px;
+		border-top: 1px solid #dbe1e5;
+	}
+
+		.log-left .oauth-log p {
+			padding: 5px 0;
+		}
+
+		.log-left .oauth-log a {
+			display: block;
+			float: left;
+			margin-right: 2px;
+			margin-bottom: 2px;
+			width: 32px;
+			height: 32px;
+			background-image: url(/bundles/zuoweb/images/share_big.gif);
+			background-repeat: no-repeat;
+		}
+
+			.log-left .oauth-log a.last {
+				margin-right: 0;
+			}
+
+			.log-left .oauth-log a.sina {
+				background-position: 0 0;
+			}
+
+				.log-left .oauth-log a.sina:hover {
+					background-position: 0 -82px;
+				}
+
+			.log-left .oauth-log a.qq-wei {
+				background-position: 0 -492px;
+			}
+
+				.log-left .oauth-log a.qq-wei:hover {
+					background-position: 0 -574px;
+				}
+
+			.log-left .oauth-log a.qq {
+				background-position: 0 -656px;
+			}
+
+				.log-left .oauth-log a.qq:hover {
+					background-position: 0 -738px;
+				}
+
+			.log-left .oauth-log a.ren {
+				background-position: 0 -328px;
+			}
+
+				.log-left .oauth-log a.ren:hover {
+					background-position: 0 -410px;
+				}
+
+			.log-left .oauth-log a.dou {
+				background-position: 0 -164px;
+			}
+
+				.log-left .oauth-log a.dou:hover {
+					background-position: 0 -246px;
+				}
+
+	.log-left .ios {
+		position: relative;
+		margin-bottom: 0;
+		padding-top: 10px;
+		height: 60px;
+	}
+
+		.log-left .ios .download-btn {
+			position: absolute;
+			left: -2px;
+			top: 10px;
+			width: 104px;
+			height: 60px;
+			background: url(/bundles/zuoweb/images/ios.png) no-repeat 0 0px;
+			cursor: pointer;
+			z-index: 15;
+		}
+
+		.log-left .ios .pulldown {
+			position: absolute;
+			top: 66px;
+			width: 98px;
+			color: #535353;
+			border-left: 1px solid #dbe1e5;
+			border-right: 1px solid #dbe1e5;
+			z-index: 10;
+		}
+
+			.log-left .ios .pulldown a {
+				display: block;
+				width: 98px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				background-color: #fff;
+				border-bottom: 1px solid #dbe1e5;
+			}
+
+				.log-left .ios .pulldown a:hover {
+					background-color: #f8f9fa;
+				}
+
+
+.left-part .my-traffic dd.tip {
+	padding-left: 7px;
+	height: 39px;
+	line-height: 39px;
+	color: #889097;
+	border-top:1px solid #dce3e7;
+	background-color:#fbfbfb;
+}
+
+.left-part h3.not-log {
+	padding: 9px;
+	height: auto;
+	line-height: 15px;
+	background: #fff;
+	font-size: 12px;
+}
+
+	.left-part h3.not-log a {
+		display: inline;
+		padding: 0 20px 0 5px;
+		background: url(/bundles/zuoweb/images/arrow_down_3.gif) no-repeat right 9px;
+		font-size: 14px;
+		color: #448aca;
+	}

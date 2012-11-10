@@ -1,0 +1,653 @@
+.page-info {
+	border: 1px solid #dbe1e5;
+}
+.page-info p {
+	float: left;
+	width: 65px;
+	height: 75px;
+	border-right: 1px solid #dbe1e5;
+	text-align: center;
+}
+	/*.page-info p:hover {
+		background-color: #f8f9fa;
+		background-color: rgba(219,215,222,0.2);
+	}*/
+	.page-info p.last {
+		width: 66px;
+		border-right: 0;
+	}
+	.page-info p b {
+		display: block;
+		margin-top: 18px;
+		color: #448aca;
+		font-size: 18px;
+	}
+	.page-info p span {
+		font-size: 14px;
+		color: #889097;
+	}
+
+.email-active, .plans, .recent-visitor, .may-transportation, .may-person,.friend-follower {
+	border: 1px solid #dbe1e5;
+}
+
+	.recent-visitor a:hover {
+	
+	}
+
+.email-active {
+	width: 198px;
+	height: 118px;
+	text-align: center;
+}
+
+	.email-active .email-icon {
+		display: block;
+		width: 30px;
+		height: 22px;
+		margin: 15px 0 12px 84px;
+		*margin-left:0;
+		background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -136px -184px;
+	}
+
+	.email-active p {
+		line-height: 20px;
+		color: #707070;
+	}
+
+		.email-active p a {
+			color: #448aca;
+		}
+		.email-active p a:hover {
+			background-color: #448aca;
+			color: #fff;
+		}
+
+
+/*============= 右侧边栏  公用 begin ====*/
+.right-part h3 {
+	height: 30px;
+	line-height: 30px;
+	color: #535353;
+	text-align: center;
+	font-size: 14px;
+	border-bottom: 1px solid #dbe1e5;
+	background: url(/bundles/zuoweb/images/repeat_x_2.png) repeat-x 0 0;
+}
+
+.right-part .list {
+	padding: 16px 15px 0 15px;
+}
+
+	.right-part .list li {
+		position: relative;
+		padding-bottom: 16px;
+		/*margin:0 15px 16px;*/
+		margin-bottom: 16px;
+		border-bottom: 1px solid #dbe1e5;
+	}
+
+		.right-part .list li.last {
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		.right-part .list li b.close {
+			position: absolute;
+			display: block;
+			display: none;
+			width: 14px;
+			height: 14px;
+			top: 0px;
+			right: -2px;
+			background: url(/bundles/zuoweb/images/group_close.png) no-repeat;
+			cursor: pointer;
+		}
+
+			.right-part .list li b.close:hover {
+				background: url(/bundles/zuoweb/images/group_close_hover.png) no-repeat;
+			}
+
+	.right-part .list .photo, .right-part .list .do-what {
+		float: left;
+	}
+
+	.right-part .list .photo {
+		position: relative;
+		*height:32px;
+		margin-right: 12px;
+	}
+
+	.right-part .list .do-what {
+		color: #707070;
+	}
+
+	.right-part .list .pink {
+		margin: 0 3px;
+	}
+	.right-part .list .do-what p.common-line {
+		color: #535353;
+	}
+
+.right-part .ul-list {
+	padding: 0 0 13px 7px;
+}
+	.right-part .ul-list .li {
+		position: relative;
+		margin:13px 0 0 0px;
+		padding-right: 1px;
+	}
+
+
+.right-part .content-inner {
+	width: 6000px;
+}
+.right-part .empty {
+	width: auto;
+	line-height: 40px;
+	color: #a0a0a0;
+	text-align: center;
+}
+.right-part .content-wrap {
+	*position: relative;
+	width: 200px;
+	overflow: hidden;
+}
+.right-part .content {
+	float: left;
+	width: 198px;
+}
+/*============= 右侧边栏  公用 end ====*/
+
+
+
+/*============ 好友出行 特有 begin ============*/
+.right-part .plans .tabs span {
+	display: block;
+	float: left;
+	width: 99px;
+	height: 25px;
+	line-height: 25px;
+	color: #707070;
+	text-align: center;
+	cursor: pointer;
+}
+
+	.right-part .plans .tabs span.disactive {
+		background-color: #dbe1e5;
+	}
+
+.right-part .plans .list {
+	padding: 15px 0 0 15px;
+}
+
+	.right-part .plans .list li {
+		margin-bottom: 0;
+		margin-right: 0;
+		padding-bottom: 10px;
+		border-bottom: 0;
+	}
+
+	.right-part .plans .list .operates {
+		clear: both;
+	}
+
+		.right-part .plans .list .operates span {
+			display: block;
+			float: left;
+		}
+
+			.right-part .plans .list .operates span.border-bottom {
+				width: 126px;
+				height: 16px;
+				border-bottom: 1px solid #dbe1e5;
+			}
+
+			.right-part .plans .list .operates span a {
+				display: block;
+				width: 50px;
+				margin-top: 8px;
+				text-align: center;
+				color: #aaa;
+			}
+/*============ 好友出行 特有 end ============*/
+.right-part .may-transportation .list .photo .icon-here {
+	_z-index: -10;
+}
+
+.right-part .may-transportation .list .photo b {
+	_bottom: -1px;
+}
+
+.right-part .may-transportation .list .do-what {
+	color: #a0a0a0;
+}
+
+	.right-part .may-transportation .list .do-what .station {
+		margin-left: 3px;
+		color: #707070;
+	}
+
+
+
+/*============ 城内线路 这里的大家也坐... begin ============*/
+.people-zuo{
+	border: 1px solid #DBE1E5;
+}
+
+	.people-zuo .title,.sit-what .title, .recent-visitor .title,.friend-follower .title {
+		height: 30px;
+		line-height: 30px;
+		font-size: 14px;
+		color: #535353;
+		border-bottom: 1px solid #dbe1e5;
+		background: url(/bundles/zuoweb/images/repeat_x_2.png) repeat-x 0 0;
+	}
+
+		.people-zuo .title h4, .people-zuo .title p,.sit-what .title h4, .sit-what .title p,.recent-visitor .title h4, .recent-visitor .title p,.friend-follower .title h4,.friend-follower .title p {
+			float: left;
+		}
+
+		.people-zuo .title h4,.sit-what .title h4,.recent-visitor .title h4, .friend-follower .title h4 {
+			_display: inline;
+			margin-left: 15px;
+			height: 30px;
+		}
+		.people-zuo .title h4 span, .sit-what .title h4 span, .recent-visitor .title h4 span,.friend-follower .title h4 span {
+			padding-left: 5px;
+			font-size: 12px;
+			color: #a0a0a0;
+		}
+
+.people-zuo {
+	*position: relative;
+	*width: 200px;
+	overflow: hidden;
+}
+
+	.people-zuo .title p,.sit-what .title p,.recent-visitor .title p {
+		float: right;
+		margin: 5px 4px 0 0;
+		background: url(/bundles/zuoweb/images/btn_move.jpg) no-repeat;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+	}
+
+		.people-zuo .title p b,.sit-what .title p b {
+			_overflow: hidden;
+			cursor: pointer;
+		}
+
+		.people-zuo .title p .left, .people-zuo .title p .right,.sit-what .title p .left, .sit-what .title p .right,.recent-visitor .title p .left, .recent-visitor .title p .right {
+			display: block;
+			float: left;
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+		}
+			.people-zuo .title p .left:hover, .sit-what .title p .left:hover,.recent-visitor .title p .left:hover {
+				background: url(/bundles/zuoweb/images/btn_move_l_hover.jpg) no-repeat;
+			}
+			.people-zuo .title p .right:hover, .sit-what .title p .right:hover,.recent-visitor .title p .right:hover {
+				background: url(/bundles/zuoweb/images/btn_move_r_hover.jpg) no-repeat;
+			}
+.recent-visitor .ul-list .li,.friend-follower .ul-list .li {
+	padding: 0;
+}
+
+	.people-zuo .content-wrap{
+		width: 5000px;
+		padding-bottom: 5px;
+	}
+
+		.people-zuo .content-wrap ul,.sit-what .content-wrap ul {
+			float: left;
+			padding: 0 5px;
+		}
+.sit-what .content-wrap ul {
+	padding: 0;
+}
+		.people-zuo .content-wrap li, .sit-what .content-wrap li {
+			margin-top: 5px;
+			_margin-top: 0px;
+			_padding-top: 5px;
+		}
+.sit-what .content-wrap li {
+	margin: 0;
+}
+		.people-zuo .content-wrap dl,.sit-what .content-wrap dl {
+			width: 186px;
+			height: 57px;
+			border: 1px solid #dbe1e5;
+			background: url(/bundles/zuoweb/images/opacity_1.png);
+		}
+
+		.people-zuo .content-wrap .last dl, .sit-what .content-wrap .last dl {
+			*height: 59px;
+		}
+
+		.people-zuo .content-wrap dt a,.sit-what .content-wrap dt a{
+			position: relative;
+			height: 28px;
+			line-height: 28px;
+			padding-left: 35px;
+			border-bottom: 1px solid #dbe1e5;
+			font-size: 14px;
+			font-weight: bold;
+			color: #448aca;
+			background: #fff url(/bundles/zuoweb/images/arrow_right_2.png) no-repeat 180px 7px;
+			cursor: pointer;
+		}
+
+			.people-zuo .content-wrap dt a b, .sit-what .content-wrap dt a b {
+				position: absolute;
+				top: 6px;
+				left: 10px;
+			}
+
+			.people-zuo .content-wrap dt a:hover, .sit-what .content-wrap dt a:hover {
+				background-color: #f8f9fa;
+				background-image: url(/bundles/zuoweb/images/arrow_right_2_hover.png);
+			}
+
+			.sit-what .content-wrap dt a:hover {
+				text-decoration: none;
+			}
+
+		.people-zuo .content-wrap dd,.sit-what .content-wrap dd {
+			_display: inline;
+			float: left;
+			_float: none;
+			width: 34px;
+			height: 28px;
+			line-height: 30px;
+			_line-height: 28px;
+			border-right: 1px solid #dbe1e5;
+			background-repeat: no-repeat;
+			background-position: 5px 6px;
+		}
+		.people-zuo .content-wrap dd, .sit-what .content-wrap dd{
+			/*display: block;
+			height: 28px;
+			line-height: 28px;*/
+			padding-left: 27px;
+			color: #889097;
+		}
+
+			.people-zuo .content-wrap dd.last{
+				border-right: 0;
+			}
+
+			.people-zuo .content-wrap dd.popularity,.sit-what .content-wrap dd.popularity {
+				background-image: url(/bundles/zuoweb/images/icon_pub_popu_0.png);
+			}
+
+			.people-zuo .content-wrap dd.news,.sit-what .content-wrap dd.news {
+				background-image: url(/bundles/zuoweb/images/icon_pub_news_0.png);
+			}
+
+			.people-zuo .content-wrap dd.picture,.sit-what .content-wrap dd.picture {
+				background-image: url(/bundles/zuoweb/images/icon_pub_pic_0.png);
+			}
+/*============ 城内线路 这里的大家也坐... end ============*/
+
+/*============ 被关注页面  begin ============*/
+/*他们坐什么（与“城内线路 这里的大家也坐”公用）*/
+.sit-what {
+	margin-bottom: 10px;
+}
+.sit-what .title {
+	border: 1px solid #DBE1E5;
+	border-bottom: 0;
+}
+.sit-what .content-wrap li {
+	position: relative;
+}
+	.sit-what .content-wrap li b.left,.sit-what .content-wrap li b.right {
+		position: absolute;
+		display: block;
+		width: 6px;
+		height: 5px;
+		top: 30px;
+		_overflow: hidden;
+	}
+		.sit-what .content-wrap li b.left {
+			left: 0;
+			background: url(/bundles/zuoweb/images/group_shadow_l.jpg);
+		}
+		.sit-what .content-wrap li b.right {
+			right: 0;
+			background: url(/bundles/zuoweb/images/group_shadow_r.jpg);
+		}
+.sit-what .content-wrap dl {
+	margin: 0;
+	width: 200px;
+	border-bottom: 0;
+	border: 0;
+}
+.sit-what .content-wrap dt {
+	border: 1px solid #DBE1E5;
+	border-bottom: 0;
+}
+.sit-what .content-wrap dd {
+	width: 34px;
+}
+	.sit-what .content-wrap dd.last {
+		width: 35px;
+	}
+.sit-what .content-wrap .last dd {
+	border-bottom: 1px solid #DBE1E5;
+}
+	.sit-what .content-wrap dd.first {
+		margin-left: 6px;
+		border-left: 1px solid #DBE1E5;
+	}
+.people-zuo .content-wrap a,.sit-what .content-wrap a {
+	display: block
+}
+
+
+.right-part .title {
+	background: url(/bundles/zuoweb/images/repeat_x_2.png) repeat-x 0 0;
+}
+
+
+.want-go,.weather {
+	margin-bottom: 10px;
+	border: 1px solid #dbe1e5;
+}
+.want-go .title,.weather .title {
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #dbe1e5;
+}
+	.want-go .title h4,.weather .title h4 {
+		float: left;
+		margin-left: 10px;
+		font-size: 14px;
+		color: #535353;
+	}
+	.want-go .title p,.weather .title p {
+		float: right;
+		margin-right: 10px;
+		color: #889097;
+		padding-right: 13px;
+		background: url(/bundles/zuoweb/images/arrow_right_3.png) no-repeat right 9px;
+	}
+	.want-go .title2 ,.weather .title2 {
+		height: 28px;
+		line-height: 30px;
+		_line-height: 28px;
+		border-bottom: 1px solid #dbe1e5;
+		text-align: center;
+		text-shadow: 0 1px 0 #fff;
+		font-size: 14px;
+		font-weight: bold;
+		color: #448aca;
+		background: url(/bundles/zuoweb/images/group_sub_title_bg.jpg) repeat-x;
+	}
+	.weather .title2 {
+		color: #889097;
+	}
+	.want-go .content-wrap {
+		height: 252px;
+		overflow: hidden;
+	}
+	.want-go .content-wrap .empty {
+		margin: 20px 0 20px 14px;
+		text-align: center;
+		color: #889097;
+		background: url(/bundles/zuoweb/images/group_add_tip_icon.png) no-repeat 0px 1px;
+	}
+	.want-go .content-wrap ul {
+		float: left;
+		width: 183px;
+	}
+	.want-go .content-wrap li {
+		*padding-bottom: 15px;
+		*float: left;
+		*width: 100%;
+		border-bottom: 1px solid #dbe1e5;
+		border-right: 1px solid #dbe1e5;
+	}
+		.want-go .content-wrap li.last {
+			border-bottom: 0;
+		}
+		.want-go .content-wrap li .answer {
+			position: relative;
+			margin:0 5px 5px;
+			height: 32px;
+			line-height: 32px;
+			clear:both;
+			background: url(/bundles/zuoweb/images/group_chuxing_bg.jpg) repeat-x;
+			border: 1px solid #dbe1e5;
+			border-radius: 5px;
+			color: #889097;
+			text-shadow: 0 1px 0 #fff;
+		}
+			.want-go .content-wrap li .answer span {
+				display: block;
+				float: left;
+				padding: 0 11px;
+				border-right: 1px solid #dbe1e5;
+				cursor: pointer;
+				font-weight: bold;
+			}
+				.want-go .content-wrap li .answer .last {
+					border-right: 0;
+				}
+				.want-go .content-wrap li .answer b{
+					position: absolute;
+					display: block;
+					top: -7px;
+					left: 16px;
+					width: 14px;
+					height: 8px;
+					background: url(/bundles/zuoweb/images/group_arrow_2.jpg) no-repeat;
+				}
+	.want-go .photo,.want-go .content {
+		float: left;
+	}
+	.want-go .photo {
+		_display: inline;
+		margin: 15px 10px 15px 15px;
+	}
+	.want-go .content {
+		margin-top: 15px;
+		color: #707070;
+	}
+		.want-go .content span {
+			padding: 0 3px;
+			color: #eb6877;
+		}
+
+	.weather .content-wrap {
+		padding: 0 15px;
+		width: 168px;
+	}
+		.weather .content-wrap ul {
+			color: #535353;
+		}
+		.weather .content-wrap li {
+			padding: 12px 0;
+			border-bottom: 1px solid #dbe1e5;
+			vertical-align:top;
+		}
+			.weather .content-wrap li.last {
+				border-bottom: 0;
+			}
+			.weather .content-wrap li span {
+				display: block;
+				float: left;
+				margin: 3px 12px 0 0;
+			}
+			.weather .content-wrap li p {
+				float: left;
+			}
+			.weather .content-wrap li p img {
+				margin-right: 5px;
+			}
+			.weather .content-wrap li b {
+				display: block;
+				float: right;
+				margin: 3px 0 0 12px;
+				font-weight: normal;
+			}
+		.weather .content-wrap .more a {
+			display: block;
+			line-height: 30px;
+			text-align: center;
+			color: #448aca;
+		}
+	
+/*============ 被关注页面  end ============*/
+
+/*============ 邀请朋友坐坐 end ============*/
+.invite-friends {
+	border: 1px solid #DBE1E5;
+	font-size: 14px;
+}
+	.invite-friends a {
+		display: block;
+		padding: 10px 0 10px 62px;
+		color: #448aca;
+		background: url(/bundles/zuoweb/images/icon_fri.png) no-repeat 40px 12px;
+	}
+		.invite-friends a:hover {
+			background-color: #f8f9fa;
+			background-color: rgba(219,215,222,0.2);
+			text-decoration: none;
+		}
+	
+/*============ 邀请朋友坐坐 end ============*/
+
+/*每天在进步*/
+.progress-wrap {
+	border:1px solid #DBE1E5;
+}
+.progress-title {
+	height: 30px;
+	line-height: 30px;
+	padding-left:15px;
+	font-size: 14px;
+	color: #535353;
+	border-bottom: 1px solid #DBE1E5;
+	background:url(/img/repeat_x_2.png) repeat-x 0 0;
+}
+.progress-content {
+	padding-left:15px;
+	padding-right:15px;
+}
+.progress-content p {
+	padding:5px 0;
+	font-size:12px;
+	color:#a0a0a0;
+}
+.progress-content p span {
+	font-size:12px;
+	color:#535353;
+}
+.progress-content .overline {
+	border-top:1px solid #dbe1e5;
+}

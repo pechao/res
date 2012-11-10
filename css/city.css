@@ -1,0 +1,467 @@
+#city-info {
+	position: relative;
+}
+
+	#city-info .section-icon {
+		background-image: url(/bundles/zuoweb/images/icon_manage.gif);
+		background-position: 0 0;
+	}
+
+	#city-info h3 {
+		float: left;
+		line-height: 50px;
+		font-size: 24px;
+		color: #535353;
+	}
+
+	#city-info .refresh-lines {
+		float: right;
+		padding-left: 20px;
+		padding-top: 20px;
+		padding-right: 20px;
+		color: #448aca;
+		font-size: 12px;
+		background: url(/bundles/zuoweb/images/refresh.gif) no-repeat 0 21px;
+	}
+
+		#city-info .refresh-lines a {
+			color: #448aca;
+		}#city-info .refresh-lines a:hover {
+			background-color: #448aca;
+			color: #fff;
+		}
+
+.city-block {
+	margin-bottom: 10px;
+	border: 1px solid #dbe1e5;
+	background-color: #fff;
+}
+.block-title {
+	height: 35px;
+	line-height: 35px;
+}
+.block-title strong {
+	padding: 0 20px 0 15px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #535353;
+}
+	.block-title span {
+		padding-left: 25px;
+		padding-right: 20px;
+		color: #a0a0a0;
+		font-size: 14px;
+	}
+	.block-title .saying {
+		padding: 0;
+	}
+	.block-title .subway {
+		background: url(/bundles/zuoweb/images/icon_subway.gif) no-repeat 0 3px;
+	}
+	.block-title .bus {
+		background: url(/bundles/zuoweb/images/icon_bus.gif) no-repeat 0 2px;
+	}
+
+.line-title {
+	margin-bottom: 20px;
+	padding-left: 15px;
+	height: 32px;
+	line-height: 32px;
+	background-color: #f8f9fa;
+}
+.line-title h4 {
+	float: left;
+	padding-left: 28px;
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+}
+	.line-title h4.subway {
+		background-image: url(/bundles/zuoweb/images/icon_subway.gif);
+	}
+	.line-title h4.bus {
+		background-image: url(/bundles/zuoweb/images/icon_bus.gif);
+	}
+	.line-title h4.travel {
+		background-position: 0 6px;
+		background-image: url(/bundles/zuoweb/images/icon_travel.gif);
+	}
+	.line-title h4 a {
+		padding: 0 1px;
+		color: #448aca;
+	}
+	.line-title h4 a:hover {
+		color: #fff;
+		background-color: #448aca;
+	}
+
+.line-change {
+	position: relative;
+	float: left;
+}
+	.line-change b {
+		display: block;
+		width: 38px;
+		height: 30px;
+		background: url(/bundles/zuoweb/images/arrow_down_4.gif) no-repeat 5px 9px;
+		cursor: pointer;
+	}
+	.line-change ul {
+		position: absolute;
+		display: none;
+		width: 123px;
+		left: -100px;
+		top: 32px;
+		background-color: #fff;
+		border-right: 1px solid #dbe1e5;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		z-index: 10;
+	}
+	.line-change li a{
+		display: block;
+		padding-left: 44px;
+		cursor: pointer;
+		border-bottom: 1px solid #dbe1e5;
+	}
+	.line-change .subway li a{
+		color: #535353;
+		background: url(/bundles/zuoweb/images/icon_subway.gif) no-repeat  15px 7px;
+	}
+	.line-change .bus li a{
+		color: #535353;
+		background: url(/bundles/zuoweb/images/icon_bus.gif) no-repeat  15px 7px;
+	}
+	.line-change .travel li a{
+		color: #535353;
+		background: url(/bundles/zuoweb/images/icon_travel.gif) no-repeat  15px 7px;
+	}
+		.line-change li a:hover {
+			background-color: #f4f6f7;
+		}
+.line-title .count-all {
+	float: left;
+}
+	.line-title .count-all span {
+		padding: 5px 15px 0 25px;
+		background-repeat: no-repeat;
+		background-position: 0 4px;
+		color: #a0a0a0;
+	}
+	.line-title .count-all .popularity {
+		padding-left: 20px;
+		background-image: url(/bundles/zuoweb/images/icon_pub_popu_0.gif);
+	}
+	.line-title .count-all .news {
+		background-image: url(/bundles/zuoweb/images/icon_pub_news_0.gif);
+	}
+	.line-title .count-all .picture {
+		background-image: url(/bundles/zuoweb/images/icon_pub_pic_0.gif);
+	}
+	.line-title .count-all .deal {
+		background-image: url(/bundles/zuoweb/images/icon_pub_deal_0.gif);
+	}
+
+.line-title .link {
+	float: right;
+	padding-right: 20px;
+}
+
+	.line-title .link a {
+		color: #448aca;
+	}
+	
+	.line-title .link a:hover {
+		background-color: #448aca;
+		color: #fff;
+	}
+
+.line-title .refresh,.line-title .loading {
+	float: right;
+	margin: 9px 5px 0 0;
+	width: 17px;
+	height: 17px;
+	background: url(/bundles/zuoweb/images/refresh.gif) no-repeat;
+	cursor: pointer;
+}
+.line-title .refresh {
+	display: none;
+}
+	.line-title .loading {
+		display: block;
+		background-image: url(/bundles/zuoweb/images/loading2.gif);
+	}
+.feed-part {
+	float: left;
+	width: 310px;
+	padding: 0 15px 0 20px;
+}
+	.feed-part .no-more {
+		background-color: #f8f9fa;
+		text-align: center;
+		color: #a0a0a0;
+	}
+		.feed-part .no-more a {
+			color: #a0a0a0;
+		}
+		.feed-part .no-more a:hover {
+			color: #fff;
+			background-color: #a0a0a0;
+		}
+		
+	.feed-part .hold1 {
+		line-height: 34px;
+	}
+		
+	.feed-part .hold2 {
+		line-height: 78px;
+	}
+	.feed-part .hold3 {
+		line-height: 122px;
+	}
+.feed {
+	margin-bottom: 10px;
+}
+.feed .avatar {
+	float: left;
+	border-radius: 5px;
+	border: 1px solid #bdc3c7;
+}
+	.feed .avatar img {
+		display: block;
+		border-radius: 4px;
+	}
+	.feed-title{
+		position: relative;
+		float: left;
+		margin-left: 19px;
+		padding: 5px 10px;
+		height: 22px;
+		line-height: 22px;
+		background-color: #f8f9fa;
+		border: 1px solid #dbe1e5;
+		border-radius: 4px;
+	}
+		.feed-title i {
+			position: absolute;
+			top: 17px;
+			left: -11px;
+			width: 11px;
+			height: 8px;
+			background: url(/bundles/zuoweb/images/city_feed_tail.gif) no-repeat;
+		}
+		.feed-title .type {
+			display: block;
+			float: left;
+			padding: 0px 5px;
+			background-color: #eb6877;
+			color: #fff;
+			border-radius: 2px;
+		}
+		.feed-title .cnt {
+			display: block;
+			float: right;
+			margin-left: 10px;
+			width: 190px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			color: #448aca;
+		}
+			.feed-title .cnt:hover {
+				color: #fff;
+				background-color: #448aca;
+			}
+.album-part .album {
+	float: left;
+	margin-right: 8px;
+	border: 1px solid #dbe1e5;
+	background: #fff url(/bundles/zuoweb/images/album_bg_bottom.jpg) repeat-x 0 bottom;
+}
+	.album-part .album:hover {
+		background-color: #f8f9fa;
+	}
+	.album .inner {
+		background: url(/bundles/zuoweb/images/bg_border.jpg) repeat-y 7px 0;
+	}
+	.album .inner2 {
+		margin-left: 5px;
+		padding: 5px 4px 0 9px;
+		height: 115px;
+		background: url(/bundles/zuoweb/images/photo_line.png) no-repeat 0 -25px;
+	}
+.album .photo {
+	position: relative;
+	padding: 2px;
+	width: 96px;
+	height: 78px;
+	border: 1px solid #dbe1e5;
+}
+	.album .photo b {
+		position: absolute;
+		display: block;
+		width: 13px;
+		height: 13px;
+		z-index: 10;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+	}
+	.album .photo .tr {
+		top: -2px;
+		right: -2px;
+		background-image: url(/bundles/zuoweb/images/album_tr.png);
+	}
+	.album .photo .bl {
+		bottom: -2px;
+		left: -2px;
+		background-image: url(/bundles/zuoweb/images/album_bl.png);
+	}
+.album .photo img {
+	display: block;
+	border-radius: 0;
+}
+	.album .name {
+		line-height: 27px;
+		color: #a0a0a0;
+	}
+		.album .name a {
+			display: block;
+			float: left;
+			margin: 5px 0;
+			width: 70px;
+			height: 20px;
+			line-height: 20px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			color: #448aca;
+			/*font-weight: bold;*/
+			white-space: nowrap;
+		}
+			.album .name a:hover {
+				background-color: #448aca;
+				color: #fff;
+			}
+.line-block .event {
+	margin-bottom: 20px;
+	padding: 15px 0px 0 20px;
+	clear: both;
+}
+	.line-block .event li {
+		margin-top: 2px;
+		float: left;
+		width: 38px;
+		height: 38px;
+		line-height: 38px;
+		text-align: center;
+		background-color: #fbfcfc;
+		border: 1px solid #dbe1e5;
+		border-right: 0;
+		color: #448aca;
+	}
+		.line-block .event li.active {
+			margin-top: 0;
+			background-color: #fff;
+			border-bottom-width: 3px;
+		}
+		.line-block .event li.hangout {
+			margin-top: 0;
+			width: 472px;
+			border: 0;
+			background-color: #fff;
+			text-align: left;
+		}
+			.line-block .event li.hangout .cnt {
+				float: left;
+				width: 383px;
+				border: 1px solid #dbe1e5;
+				border-right: 0;
+				border-bottom-width: 3px;
+			}
+				.line-block .event li.hangout .cnt span {
+					display: block;
+					float: left;
+					width: 72px;
+					width: auto;
+					max-width: 72px;
+					height: 38px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					color: #a0a0a0;
+					padding: 0 10px;
+				}
+				.line-block .event li.hangout .cnt a {
+					display: block;
+					float: left;
+					width: 255px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					font-size: 14px;
+				}
+					.line-block .event li.hangout .cnt a:hover {
+						text-decoration: underline;
+					}
+			.line-block .event li.hangout .pub-btn {
+				display: block;
+				float: right;
+				width: 86px;
+				text-align: center;
+				background-color: #75A9DD;
+				border: 1px solid #4D83B4;
+				border-bottom-width: 3px;
+				color: #fff;
+				cursor: pointer;
+			}
+				.line-block .event li.hangout .pub-btn:hover {
+					background-color: #67aae7;
+				}
+			.line-block .event li.hangout .refresh,.line-block .event li.hangout .loading {
+				display: block;
+				float: right;
+				width: 32px;
+				height: 38px;
+				background: url(/bundles/zuoweb/images/refresh.gif) no-repeat no-repeat 0 12px;
+				cursor: pointer;
+			}
+			.line-block .event li.hangout .loading {
+				background-image: url(/bundles/zuoweb/images/loading2.gif);
+			}
+		.line-block .event li.more {
+			border-right: 1px solid #dbe1e5;
+		}
+			.line-block .event li.more a {
+				display: block;
+				height: 38px;
+				background: url(/bundles/zuoweb/images/city_more.gif) no-repeat;
+			}
+
+
+
+#post-hangout {
+	position: absolute;
+	display: none;
+	padding-bottom: 0;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #999;
+	border-color: rgba(0,0,0,0.4);
+	border-radius: 10px;
+	z-index: 100;
+}
+	#post-hangout .msg-form {
+		display: block;
+		padding-bottom: 0;
+		border:0;
+		background: none;
+	}
+	#post-hangout .ul-area {
+		border: 0;
+	}
+	#post-hangout .btn-line {
+		border: 0;
+	}
+	#post-hangout .where .input {
+		height: 28px;
+	}
+		#post-hangout .where .input input {
+			height: 27px;
+		}

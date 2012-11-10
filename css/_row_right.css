@@ -1,0 +1,87 @@
+/*=============== 三列布局---右侧  =================*/
+
+.right-part .news-count{
+	border:1px solid #333;
+}
+.right-part .news-count li{
+	float:left;
+	border:1px solid #333;
+	margin:10px 0 10px 10px;
+}
+.right-part .news-count li a{
+	display:block;
+	width:60px;
+	height:50px;
+	text-align:center;
+	font-size:16px;
+}
+
+.right-part .invite-friends{
+	margin-top:10px;
+}
+.right-part .invite-friends a{
+	display:block;
+	text-align:center;
+	height:50px;
+	line-height:50px;
+	background-color:#00CCFF;
+}
+.right-part .pop-lines,.right-part .tuan,.right-part .way-shoper{
+	margin-top:10px;
+	padding:10px;
+	border:1px solid #333;
+}
+/*===========右侧栏 标题 和 more common -- begin ===========*/
+.right-part h3{
+	font-size:16px;
+	margin-bottom:10px;
+}
+.right-part .more{
+	float:right;
+}
+/*===========右侧栏 标题 和 more common -- end ===========*/
+.right-part .tuan li{
+	margin-bottom:10px;
+}
+.right-part .tuan li p{
+	line-height:16px;
+}
+.right-part .tuan .title{
+	color:#999;
+}
+.right-part .tuan .title a{
+	color:#666;
+	margin:0 4px;
+}
+
+/*===========图像和内容左右两列的情况  --  begin  ============*/
+/*===================================================
+=================================================
+=========================================
+===============================
+====================*/
+.layout2-img-content .each-list{
+	margin-bottom:10px;
+}
+.layout2-img-content .each-list .block{
+	float:left;
+}
+.layout2-img-content .each-list .photo{
+}
+.layout2-img-content .each-list .content{
+	margin-left:10px;
+}
+.layout2-img-content .each-list .content h4{
+}
+.layout2-img-content .each-list .content .txt{
+	width:160px;
+	color:#999;
+}
+
+/*
+====================
+===============================
+=========================================
+=================================================
+===================================================*/
+/*===========图像和内容左右两列的情况  --  end  ============*/

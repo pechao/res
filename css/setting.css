@@ -1,0 +1,780 @@
+.setting-page {
+	position: relative;
+}
+
+	.setting-page .section-icon {
+		background-image: url(/bundles/zuoweb/images/icon_manage.gif);
+		background-position: 0 0;
+	}
+
+	.setting-page h3 {
+		float: left;
+		line-height: 50px;
+		font-size: 24px;
+		color: #535353;
+	}
+
+
+.setting-part {
+	padding-bottom: 7px;
+	background: url(/bundles/zuoweb/images/setting_box_bottom.gif) no-repeat 0 bottom;
+}
+
+.st-title {
+	padding-left: 6px;
+	background: url(/bundles/zuoweb/images/setting_box_tl.gif) no-repeat left 0;
+}
+
+	.st-title .inner {
+		padding-right: 6px;
+		background: url(/bundles/zuoweb/images/setting_box_tr.gif) no-repeat right 0;
+	}
+
+	.st-title .inner2 {
+		padding-left: 8px;
+		height: 35px;
+		background: url(/bundles/zuoweb/images/setting_box_title_bg.gif) repeat-x;
+	}
+
+	.st-title .inner ul {
+		color: #535353;
+	}
+
+	.st-title .inner li.txt {
+		float: left;
+		width: 100px;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+		cursor: pointer;
+	}
+
+		.st-title .inner li.txt a {
+			display: block;
+		}
+
+			.st-title .inner li.txt a:hover {
+				background: url(/bundles/zuoweb/images/setting_box_title_hover.gif) repeat-x;
+			}
+
+	.st-title .inner li.split {
+		float: left;
+		width: 2px;
+		height: 35px;
+		background: url(/bundles/zuoweb/images/setting_box_split.gif) no-repeat;
+	}
+
+	.st-title .inner li.active {
+		/*width: 104px;*/
+	}
+
+		.st-title .inner li.active a {
+			background: url(/bundles/zuoweb/images/setting_box_title_active.gif) no-repeat;
+		}
+
+			.st-title .inner li.active a:hover {
+				background: url(/bundles/zuoweb/images/setting_box_title_active.gif) no-repeat;
+			}
+
+.st-cnt {
+	padding-left: 5px;
+	background:#fff url(/bundles/zuoweb/images/setting_box_lr.gif) repeat-y left 0;
+	color: #535353;
+}
+	.st-cnt .inner {
+		padding-right: 5px;
+		background: url(/bundles/zuoweb/images/setting_box_lr.gif) repeat-y right 0;
+	}
+	.st-cnt .gray-bg {
+		background-color: #fbfcfc;
+	}
+	.st-cnt .st-item h4 {
+		float: left;
+		width: 110px;
+		text-align: right;
+		font-size: 14px;
+	}
+	.st-cnt .st-item {
+		padding: 15px 0;
+	}
+	.st-cnt .st-item .st-td {
+		float: left;
+		padding-left: 15px;
+	}
+	.st-cnt .log-name {
+		padding-top: 2px;
+	}
+		.st-cnt .log-name b {
+			font-size: 14px;
+		}
+		.st-cnt .log-name .old-pass, .st-cnt .log-name .new-pass, .st-cnt .log-name .op {
+			float: left;
+		}
+		.st-cnt .log-name label {
+			position: absolute;
+			top: 7px;
+			left: 5px;
+			color: #a0a0a0;
+			cursor: text;
+		}
+		.st-cnt .log-name input {
+			padding: 0 3px;
+			width: 122px;
+			height: 28px;
+			line-height: 28px\9;
+			background: url(/bundles/zuoweb/images/reply_box_repeat.jpg) repeat-x;
+			border: 1px solid #dbe1e5;
+			color: #535353;
+		}
+		.st-cnt .log-name .old-pass {
+			position: relative;
+			margin-top: 30px;
+			padding-right: 20px;
+			background: url(/bundles/zuoweb/images/arrow_right_6.gif) no-repeat right 10px;
+		}
+			.st-cnt .log-name .old-pass label {
+			}
+		.st-cnt .log-name .new-pass {
+			margin-top: 10px;
+			padding-left: 10px;
+		}
+		.st-cnt .log-name .new-pass-f, .st-cnt .log-name .new-pass-re {
+			position: relative;
+		}
+		.st-cnt .log-name .new-pass-f {
+			margin-bottom: 10px;
+		}
+		.st-cnt .log-name .op {
+			margin: 30px 0 0 20px;
+		}
+		.st-cnt .log-name .op a {
+			position: static !important;
+			letter-spacing: 0 !important;
+		}
+			.st-cnt .log-name .op p {
+				margin-top: 10px;
+				color: #a0a0a0;
+			}
+				.st-cnt .log-name .op p.error {
+					color: #eb6877;
+				}
+	.st-cnt .domain-personal input {
+		float: none;
+		width: 100px;
+		margin-right: 10px;
+	}
+	.st-cnt a {
+		color: #448aca;
+	}
+	.st-cnt .nick-tip,.st-cnt .input-text {
+		float: left;
+	}
+	.st-cnt .nick-tip {
+		padding-left: 10px;
+	}
+		.st-cnt .nick-tip span {
+			color: #eb6877;
+		}
+	.st-cnt .input-text {
+		padding: 0 3px;
+		width: 128px;
+		height: 28px;
+		line-height: 28px\9;
+		background: url(/bundles/zuoweb/images/reply_box_repeat.jpg) repeat-x;
+		border: 1px solid #dbe1e5;
+		color: #535353;
+	}
+	.st-cnt .sex-sel {
+		padding-top: 3px;
+	}
+		.st-cnt .sex-sel label {
+			padding-right: 5px;
+		}
+	.st-cnt .domain-personal b{
+		padding: 0 5px;
+		line-height: 30px;
+	}
+	.st-cnt select {
+		border-color: #dbe1e5;
+		color: #535353;
+	}
+	.st-cnt .other-account select {
+		height: 30px;
+	}
+	.st-cnt .home-sel, .st-cnt .city-sel {
+		display: block;
+		width: 130px;
+		height: 30px;
+		padding-right: 29px;
+		line-height: 30px;
+		background: url(/bundles/zuoweb/images/setting_city_sel.gif) no-repeat;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: center;
+		color: #535353;
+	}
+		.st-cnt .home-sel:hover, .st-cnt .city-sel:hover {
+			background-image: url(/bundles/zuoweb/images/setting_city_sel_hover.gif);
+		}
+
+	.st-cnt .avatar-area {
+		position: relative;
+		height: 160px;
+	}
+	.st-cnt .log-name .op a {
+		position: absolute;
+		left: 285px;
+		top: 0;
+	}
+		.st-cnt .avatar-area a,.st-cnt .log-name .op a {
+			display: block;
+			width: 70px;
+			height: 32px;
+			line-height: 32px;
+			text-align: center;
+			background-color: #67aae7;
+			border: 1px solid #5288b9;
+			border-width: 0 1px 4px;
+			color: #fff;
+			font-size: 14px;
+			font-weight: bold;
+			letter-spacing: 2px;
+		}
+			.st-cnt .avatar-area a:hover, .st-cnt .log-name .op a:hover {
+				background-color: #559ad8;
+			}
+			.st-cnt .avatar-area a:active, .st-cnt .log-name .op a:active {
+				border-width: 3px 1px 1px;
+			}
+
+		.st-cnt .avatar-area .file {
+			position: absolute;
+			left: 285px;
+			top: 0;
+		}
+			.st-cnt .avatar-area .file p {
+				margin-top: 10px;
+				width: 300px;
+			}
+		.st-cnt .avatar-area .file input{
+			display: none;
+		}
+	.st-cnt .avatar {
+		position: absolute;
+		background-color: #fbfcfc;
+		border-radius: 3px;
+	}
+		.st-cnt .avatar img {
+			border-radius: 3px;
+		}
+	.st-cnt .size160 {
+		top: 0;
+		left: 15px;
+		width: 160px;
+		height: 160px;
+	}
+	.st-cnt .size96 {
+		top: 0;
+		left: 180px;
+		width: 96px;
+		height: 96px;
+	}
+	.st-cnt .size48 {
+		top: 101px;
+		left: 180px;
+		width: 48px;
+		height: 48px;
+	}
+	.st-cnt .size32 {
+		top: 101px;
+		left: 233px;
+		width: 32px;
+		height: 32px;
+	}
+
+	.st-cnt .submit {
+		margin: 20px 0 50px 125px;
+		width: 70px;
+		height: 30px;
+		letter-spacing: 2px;
+		font-weight: bold;
+		font-size: 14px;
+		color: #fff;
+		border: 1px solid #5d9a48;
+		border-width: 0 1px 4px;
+		background-color: #74c15a;
+		cursor: pointer;
+	}
+		.st-cnt .submit:hover {
+			background-color: #67b84e;
+		}
+		.st-cnt .submit:active {
+			border-width: 3px 1px 1px;
+		}
+
+	.st-cnt .st-item2 {
+		padding: 15px 10px 15px 55px;
+	}
+		.st-cnt .st-item2 h4 {
+			margin-bottom: 10px;
+			font-size: 14px;
+		}
+			.st-cnt .st-item2 h4 span {
+				color: #a0a0a0;
+			}
+			
+.add-custom span, .add-custom p, .add-custom button {
+	display: block;
+	float: left;
+}
+.add-custom p {
+	position: relative;
+	border-bottom: 1px solid #fff;
+}
+.add-custom p label {
+	position: absolute;
+	top: 7px;
+	_top: 11px;
+	left: 7px;
+	cursor: text;
+}
+.add-custom p input {
+	width: 100px;
+	height: 28px;
+	padding-left: 5px;
+	border: 1px solid #DBE1E5;
+	border-right: 0;
+	background: #fff url(/bundles/zuoweb/images/reply_box_repeat.jpg) repeat-x;
+	color: #535353;
+}
+.add-custom button {
+	width: 50px;
+	height: 30px;
+	text-indent: -9999px;
+	background: url(/bundles/zuoweb/images/add_btn.jpg) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+
+.st-cnt .st-item3 {
+	padding: 20px 0;
+}
+.st-cnt .s-tips {
+	width: 500px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	padding-left: 6px;
+	text-align: center;
+	background: url(/bundles/zuoweb/images/setting_bind_tl.gif) no-repeat;
+	color: #889097;
+}
+	.st-cnt .s-tips .inner {
+		padding-right: 6px;
+		background: url(/bundles/zuoweb/images/setting_bind_tr.gif) no-repeat right 0;
+	}
+		.st-cnt .s-tips .inner p {
+			height: 38px;
+			background-color: #fff;
+			border-top: 1px solid #dbe1e5;
+			border-bottom: 1px solid #dbe1e5;
+		}
+.st-cnt .accounts {
+	padding-left: 120px;
+}
+.st-cnt .third-account-item {
+	width: 238px;
+	height: 254px;
+	background-color: #fbfcfc;
+	border: 1px solid #dbe1e5;
+}
+.st-cnt .accounts img {
+	display: block;
+	margin: 30px auto;
+	width: 101px;
+	height: 90px;
+}
+.st-cnt .st-item3 .op {
+	padding-left: 74px;
+}
+	.st-cnt .st-item3 .op button {
+		float:left;
+		width: 90px;
+		height: 36px;
+		line-height: 36px;
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		color:#fff;
+		border: 1px solid #5288b9;
+		border-width: 0 1px 4px;
+		background-color: #67aae7;
+		cursor: pointer;
+	}
+		.st-cnt .st-item3 .op button:hover {
+			background-color: #559ad8;
+		}
+
+		.st-cnt .st-item3 .op button.not-bind {
+			border-color: #5d9a48;
+			background-color: #74c15a
+		}
+		.st-cnt .st-item3 .op button.not-bind:hover {
+			background-color: #67b84e;
+		}
+		.st-cnt .st-item3 .op button:active {
+			border-width: 3px 1px 1px;
+		}
+
+	.st-cnt .st-item3 .op span {
+		float:left;
+		line-height:34px;
+		color: #a0a0a0;
+	}
+.st-cnt .st-item3 .third-account-item p {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #448aca;
+}
+	.st-cnt .st-item3 .third-account-item p.not-bind {
+		color: #a0a0a0;
+	}
+.st-cnt .st-item3 .third-account-item {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+.st-cnt .st-privacy p {
+	padding: 4px 0;
+	color: #a0a0a0;
+}
+
+/*替换头像的弹出窗*/
+#change-avatar-pop {
+	position: absolute;
+	border: 1px solid #bdc3c7;
+	box-shadow: 0 0 10px rgba(189,195,199,0.5);
+	background-color: #fff;
+	color: #535353;
+}
+	#change-avatar-pop h3 {
+		padding-bottom: 10px;
+		font-weight: bold;
+	}
+	#change-avatar-pop button {
+		
+	}
+	#change-avatar-pop .sel-avatar {
+		width: 84px;
+		height: 32px;
+		background: url(/bundles/zuoweb/images/btn_style14.gif) no-repeat;
+		border: 0;
+		color: #fff;
+		font-size: 14px;
+		font-weight: bold;
+	}
+		#change-avatar-pop .sel-avatar:hover {
+			background-image: url(/bundles/zuoweb/images/btn_style14_hover.gif);
+		}
+	
+	#change-avatar-pop .left {
+		float: left;
+		width: 200px;
+		height: 340px;
+		padding: 20px;
+		background: #F5F7F6 url(/bundles/zuoweb/images/bg_2.gif) repeat;
+		border-right: 1px solid #dbe1e5;
+	}
+		#change-avatar-pop .left p {
+			padding: 10px 0 15px;
+		}
+		#change-avatar-pop .left .avatar-show {
+			background-color: #dbe1e5;
+			box-shadow: inset 0 0 10px #b9c1c7;
+			border-radius: 5px;
+			color: #889097;
+		}
+			#change-avatar-pop .left .avatar-show table {
+				width: 200px;
+				height: 200px;
+			}
+				#change-avatar-pop .left .avatar-show table div {
+					width: 160px;
+					height: 160px;
+					line-height: 160px;
+					border: 3px dashed #fff;
+					border-radius: 8px;
+				}
+		#change-avatar-pop .left .save,#change-avatar-pop .left .cancel {
+			width: 90px;
+			height: 30px;
+			border: 0;
+			font-size: 12px;
+			font-weight: bold;
+			color: #fff;
+			letter-spacing: 3px;
+			cursor: pointer;
+		}
+		#change-avatar-pop .left .op {
+			margin-top: 15px;
+		}
+		#change-avatar-pop .left .save {
+			text-shadow: 0 -1px 1px #74c15a;
+			background: url(/bundles/zuoweb/images/btn_style15.gif) no-repeat;
+		}
+			#change-avatar-pop .left .save:hover {
+				background-image: url(/bundles/zuoweb/images/btn_style15_hover.gif);
+			}
+		#change-avatar-pop .left .cancel {
+			margin-left: 10px;
+			color: #bdc3c7;
+			text-shadow: 0 1px 1px #fff;
+			background: url(/bundles/zuoweb/images/btn_style8.gif) no-repeat;
+		}
+			#change-avatar-pop .left .cancel:hover {
+				background-image: url(/bundles/zuoweb/images/btn_style8_hover.gif);
+			}
+	#change-avatar-pop .right {
+		padding: 20px;
+		float: left;
+		height: 340px;
+	}
+	#change-avatar-pop table {
+		margin-bottom: 5px;
+	}
+	#change-avatar-pop table td.img {
+		color: #fff;
+		background-color: #448aca;
+		border-radius: 5px;
+	}
+	#change-avatar-pop .size160 td.img {
+		width: 160px;
+		height: 160px;
+	}
+	#change-avatar-pop .size96 td.img {
+		width: 96px;
+		height: 96px;
+	}
+	#change-avatar-pop .size48 td.img {
+		width: 48px;
+		height: 48px;
+	}
+	#change-avatar-pop .size32 td.img {
+		width: 32px;
+		height: 32px;
+	}
+	#change-avatar-pop .size48 {
+		float: left;
+	}
+	#change-avatar-pop .size32 {
+		float: left;
+		margin-top: 16px;
+		margin-left: 10px;
+	}
+	#change-avatar-pop table td img {
+		border-radius: 5px;
+	}
+	#change-avatar-pop table td.txt {
+		padding-left: 10px;
+		vertical-align: bottom;
+		color: #a0a0a0;
+	}
+
+
+
+#line-search {
+	position: relative;
+	float: right;
+	margin-top: 10px;
+}
+	#line-search .city {
+		float: left;
+		display: block;
+		width: 64px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+		color: #fff;
+		background: url(/bundles/zuoweb/images/btn_style2.jpg) no-repeat;
+	}
+	#line-search label {
+		position: absolute;
+		left: 69px;
+		top: 7px;
+		color: #a0a0a0;
+		cursor: text;
+	}
+	#line-search input {
+		display: block;
+		float: left;
+		padding-left: 3px;
+		width: 167px;
+		height: 28px;
+		line-height: 28px\9;
+		background: #fff url(/bundles/zuoweb/images/input_bg_2.gif) repeat-x;
+		border: 1px solid #dbe1e5;
+		border-left: 0;
+		border-right: 0;
+		color: #535353;
+	}
+	#line-search button {
+		float: left;
+		width: 30px;
+		height: 30px;
+		border: 0;
+		background: url(/bundles/zuoweb/images/line_search_btn.gif) no-repeat;
+		cursor: pointer;
+	}
+	#line-search .stations-box {
+		position: absolute;
+		padding: 11px 0 11px 11px;
+		top: 30px;
+		background-color: #f8f9fa;
+		border: 1px solid #dbe1e5;
+		border-top: 0;
+		box-shadow: 0 3px 6px #ccc;
+		z-index: 100;
+	}
+	
+	
+	
+	
+/*===============================线路圈管理 begin=================================*/
+#lines-wrap {
+	width: auto;
+	margin-top: 0;
+}
+	#lines-wrap .had-in {
+		margin-bottom: 10px;
+	}
+#lines-wrap .had-in,#lines-wrap .suggest {
+	float: none;
+	width: auto;
+	height: auto;
+}
+
+#lines-wrap .stations-box li {
+	float: left;
+}
+#lines-wrap .suggest .sub-and-bus,#lines-wrap .suggest .plane-and-train {
+	height: auto;
+}
+	
+/*===============================线路圈管理 end=================================*/
+	
+	
+	
+/*===============================头像设置 begin=================================*/
+.avatar-set {
+	padding:40px 0 40px 90px;
+	color:#889097;
+}
+	.avatar-set .upload {
+		float:left;
+		padding:20px 90px 20px 0;
+	}
+
+		.avatar-set .upload .big-edit {
+			border:1px solid #eee;
+		}
+	
+	.avatar-set .preview {
+		float:left;
+		padding:20px 0 20px 90px;
+		border-left:1px dashed #dbe1e5;
+	}
+		.avatar-set .preview .item {
+			padding-bottom:15px;
+		}
+			.avatar-set .preview .item div {
+				position:relative;
+				display:inline-block;
+				border:1px solid #eee;
+				overflow:hidden;
+			}
+			.avatar-set .preview .item .middle {
+				width:160px;
+				height:160px;
+			}
+			.avatar-set .preview .item .small {
+				width:48px;
+				height:48px;
+			}
+			
+			.avatar-set .preview .item img {
+				position:absolute;
+				display:block;
+				left:0;
+				top:0;
+			}
+	
+	.avatar-set h3 {
+		margin-bottom:30px;
+		font-size:14px;
+		font-weight:bold;
+		color:#535353;
+	}
+
+.avatar-set-btns {
+	padding:0 0 50px 270px;
+}
+	.avatar-set-btns a,#sel-photo {
+		display:block;
+		width:98px;
+		height:30px;
+		line-height:30px;
+		text-align:center;
+		border-style:solid;
+		border-left-width:1px;
+		border-right-width:1px;
+		border-bottom-width:4px;
+		border-top-width:0;
+	}
+	.avatar-set-btns a {
+		float:left;
+	}
+		.avatar-set-btns a:active {
+			border-top-width:3px;
+			border-bottom-width:1px;
+		}
+#sel-photo {
+	margin: 10px 0;
+	background-color:#67aae7;
+	border-color:#5288b9;
+	color:#fff;
+}
+	#sel-photo:hover {
+		background-color:#559ad8;
+	}
+
+
+#save {
+	margin-right:20px;
+	background-color:#74c15a;
+	border-color:#5d9a48;
+	color:#fff;
+}
+	#save:hover {
+		background-color:#67b84e;
+	}
+
+#reset {
+	background-color:#fff;
+	border-color:#dbe1e5;
+	color:#889097;
+}
+	#reset:hover {
+		background-color:#f8f9fa;
+	}
+
+
+	
+
+	
+	
+	
+
+/*===============================头像设置 end=================================*/

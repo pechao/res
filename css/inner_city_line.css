@@ -1,0 +1,1285 @@
+
+
+.main-part {
+	/*width: 535px;*/
+	margin-left: 70px;
+}
+
+.main-part .icon30 {
+	position: absolute;
+	top: 10px;
+	left: -50px;
+}
+.page-title,.post-news {
+	position: relative;
+}
+
+
+
+	.page-title .icon-here {
+		background-image: url(/bundles/zuoweb/images/icon_bus.png);
+	}
+.page-title .line-info{
+	float: left;
+	margin-top: 10px;
+}
+	.page-title .line-info h3 {
+		float:left;
+		font-size: 24px;
+		color: #535353;
+	}
+		.page-title .line-info h3 a {
+			color: #535353;
+		}
+			.page-title .line-info h3 a:hover {
+				background-color: #535353;
+				color: #fff;
+			}
+		.page-title .line-info h3 b {
+			font-weight: bold;
+			padding: 0 5px;
+		}
+	.page-title .line-info h4 {
+		float: left;
+		margin: 13px 0 0 10px;
+		padding-left: 20px;
+		background: url(/bundles/zuoweb/images/reverse_icon.gif) no-repeat 0 3px;
+	}
+		.page-title .line-info h4 a {
+			color: #a0a0a0;
+		}
+			.page-title .line-info h4 a:hover {
+				background-color: #a0a0a0;
+				color: #fff;
+			}
+	.page-title .line-info p {
+		margin-top: 10px;
+		color: #a0a0a0;
+		font-size: 14px;
+	}
+.page-title .about-line {
+	_width: 133px;
+	float: right;
+	margin-top: 10px;
+}
+	.page-title .about-line .joined {
+		display: block;
+		float: right;
+		width: 95px;
+		height: 30px;
+		line-height: 30px;
+		margin-right: 2px;
+		font-size: 14px;
+		font-weight: bold;
+		border: 1px solid #dbe1e5;
+		border-width: 0 1px 4px;
+
+		background-color: #fff;
+		color: #74c15a;
+		cursor: pointer;
+	}
+		.page-title .about-line .joined:hover {
+			background-color: #f8f9fa;
+			text-decoration: none;
+		}
+		.page-title .about-line .joined:active {
+			border-top-width:3px;
+			border-bottom-width:1px;
+		}
+
+		.page-title .about-line .joined i {
+			display: block;
+			float: left;
+			margin: 6px 0px 0 10px;
+			width: 18px;
+			height: 18px;
+			background-repeat:no-repeat;
+			background-position:0 -40px;
+			background-image: url(/bundles/zuoweb/images/btn_style18.gif);
+		}
+			.page-title .about-line .not-join i.loading {
+				background-image: url(/bundles/zuoweb/images/loading2.gif)
+			}
+
+		.page-title .about-line .joined .btn-txt {
+			display: block;
+			text-align: center;
+			padding-left: 35px;
+		}
+		.page-title .about-line .joined .joined-station {
+			color: #74c15a;
+		}
+	.page-title .about-line .not-join {
+		color: #fff;
+		background-color: #74c15a;
+		border-color: #5d9a48;
+	}
+	.page-title .about-line .not-join:hover {
+		background-color:#67b84e;
+	}
+		.page-title .about-line .not-join i {
+			margin-top:7px;
+			background-position:0 0;
+		}
+		.page-title .about-line .not-join .btn-txt {
+			/*display: inline;*/
+			padding: 0;
+		}
+	.page-title .about-line .mail {
+		display: block;
+		float: right;
+		width: 34px;
+		height: 34px;
+		background-image: url(/bundles/zuoweb/images/mail_send_icon2.png);
+		cursor: pointer;
+	}
+	.page-title .about-line .msg {
+		margin-top: 10px;
+		color: #a0a0a0;
+		text-align: right;
+	}
+
+.post-news {
+	margin-top: 10px;
+}
+	
+.post-news .info-list {
+	background-color: #fff;
+}
+	.post-news .title-list {
+		/*border-left: 1px solid #dbe1e5;*/
+	}
+	.post-news .title-list li{
+		float: left;
+		width: 88px;
+		height: 41px;
+		line-height: 41px;
+		border-left: 1px solid #dbe1e5;
+		border-top: 1px solid #dbe1e5;
+		cursor: pointer;
+	}
+		.post-news .title-list li.last {
+			border-right: 0;
+		}
+		.post-news .title-list li.nothing p a{
+			background: none;
+			text-indent: -9999em;
+		}
+		.post-news .title-list li p {
+			background: url(/bundles/zuoweb/images/btn_bg_1.jpg) repeat-x;
+		}
+		.post-news .title-list li .active {
+			background-image: url(/bundles/zuoweb/images/btn_bg_2.jpg);
+		}
+			.post-news .title-list li a {
+				display: block;
+				padding-left: 39px;
+				color: #535353;
+				background-repeat: no-repeat;
+				background-position: 13px 11px;
+			}
+			.post-news .title-list li .active {
+				font-weight: bold;
+			}
+		.post-news .title-list li.news a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_news_0.png);
+		}
+		.post-news .title-list li.news .active a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_news_1.png);
+		}
+		.post-news .title-list li.need-person a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_needP_0.png);
+		}
+		.post-news .title-list li.need-person .active a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_needP_1.png);
+		}
+		.post-news .title-list li.topic a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_topic_0.png);
+		}
+		.post-news .title-list li.topic .active a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_topic_1.png);
+		}
+		.post-news .title-list li.album a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_pic_0.png);
+		}
+		.post-news .title-list li.album .active a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_pic_1.png);
+		}
+		.post-news .title-list li.meeting a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_meet_0.png);
+		}
+		.post-news .title-list li.meeting .active a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_meet_1.png);
+		}
+		.post-news .title-list li.bussiness a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_bussiness_0.png);
+		}
+		.post-news .title-list li.bussiness .active a {
+			background-image: url(/bundles/zuoweb/images/icon_pub_bussiness_1.png);
+		}
+		.post-news .title-list li.publish {
+			position: relative;
+			border-color: #60a4e1;
+			border-right: 1px solid #60a4e1;
+			border-left: 1px solid #4d83b4;
+		}
+		.post-news .title-list li.publish p {
+			height: 38px;
+			line-height: 38px;
+			text-align: center;
+			font-size: 14px;
+			font-weight: bold;
+			color: #fff;
+			background: #75a9dd;
+			border-bottom: 3px solid #4d83b4;
+		}
+			.post-news .title-list li.publish p:hover {
+				background: #60a4e1;
+			}
+		.post-news .title-list li.publish ul {
+			position: absolute;
+			display: none;
+			top: 41px;
+			left: -1px;
+			border-left: 1px solid #dbe1e5;
+			border-right: 1px solid #dbe1e5;
+			text-align: center;
+			z-index: 60;
+		}
+			.post-news .title-list li.publish ul li {
+				width: 88px;
+				height: 28px;
+				margin:0;
+				line-height: 28px;
+				border-right: 0;
+				border: 0;
+				border-bottom: 1px solid #dbe1e5;
+				background: #fff;
+				color: #535353;
+			}
+				.post-news .title-list li.publish ul li:hover {
+					background-color: #f8f9fa;
+				}
+.timefilter {
+	float: left;
+	margin: 13px 0 0 17px;
+}
+.timefilter b, .timefilter span, .timefilter i {
+	display: block;
+	float: left;
+	height: 24px;
+}
+.timefilter b, .timefilter i {
+	width: 11px;
+	background-repeat: no-repeat;
+}
+.timefilter b {
+	background-image: url(/bundles/zuoweb/images/btn_bg_3.jpg);
+}
+.timefilter i {
+	background-image: url(/bundles/zuoweb/images/btn_bg_4.jpg);
+}
+.timefilter span {
+	padding: 0 12px;
+	line-height: 24px;
+	color: #889097;
+	text-shadow: 0 1px 0 #fff;
+	border-right: 1px solid #dbe1e5;
+	background: url(/bundles/zuoweb/images/btn_bg_5.jpg) repeat-x;
+	font-weight: bold;
+	cursor: pointer;
+}
+	.timefilter span.last {
+		border-right: 0;
+	}
+	.timefilter span.active {
+		color: #448aca;
+	}
+.options .publish {
+	position: relative;
+	float: right;
+	margin: 13px 17px 0 0;
+	cursor: pointer;
+	z-index: 60;
+}
+	.options .publish span {
+		display: block;
+		width: 100px;
+		height: 34px;
+		line-height: 34px;
+		text-align: center;
+		background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -88px -80px;
+		font-size: 16px;
+		font-weight: bold;
+		color: white;
+	}
+		.options .publish span:hover {
+			background: url(/bundles/zuoweb/images/btn_style4_hover.gif) 0 0;
+		}
+	.options .publish ul {
+		display: none;
+		position: absolute;
+		top: 31px;
+		background-color: #f4fbff;
+		border: 1px solid #448aca;
+		border-bottom: 0;
+		color: #535353;
+		z-index: 60;
+	}
+	.options .publish li {
+		border-bottom: 1px solid #448aca;
+		text-align: center;
+		width: 98px;
+		height: 30px;
+		line-height: 30px;
+	}
+		
+			.options .publish li:hover {
+				background-color: #fcfeff;
+			}
+
+.station-graphics {
+	/*position: relative;*/
+	height: 130px;
+	border-left: 1px solid #dbe1e5;
+	border-right: 1px solid #dbe1e5;
+}
+.cross-city .station-graphics {
+	border-bottom: 1px solid #dbe1e5;
+}
+	.station-graphics .station-g-wrap {
+		/*position: absolute;
+		top: -30px;
+		height: 177px;*/
+		*position: static;/*IE7 在用定位布局的话，JS交互时，会有BUG，但是，overflow 失效的问题，又不得不用这个来修复，不过这个也取决于下面你的一条CSS*/
+		_position: relative;
+		width: 533px;
+		overflow: hidden;
+	}
+	.station-graphics ul {
+		width: 1000000px;
+		/*margin-top: 30px;*/
+		padding:0 10px;
+		background: url(/bundles/zuoweb/images/ugc_bg_dot.gif) repeat-x 0 79px;
+	}
+	.station-graphics li {
+		position: relative;
+		*position: static;/*如果这条不是相对定位，这上面的overflow不会失效；但，这里还必须用相对定位，因为那些小人需要绝对定位，故此，IE7就用js来解决这个问题，而不是css*/
+		_position: relative;
+		float:left;
+		width: 103px;
+		height: 130px;
+		background: url(/bundles/zuoweb/images/station_gif.gif) no-repeat 12px 13px;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+
+.cross-city .station-graphics li {
+	background-position: 12px  -168px;
+}
+		.msg-pop {
+			position: absolute;
+			display: none;
+			top: 0;
+			left: 0;
+			z-index:100;
+		}
+		
+			.msg-pop .loading {
+				line-height: 42px;
+				text-align: center;
+			}
+			.msg-pop .content {
+				border-bottom: 1px solid rgba(0,0,0,.2);
+			}
+			 .msg-pop .loading,.msg-pop .inner{
+				width: 198px;
+				height: 42px;
+				background-color: #fff;
+				border: 1px solid #000;
+			}
+			.msg-pop .photo {
+				position: relative;
+				_display: inline;
+				float: left;
+				margin: 5px 5px 0 5px;
+			}
+			.msg-pop .msg {
+				float:left;
+				width: 150px;
+				margin-top: 5px;
+			}
+				.msg-pop .msg h5 a{
+					color: #535353;
+				}
+				.msg-pop .msg .user {
+					
+				}
+				.msg-pop .msg .album {
+					color: #448aca;
+					font-weight: bold;
+				}
+				.msg-pop .msg .title {
+					margin:0 3px;
+					color: #448aca;
+					font-weight: bold;
+				}
+				.msg-pop .msg span{
+					color: #a0a0a0;
+				}
+			.msg-pop .foot b{
+				display: block;
+				width: 10px;
+				height:7px;
+				margin: -2px auto 0;
+				background: url(/bundles/zuoweb/images/arrow_down_2.gif) no-repeat 0 0;
+			}
+		.station-graphics li i {
+			position: absolute;
+			display: block;
+			width: 22px;
+			height: 43px;
+			background-repeat: no-repeat;
+		}
+		.station-graphics li p {
+			height: 20px;
+			margin-top: 100px;
+			color: #889097;
+			text-align: center;
+			overflow:hidden;
+			text-overflow:ellipsis;
+			white-space:nowrap;
+		}
+			.station-graphics li p.lookme {
+				color: #eb6877;
+				font-weight: bold;
+			}
+		.station-graphics li .man1a {
+			background-image: url(/bundles/zuoweb/images/p_man1a.gif);
+			left: 40px;
+			top: 50px;
+			z-index: 55;
+		}
+		.station-graphics li .man2a {
+			background-image: url(/bundles/zuoweb/images/p_man2a.gif);
+			width: 14px;
+			left: 28px;
+			top: 44px;
+			z-index: 54;
+		}
+		.station-graphics li .man3a {
+			background-image: url(/bundles/zuoweb/images/p_man3a.gif);
+			left: 62px;
+			top: 43px;
+			z-index: 53;
+		}
+		.station-graphics li .man4a {
+			background-image: url(/bundles/zuoweb/images/p_man4a.gif);
+			left: 35px;
+			top: 32px;
+			z-index: 52;
+		}
+		.station-graphics li .man5a {
+			background-image: url(/bundles/zuoweb/images/p_man5a.gif);
+			width: 32px;
+			left: 38px;
+			top: 26px;
+			z-index: 51;
+		}
+		.station-graphics li .wom1a {
+			background-image: url(/bundles/zuoweb/images/p_wom1a.gif);
+			left: 40px;
+			top: 50px;
+			z-index: 55;
+		}
+		.station-graphics li .wom2a {
+			background-image: url(/bundles/zuoweb/images/p_wom2a.gif);
+			left: 25px;
+			top: 40px;
+			z-index: 54;
+		}
+		.station-graphics li .wom3a {
+			background-image: url(/bundles/zuoweb/images/p_wom3a.gif);
+			left: 62px;
+			top: 43px;
+			z-index: 53;
+		}
+		.station-graphics li .wom4a {
+			background-image: url(/bundles/zuoweb/images/p_wom4a.gif);
+			width: 25px;
+			left: 32px;
+			top: 35px;
+			z-index: 52;
+		}
+		.station-graphics li .wom5a {
+			background-image: url(/bundles/zuoweb/images/p_wom5a.gif);
+			left: 50px;
+			top: 35px;
+			z-index: 51;
+		}
+		
+		
+		.station-graphics li .man1b {
+			background-image: url(/bundles/zuoweb/images/p_man1b.gif);
+			left: 40px;
+			top: 50px;
+			z-index: 55;
+		}
+		.station-graphics li .man2b {
+			background-image: url(/bundles/zuoweb/images/p_man2b.gif);
+			width: 14px;
+			left: 28px;
+			top: 44px;
+			z-index: 54;
+		}
+		.station-graphics li .man3b {
+			background-image: url(/bundles/zuoweb/images/p_man3b.gif);
+			left: 62px;
+			top: 43px;
+			z-index: 53;
+		}
+		.station-graphics li .man4b {
+			background-image: url(/bundles/zuoweb/images/p_man4b.gif);
+			left: 35px;
+			top: 32px;
+			z-index: 52;
+		}
+		.station-graphics li .man5b {
+			background-image: url(/bundles/zuoweb/images/p_man5b.gif);
+			width: 32px;
+			left: 38px;
+			top: 26px;
+			z-index: 51;
+		}
+		.station-graphics li .wom1b {
+			background-image: url(/bundles/zuoweb/images/p_wom1b.gif);
+			left: 40px;
+			top: 50px;
+			z-index: 55;
+		}
+		.station-graphics li .wom2b {
+			background-image: url(/bundles/zuoweb/images/p_wom2b.gif);
+			left: 25px;
+			top: 40px;
+			z-index: 54;
+		}
+		.station-graphics li .wom3b {
+			background-image: url(/bundles/zuoweb/images/p_wom3b.gif);
+			left: 62px;
+			top: 43px;
+			z-index: 53;
+		}
+		.station-graphics li .wom4b {
+			background-image: url(/bundles/zuoweb/images/p_wom4b.gif);
+			width: 25px;
+			left: 32px;
+			top: 35px;
+			z-index: 52;
+		}
+		.station-graphics li .wom5b {
+			background-image: url(/bundles/zuoweb/images/p_wom5b.gif);
+			left: 50px;
+			top: 35px;
+			z-index: 51;
+		}
+
+#px-style-scroll {
+	padding: 0 0 9px 20px;
+	border: 1px solid #dbe1e5;
+	border-top: 0;
+}
+		
+.scrollbar-wrap-hor {
+	*display: inline;
+	width: 493px;
+}
+	.scrollbar-wrap-hor .scrollbar {
+		top: 0;
+		left: 0;
+		cursor: pointer;
+	}
+
+.news-container {
+	/*margin-top: 10px;*/
+}
+.zhengren-part .icon30 {
+	background-image: url(/bundles/zuoweb/images/icon_peo_red.png);
+}
+
+
+
+
+.find-fav,.news-paihang,.tuangou {
+	border: 1px solid #DBE1E5;
+}
+
+	.find-fav .title {
+		background: url(/bundles/zuoweb/images/bg_findFav.png) repeat-x;
+	}
+.find-fav h4 {
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #535353;
+	text-align: center;
+}
+	.find-fav h4 a {
+		display: block;
+		background: url(/bundles/zuoweb/images/arrow_right_3.png) no-repeat 179px 11px;
+	}
+		.find-fav h4 a:hover {
+			text-decoration: none;
+			background-image: url(/bundles/zuoweb/images/arrow_right_3_hover.gif);
+		}
+	.find-fav li {
+		float: left;
+		border-top: 1px solid #dbe1e5;
+		border-right: 1px solid #dbe1e5;
+		/*background: url(/bundles/zuoweb/images/opacity_2.png) repeat;*/
+	}
+		.find-fav li a {
+			display: block;
+			width: 65px;
+			height: 28px;
+			line-height: 28px;
+			text-align: center;
+			color: #889097;
+		}
+			.find-fav li a:hover {
+				background: url(/bundles/zuoweb/images/opacity_2.png) repeat;
+				text-decoration: none;
+			}
+		.find-fav li.last {
+			border-right: 0;
+		}
+			.find-fav li.last a {
+				width: 66px;
+			}
+		.find-fav li.active {
+			/*background: none;*/
+		}
+		.find-fav li span {
+			margin: 0 3px;
+			color: #448aca;
+		}
+	.news-paihang h3, .tuangou h3 {
+		color: #535353;
+	}
+.news-paihang ul,.tuangou ul {
+	padding: 0 15px;
+}
+	.news-paihang li {
+		padding:16px 0 16px 35px;
+		background-repeat: no-repeat;
+		background-position: 0 16px;
+		border-bottom: 1px solid #dbe1e5;
+	}
+		.news-paihang li.one {
+			background-image: url(/bundles/zuoweb/images/icon_paihang_1.png);
+		}
+		.news-paihang li.two {
+			background-image: url(/bundles/zuoweb/images/icon_paihang_2.png);
+		}
+		.news-paihang li.three {
+			background-image: url(/bundles/zuoweb/images/icon_paihang_3.png);
+		}
+		.news-paihang li.four {
+			background-image: url(/bundles/zuoweb/images/icon_paihang_4.png);
+		}
+		.news-paihang li.five {
+			background-image: url(/bundles/zuoweb/images/icon_paihang_5.png);
+		}
+		.news-paihang li.last {
+			border-bottom: 0;
+		}
+		.news-paihang li h5 {
+			color: #448aca;
+		}
+		.news-paihang li span {
+			color: #a0a0a0;
+		}
+
+
+	.tuangou ul {
+		padding: 0 15px;
+	}
+	.tuangou li {
+		padding: 15px 0;
+		border-bottom: 1px solid #dbe1e5;
+	}
+		.tuangou li p a {
+			color: #448aca;
+		}
+			.tuangou li p a:hover {
+				background-color: #448aca;
+				color: #fff;
+			}
+		.tuangou li span {
+			color: #a0a0a0;
+		}
+			.tuangou li span b {
+				margin: 0 3px;
+				color: #707070;
+			}
+	.tuangou .more {
+		color: #448aca;
+		text-align: center;
+		line-height: 32px;
+	}
+
+
+/*==============================================征人详细页==============================================*/
+.page-msg {
+	line-height: 36px;
+	font-size: 14px;
+}
+	.page-msg .bus,.page-msg .subway,.page-msg .cross {
+		padding-left: 23px;
+		background-repeat:no-repeat;
+		background-position:0 10px;
+	}
+	.page-msg .bus {
+		background-image: url(/bundles/zuoweb/images/line_bus.png);
+	}
+	.page-msg .subway {
+		background-image:url(/bundles/zuoweb/images/icon_subway.gif);
+	} 
+	.page-msg .cross {
+		background-image:url(/bundles/zuoweb/images/line_cross.gif);
+	}
+	.page-msg .float-left {
+		color: #535353;
+	}
+	.page-msg .float-left a{
+		padding-right: 15px;
+		padding-left: 3px;
+		color: #448aca;
+		background: url(/bundles/zuoweb/images/arrow_right_1.png) no-repeat right 4px;
+	}
+		.page-msg .float-left a:hover {
+			background-color: #448aca;
+			color: #fff;
+		}
+
+	.page-msg .share-sns {
+		float: right;
+		margin-top: 12px;
+	}
+	
+
+.thread-main {
+	position: relative;
+	background-color: #fff;
+	z-index: 10;
+}
+.avatar {
+	top: 0;
+	position: absolute;
+}
+.thread-main .avatar {
+	left: -60px;
+}
+	.avatar img {
+		border-radius: 5px;
+	}
+	.thread-main .inner-container {
+		border: 1px solid #dce3e7;
+		margin-bottom:10px;
+	}
+	.main-part b.arrow {
+		position: absolute;
+		display: block;
+		width: 8px;
+		height: 16px;
+		top: 10px;
+		left: -7px;
+		background: url(/bundles/zuoweb/images/arrow_thread_left.png) no-repeat;
+	}
+	.thread-main .title {
+		position: relative;
+		height: 52px;
+	}
+		.thread-main .title h3 {
+			margin-left: 15px;
+			line-height: 50px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+			.thread-main .title h3 a {
+				color: #448aca;
+			}
+				.thread-main .title h3 a:hover {
+					background-color: #448aca;
+					color: #fff;
+				}
+		.thread-main .title table {
+			position: absolute;
+			top: 13px;
+			right: 13px;
+			color: #fff;
+		}
+		.thread-main .title td.head {
+			width: 20px;
+			height: 30px;
+			background: url(/bundles/zuoweb/images/tag_interest_bg_l_1.jpg) no-repeat;
+		}
+		.thread-main .title td.text {
+			padding: 0 6px 0 4px;
+			background: url(/bundles/zuoweb/images/tag_interest_bg_m.jpg) repeat-x;
+		}
+		.thread-main .title td.foot {
+			width: 4px;
+			background: url(/bundles/zuoweb/images/tag_interest_bg_r.jpg) no-repeat right 0;
+		}
+
+	.thread-main .thread-info {
+		line-height: 32px;
+		background-color: #f8f9fa;
+		color: #a0a0a0;
+		font-size: 12px;
+	}
+		.thread-main .thread-info .float-left {
+			width: 300px;
+			margin-left: 15px;
+			overflow: hidden;
+			text-overflow:ellipsis;
+			white-space: nowrap;
+		}
+			.thread-main .thread-info .float-left a {
+				font-size: 14px;
+				color: #448aca;
+			}
+				.thread-main .thread-info .float-left a:hover {
+					background-color: #448aca;
+					color: #fff;
+				}
+		.thread-main .thread-info .float-right {
+			margin-right: 15px;
+		}
+
+	.thread-main .thread-cnt {
+		padding: 10px 0px 15px;
+	}
+		.thread-main .thread-cnt p {
+			padding:0 15px;
+			line-height: 27px;
+			font-size: 14px;
+			color: #707070;
+		}
+		.thread-main .thread-cnt .cnt {
+			margin-top: 8px;
+			padding: 10px;
+			background-color: #F8F9FA;
+			border-top: 1px solid #DBE1E5;
+			border-bottom: 1px solid #DBE1E5;
+		}
+		.thread-main .thread-cnt .thread-pic, .thread-main .thread-cnt .xiehou {
+			padding:0 15px;
+		}
+			.thread-main .thread-cnt .thread-pic li {
+				float: left;
+				padding:10px 10px 0px 0;
+			}
+			.thread-main .thread-cnt .thread-pic td {
+				height: 80px;
+				background-color: #f8f9fa;
+				overflow: hidden;
+			}
+		.thread-main .thread-cnt .intro-l {
+			float: left;
+			margin-right: 16px;
+		}
+			.thread-main .thread-cnt .intro-l td {
+				
+			}
+				.thread-main .thread-cnt .intro-l td img {
+					
+				}
+		.thread-main .thread-cnt .intro-r {
+			float: left;
+			width: 365px;
+		}
+			.thread-main .thread-cnt .intro-r h3 {
+				
+			}
+				.thread-main .thread-cnt .intro-r h3 a {
+					
+				}
+				.thread-main .thread-cnt .intro-r h3 span {
+					position: absolute;
+					top: 0;
+					right: 0;
+					padding: 0 3px;
+					line-height: 20px;
+					background-color: #fff;
+					border: 1px solid #dbe1e5;
+					color: #448aca;
+					cursor: pointer;
+				}
+			.thread-main .thread-cnt .intro-r p {
+				
+			}
+
+
+	.thread-main .operates {
+		position: relative;
+		height: 64px;
+		background-color: #f8f9fa;
+		border-top: 1px solid #dbe1e5;
+	}
+	
+.situation1 .thread-cnt {
+	padding-bottom:0;
+}
+.situation1 .operates {
+	border-top:0;
+}
+.situation1 .cnt p {
+	padding:0;
+}
+
+		.thread-main .operates .station {
+			position: absolute;
+			top: 24px;
+			left: 15px;
+			padding-left: 18px;
+			line-height: 16px;
+			color: #a0a0a0;
+			background: url(/bundles/zuoweb/images/thread_station.gif) no-repeat;
+		}
+		.thread-main .operates p {
+			
+		}
+		.thread-main .operates .float-right {
+			padding: 15px 15px 0 0;
+		}
+		.thread-main .operates .follow, .thread-main .operates .reply {
+			position: relative;
+			float: left;
+		}
+		.thread-main .operates .op {
+			display:block;
+			float:left;
+			margin-left:10px;
+			line-height:34px;
+		}
+			.thread-main .operates .op a {
+				color:#a0a0a0;
+			}
+			.thread-main .operates .op a:hover {
+				background-color:#a0a0a0;
+				color:#fff;
+			}
+		.thread-main .operates .button {
+			width: 100px;
+			height: 34px;
+			margin-left: 10px;
+			border: 0;
+		}
+		.thread-main .operates .button a{
+			display: block;
+			line-height: 34px;
+			text-align: center;
+			font-size: 16px;
+			font-weight: bold;
+			color:#fff;
+			background-color: #67aae7;
+			border: 1px solid #447bad;
+			border-width: 0 1px 4px;
+			cursor: pointer;
+		}
+			.thread-main .operates .button a:hover {
+				background-color: #559ad8;
+			}
+			.thread-main .operates .button a:active {
+				border-width: 3px 1px 1px;
+			}
+
+		.thread-main .operates .follow a {
+			display: block;
+			color: #fff;
+		}
+			.operates .more-text span {
+				font-size: 13px;
+			}
+			.thread-main .operates button a:hover {
+				background: url(/bundles/zuoweb/images/btn_style4_hover.gif) 0 0;
+			}
+
+
+.main-part .replies {
+	/*margin-top: 10px;*/
+	background-color: #fff;
+}
+.main-part .picture .replies {
+	margin-top: 0;
+}
+.main-part .replies {
+	
+}
+	.main-part .replies .pinglun {
+		
+	}
+	.main-part .hangouter .pinglun .pl-content {
+		width: 484px;
+	}
+		.main-part .replies .pinglun .pl-content .a-reply {
+			width: auto;
+		}
+
+.replies .pinglun .pl-content .info {
+	width:345px;
+	line-height: 16px;
+	/*font-size: 12px;
+	color: #a0a0a0;*/
+}
+.info .extra {
+	font-size: 12px;
+	color: #a0a0a0;
+}
+	.info .extra a {
+		color: #a0a0a0;
+	}
+	.info .extra a:hover {
+		color: #fff;
+		background-color: #a0a0a0;
+	}
+.hangout-title {
+	color: #448ACA;
+}
+	.hangout-title:hover {
+		background-color: #448ACA;
+		color: #fff;
+	}
+.replies-style2 .pinglun .pl-content .info {
+	font-size: 12px;
+	color: #a0a0a0;
+}
+	.replies .pinglun .pl-content .info .time {
+		/*在 inner_city_line.html  和  征人列表页，都有问题，不知道在哪里需要这个css设置，到时候重新设置...发现了，征人详细页，这两个用class来区分来*/
+		/*font-size: 14px;
+		color: #535353;*/
+	}
+.replies-style2 .pinglun .pl-content .info .time {
+	font-size: 14px;
+	color: #535353;
+}
+.replies-style2 .pinglun .pl-content .info .no-word {
+	color: #a0a0a0;
+}
+.replies-style2 .pinglun .pl-content .info .username {
+	font-weight: normal;
+	/*color: #a0a0a0;*/
+}
+
+.replies .pinglun .pl-content button {
+	margin: 14px 10px 0 0;
+	display: block;
+	float: right;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #EB6877;
+	background-color: #fff;
+	border:1px solid #dbe1e5;
+	border-width: 0 1px 4px;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+	.replies .pinglun .pl-content button:hover {
+		background-color: #f8f9fa;
+	}
+	.replies .pinglun .pl-content button:active {
+		border-width: 3px 1px 1px;
+	}
+
+.replies .pinglun .pl-content .nothing {
+	line-height: 58px;
+	text-align: center;
+	font-size: 14px;
+	color: #bdc3c7;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+
+.thread-reply {
+	position: relative;
+	margin-top: 10px;
+}
+	.thread-reply .cnt a {
+		color:#448aca;
+	}
+		.thread-reply .cnt a:hover {
+			background-color: #448aca;
+			color: #fff;
+		}
+
+	.thread-reply .avatar {
+		position: absolute;
+		top: 0;
+		left: -51px;
+	}
+	.thread-reply .cnt {
+		background-color: #fff;
+		border: 1px solid #DBE1E5;
+	}
+		.thread-reply .cnt .title {
+			padding: 7px 15px 0 15px;
+			height: 30px;
+			color: #a0a0a0;
+		}
+			.thread-reply .cnt .title div {
+				float:left;
+				width: 400px;
+				overflow:hidden;
+				text-overflow:ellipsis;
+				white-space:nowrap;
+			}
+			body.col2 .thread-reply .cnt .title div {
+				width: 610px;
+			}
+
+			.thread-reply .cnt .title span {
+				
+			}
+			.thread-reply .cnt .title a {
+				font-size: 14px;
+			}
+			.thread-reply .cnt .title p {
+				float:right;
+			}
+				.thread-reply .cnt .title p .delete {
+					cursor: pointer;
+				}
+		.thread-reply .cnt .blockquote {
+			position:relative;
+			padding: 10px;
+			margin:0 15px 15px 15px;
+			line-height: 20px;
+			background-color: #f8f9fa;
+			color: #889097;
+		}
+			.thread-reply .cnt .blockquote .big {
+				font-size: 14px;
+			}
+			.thread-reply .cnt .blockquote .close {
+				position: absolute;
+				/*display: block;*/
+				top: 10px;
+				right: 10px;
+				width: 14px;
+				height: 14px;
+				background: url(/bundles/zuoweb/images/group_close.png) no-repeat;
+				cursor: pointer;
+			}
+		.thread-reply .cnt .reply-cnt {
+			margin: 0 15px 15px 15px;
+			line-height: 20px;
+			font-size: 14px;
+			color: #535353;
+		}
+			.thread-reply .cnt .reply-cnt img {
+				vertical-align: text-bottom;
+			}
+		
+		.thread-reply .cnt .reply-msg {
+			position: relative;
+			padding-left: 15px;
+			height: 30px;
+			line-height: 30px;
+			border-top: 1px solid #dbe1e5;
+		}
+		.thread-reply .cnt .del-btn{
+			color: #a0a0a0;
+		}
+		.thread-reply .cnt .del-btn:hover{
+			background-color: #a0a0a0;
+			color:#fff;
+		}
+			.thread-reply .cnt .reply-msg .layer {
+				color: #a0a0a0;
+			}
+			.thread-reply .cnt .first-reply .layer {
+				display:block;
+				float:left;
+				width: 27px;
+				height: 17px;
+				margin-top: 6px;
+				background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -136px -160px;
+				text-indent: -9999px;
+			}
+			.thread-reply .cnt .reply-msg .btn {
+				position: absolute;
+				top: 5px;
+				right: 15px;
+				padding: 0 5px;
+				line-height: 20px;
+				cursor: pointer;
+			}
+
+		.thread-reply .cnt .reply-area {
+			position: relative;
+			margin:0 15px 15px;
+			padding-bottom: 44px;
+		}
+			.thread-reply .cnt .reply-area label {
+				position: absolute;
+				top: 7px;
+				left: 7px;
+				color: #a0a0a0;
+			}
+			.thread-reply .cnt .reply-area textarea {
+				padding: 5px;
+				margin-right: 15px;
+				width: 491px;
+				height: 88px;
+				border: 1px solid #dce3e7;
+				border-radius: 5px;
+				background: url(/bundles/zuoweb/images/reply_box_repeat.jpg) repeat-x;
+				color: #535353;
+			}
+			.col2 .thread-reply .cnt .reply-area textarea {
+				width: 706px;
+			}
+			.thread-reply .cnt .reply-area button {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width: 70px;
+				height: 34px;
+				line-height: 34px;
+				text-align: center;
+				font-size: 16px;
+				font-weight: bold;
+				background-color: #67aae7;
+				border:1px solid #447bad;
+				border-width:0 1px 4px;
+				letter-spacing: 2px;
+				color: #fff;
+				cursor: pointer;
+			}
+				.thread-reply .cnt .reply-area button:hover {
+					background-color: #559ad8;
+				}
+				.thread-reply .cnt .reply-area button:active {
+					border-width: 3px 1px 1px;
+				}
+
+.album-part .album {
+	margin-right: 8px;
+}
+.main-part .line-album .p-cnt {
+	padding-left: 10px;
+	padding-right: 0;
+}
+
+.line-album .section-icon {
+	background: url(/bundles/zuoweb/images/icon_album_blue.gif) no-repeat;
+}
+

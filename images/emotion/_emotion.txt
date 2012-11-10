@@ -1,0 +1,1 @@
+{"微笑":"weixiao","大笑":"daxiao","呲牙":"chiya","呆":"dai","喜欢":"xihuan","哭":"ku","喵":"miao","哼":"hen","皮蛋":"pidan","骷髅":"kulou","萌":"meng","吃":"chi","呃":"e","闭嘴":"bizui","汗":"han","鬼脸":"guilian","帅":"shuai","囧":"jiong","怒":"nu","吐":"tu","海盗":"haidao"}

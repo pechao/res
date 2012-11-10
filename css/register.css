@@ -1,0 +1,2095 @@
+/*
+* 因为每个页面都有可能引用：未登录的时候，会弹出悬浮登录框，登录样式就在这里
+*
+*/
+/*///////////---------------------------------------------*/
+body {
+	/*overflow: hidden;*/
+}
+
+.reg-step {
+	width: 844px;
+	margin: 30px auto;
+}
+
+	.reg-step li {
+		float: left;
+		width: 280px;
+		height: 50px;
+		line-height: 50px;
+		/*	background-color:#FFCC00;*/
+		border: 1px solid #333;
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		color: #999;
+	}
+
+		.reg-step li.now-step {
+			color: #000;
+		}
+
+		.reg-step li.mid-step {
+			border-left: 0;
+			border-right: 0;
+		}
+
+.first-step-info {
+	width: 390px;
+	margin: 0 auto;
+	padding: 0 0 20px 50px;
+	border-bottom: 1px solid #333;
+}
+
+	.first-step-info .input-text {
+		width: 320px;
+		height: 50px;
+		*line-height:50px;
+		/*padding-left:5px;*/
+		margin-top: 30px;
+		font-size: 20px;
+	}
+
+	.first-step-info .sex {
+		padding: 15px 0 15px 100px;
+	}
+
+		.first-step-info .sex li {
+			float: left;
+			width: 80px;
+			font-size: 20px;
+		}
+
+	.first-step-info .city {
+		width: 322px;
+		height: 30px;
+		padding-left: 5px;
+		font-size: 16px;
+	}
+
+.reg-info .next-step {
+}
+
+.next-step span {
+	display: block;
+	width: 230px;
+	height: 50px;
+	line-height: 50px;
+	margin: 20px auto;
+	background-color: #66CCFF;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.add-lines .outer {
+	margin-left: 160px;
+}
+
+.add-lines .slide {
+	float: left;
+}
+
+.add-lines .popup {
+	position: absolute;
+	+width:562px;
+	margin-right: 5px;
+	border: 1px solid #333;
+	background-color: #fff;
+	left: 1200px;
+	top: 200px;
+}
+
+.pop-title {
+	line-height: 50px;
+	border-bottom: 1px solid #333;
+}
+
+	.pop-title span {
+		float: left;
+		margin-left: 10px;
+	}
+
+	.pop-title .close-btn {
+		display: block;
+		float: right;
+		width: 20px;
+		height: 20px;
+		margin: 15px 15px 0 0;
+		background-color: #0099FF;
+		cursor: pointer;
+	}
+
+.pop-body {
+	border-bottom: 1px solid #333;
+}
+
+	.pop-body .pop-body-list {
+		float: left;
+		height: 190px;
+	}
+
+	.pop-body .pop-body-left {
+		width: 270px;
+		padding: 5px;
+		border-right: 1px solid #333;
+	}
+
+	.pop-body .pop-body-middle, .pop-body .pop-body-right {
+		width: 130px;
+		padding: 5px;
+	}
+
+	.pop-body .pop-body-middle {
+		border-right: 1px solid #333;
+	}
+
+.pop-body-list h4 {
+	line-height: 20px;
+}
+
+.pop-body .pop-body-list li {
+	float: left;
+	padding: 5px 10px;
+	background-color: #99CC00;
+	border: 1px solid #333;
+	cursor: move;
+}
+
+	.pop-body .pop-body-list li:hover {
+		background-color: #9F0;
+	}
+
+.pop-foot {
+	height: 50px;
+	padding-left: 20px;
+}
+
+	.pop-foot .tip {
+		width: 400px;
+		display: inline-block;
+		line-height: 50px;
+	}
+
+	.pop-foot .save a, .pop-foot .cancel a {
+		padding: 5px 10px;
+		background-color: #FC0;
+	}
+
+.add-lines .border-bottom {
+	width: 200px;
+	height: 30px;
+	margin: 0 auto;
+	border-bottom: 1px solid #333;
+}
+
+.add-line-now {
+	padding-right: 40px;
+	border-right: 1px solid #333;
+}
+
+.added-lines {
+	margin-left: 40px;
+}
+
+.slide h3 {
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.slide .input-text {
+	width: 280px;
+	height: 40px;
+	+line-height:40px;
+	margin-bottom: 10px;
+}
+
+.lines dt {
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #333;
+	font-size: 14px;
+}
+
+.lines li, .lines dd {
+	width: 280px;
+	margin-bottom: 10px;
+	background-color: #6FC;
+}
+
+.lines .line-name {
+	+float:left;
+	margin-left: 10px;
+	line-height: 40px;
+	font-size: 16px;
+}
+
+.lines strong {
+	float: right;
+	cursor: pointer;
+}
+
+.lines .add, .lines .sub {
+	padding: 3px 10px;
+	margin-top: 8px;
+	margin-right: 10px;
+	background-color: #FC0;
+	line-height: none;
+}
+
+.how-to-play {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+
+
+
+
+/*===================== 注册第二步 2012-04-06 ===================*/
+.step-info {
+	width: 940px;
+	margin: 30px 0;
+}
+
+	.step-info b {
+		display: block;
+		float: left;
+		width: 6px;
+		height: 6px;
+		background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite_3.png);
+		background-repeat: no-repeat;
+		background-position: -259px -153px;
+	}
+
+		.step-info b.first {
+			width: 10px;
+			height: 10px;
+			margin-top: 24px;
+			margin-right: -2px;
+			background-position: -56px -35px;
+		}
+
+		.step-info b.last {
+			background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite.png);
+			background-position: -257px -152px;
+			width:10px;
+			height:10px;
+			margin-top: 25px;
+			padding-left:2px;
+		}
+
+	.step-info i {
+		display: block;
+		float: left;
+		width: 180px;
+		height: 6px;
+		margin-top: 26px;
+	}
+
+		.step-info i.first, .step-info i.last {
+			width: 80px;
+		}
+
+		.step-info i.already {
+			background: url(/bundles/zuoweb/images/reg_step_bg2.jpg) repeat-x;
+		}
+
+		.step-info i.notyet {
+			background: url(/bundles/zuoweb/images/reg_step_bg2.gif) repeat-x;
+		}
+
+	.step-info .step1, .step-info .step2, .step-info .step3,.step-info .step4 {
+		float: left;
+		width: 74px;
+		height: 80px;
+		margin: 0 -12px;
+		+margin:0 -6px 0 -18px;
+		text-align: center;
+	}
+
+	.step-info div s {
+		display: block;
+		width: 54px;
+		height: 54px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite_4.png);
+		background-repeat: no-repeat;
+	}
+	/*#默认为already*/
+	.step-info div.step1 s {
+		background-position: -40px -95px;
+	}
+
+	.step-info div.step2 s {
+		background-position: -142px -95px;
+	}
+
+	.step-info div.step3 s {
+		background-position: -258px -95px;
+	}
+	.step-info div.step4 s {
+		background-position: -374px -95px;
+	}
+	/*#未完成 缺1*/
+	.step-info .step2 .notyet s {
+		background-position: -40px -178px;
+	}
+
+	.step-info .step3 .notyet s {
+		background-position: -142px -178px;
+	}
+	.step-info .step4 .notyet s {
+		background-position: -258px -178px;
+	}
+	/*#已经完成 缺4*/
+	.step-info .step1 .completed s {
+		background-position: -38px -21px;
+	}
+	.step-info .step2 .completed s {
+		background-position: -143px -21px;
+	}
+
+	.step-info .step3 .completed s {
+		background-position: -255px -21px;
+	}
+
+	.step-info div span {
+		font-size: 14px;
+		color: #7a8993;
+	}
+
+	.step-info div.notyet span {
+		color: #bdc3c7;
+	}
+
+/*==== 2012-04-09 =======*/
+.reg-note {
+	width: 740px;
+	margin: 0 auto;
+}
+
+	.reg-note .left {
+		float: left;
+	}
+
+		.reg-note .left strong {
+			font-size: 14px;
+			font-weight: bold;
+			margin-right: 10px;
+		}
+
+	.reg-note .right {
+		float: right;
+	}
+
+		.reg-note .right strong {
+			margin-left: 10px;
+		}
+
+	.reg-note span {
+		color: #a0a0a0;
+	}
+
+	.reg-note strong {
+		color: #448aca;
+	}
+
+
+.search-part {
+	width: 740px;
+	width: 743px;
+	margin: 14px auto 12px;
+}
+
+	.search-part .search-input b, .search-part .search-input i, .search-part .search-input p {
+		display: block;
+		float: left;
+		height: 54px;
+	}
+
+	.search-part .search-input b {
+		text-indent: -9999px;
+		width: 164px;
+		background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat 0 -480px;
+	}
+
+	.search-part .search-input i {
+		_position: absolute;
+		_right: 0;
+		_top: 0;
+		_z-index: 2;
+		width: 5px;
+		background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat -176px -480px;
+	}
+
+	.search-part .search-input p {
+		position: relative;
+		width: 571px;
+		width: 574px;
+		background: url(/bundles/zuoweb/images/repeat_x_2.png) repeat-x 0 -101px;
+	}
+
+		.search-part .search-input p label {
+			position: absolute;
+			width: 510px;
+			left: 23px;
+			top: 1px;
+			line-height: 50px;
+			color: #a9a9a9;
+			font-size: 20px;
+			cursor: text;
+			z-index: 10;
+		}
+
+		.search-part .search-input p input {
+			position: absolute;
+			/*float:left;*/
+			width: 510px;
+			padding-left: 23px;
+			left: 0;
+			top: 1px;
+			height: 50px;
+			line-height: 50px\9;
+			border: 0;
+			color: #626262;
+			font-size: 20px;
+			background: none;
+			white-space: normal;
+			z-index: 20;
+		}
+
+		.search-part .search-input p strong {
+			display: block;
+			float: left;
+			width: 35px;
+			height: 50px;
+			margin-top: 1px;
+			margin-left: 536px;
+			display: inline;
+			cursor: pointer;
+		}
+
+			.search-part .search-input p strong em {
+				display: block;
+				width: 18px;
+				height: 18px;
+				margin: 17px 0 0 7px;
+				background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite.png);
+				background-repeat: no-repeat;
+				background-position: -32px -422px;
+			}
+
+			.search-part .search-input p strong.loading em {
+				background: url(/bundles/zuoweb/images/loading.gif);
+			}
+
+			.search-part .search-input p strong.close em {
+				background-position: -64px -422px;
+			}
+
+	.search-part .result {
+		width: 738px;
+		margin-left: 2px;
+		margin-top: -4px;
+		border: 1px solid #dbe1e5;
+		border-top: 0;
+	}
+
+		.search-part .result .more-btn {
+			height: 28px;
+			line-height: 28px;
+			background: url(/bundles/zuoweb/images/repeat_x_3.png) repeat-x;
+			border: 1px solid #dbe1e5;
+			text-align: center;
+			font-weight: bold;
+			font-size: 14px;
+			color: #919699;
+			text-shadow: 1px 1px 0px #fff;
+			cursor: pointer;
+		}
+
+
+
+.recommend {
+	width: 740px;
+	margin: 0 auto;
+}
+
+	.recommend .bus-subway, .recommend .plane-train {
+		border: 1px solid #dbe1e5;
+	}
+
+	.recommend .plane-train {
+		border-top: 1px solid #fff;
+	}
+
+	.recommend p.title {
+		padding-left: 10px;
+		line-height: 28px;
+		color: #a0a0a0;
+		border-bottom: 1px dashed #dbe1e5;
+	}
+
+		.recommend p.title strong {
+			color: #eb6877;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+/*================================== 添加线路站点 begin ======================================*/
+.stations-box {
+	padding: 9px 0 7px 8px;
+}
+
+	.stations-box li {
+		position: relative;
+		float: left;
+		width: 236px;
+		margin-right: 7px;
+		_margin-right: 5px;
+		z-index: 0;
+	}
+
+		.stations-box li .station-container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 10;
+		}
+
+		.stations-box li .placeholder {
+			width: 236px;
+			height: 54px;
+		}
+
+		.stations-box li .top, .stations-box li .btm, .stations-box li div.mdl {
+			display: block;
+			width: 222px;
+		}
+
+		.stations-box li .top {
+			height: 4px;
+			background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat 0px -544px;
+			_overflow: hidden;
+		}
+
+		.stations-box li .btm {
+			height: 6px;
+			background: url(/bundles/zuoweb/images/icon_bg_css_sprite.png) no-repeat 0px -552px;
+			_overflow: hidden;
+		}
+
+		.stations-box li div.mdl {
+			position: relative;
+			/*background:url(/bundles/zuoweb/images/repeat_y_1.png) repeat-y -13px 0;*/
+			background: url(/bundles/zuoweb/images/add_station_bg.png) repeat-y;
+		}
+
+			.stations-box li div.mdl em {
+				position: absolute;
+				display: block;
+				width: 34px;
+				height: 34px;
+				right: -14px;
+				top: 6px;
+				cursor: pointer;
+				background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite.png);
+				background-repeat: no-repeat;
+			}
+
+				.stations-box li div.mdl em.add {
+					background-position: -224px -376px;
+				}
+
+				.stations-box li div.mdl em.change {
+					background-position: -224px -416px;
+				}
+
+		.stations-box li div p {
+			float: left;
+			text-align: center;
+		}
+
+			.stations-box li div p.hot, .stations-box li div p.news-num {
+				width: 52px;
+				height: 44px;
+				margin-left: 3px;
+			}
+
+				.stations-box li div p.hot span, .stations-box li div p.news-num span {
+					display: block;
+					margin-top: 5px;
+					color: #535353;
+				}
+
+				.stations-box li div p.hot b, .stations-box li div p.news-num b {
+					color: #eb6877;
+				}
+
+			.stations-box li div p.news-num {
+				display: none;
+			}
+
+			.stations-box li div p.station-name b {
+				margin: 15px 10px 0 11px;
+			}
+
+			.stations-box li div p.station-name b, .stations-box li div p.station-name span {
+				float: left;
+			}
+
+			.stations-box li div p.station-name span {
+				width: 108px;
+				text-align: left;
+				margin: 11px 0;
+				color: #448aca;
+				font-size: 16px;
+				font-weight: bold;
+				overflow:hidden;
+				text-overflow:ellipsis;
+				white-space:nowrap;
+			}
+
+				.stations-box li div p.station-name span.full-name {
+					display: none;
+				}
+/*================================== 添加线路站点 end ======================================*/
+
+
+.next-btn {
+	width: 193px;
+	height: 54px;
+	margin: 30px auto 5px;
+	background: url(/bundles/zuoweb/images/icon_bg_css_sprite_2.png) no-repeat;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.next-btn2 {
+	background-position: -220px 0;
+}
+
+.next-btn div {
+	width: 170px;
+	text-align: center;
+}
+
+.next-btn .button {
+	display: block;
+	width: 193px;
+	height: 52px;
+	border: none;
+	background: none;
+	font-family: 'Microsoft YaHei',SimSun;
+	cursor: pointer;
+}
+
+.next-btn div b {
+	display: block;
+	padding-top: 10px;
+	font-weight: bold;
+	color: #eb6877;
+}
+
+.next-btn div p {
+	color: #707070;
+}
+
+.next-btn .error p, .next-btn .error b {
+	display: block;
+}
+
+.next-btn .ok strong {
+	display: block;
+}
+
+.next-btn .ok2 strong {
+	color: #448aca;
+}
+
+.next-btn .ok p, .next-btn .ok b, .next-btn .ok2 p, .next-btn .ok2 b {
+	display: none;
+}
+
+.next-btn .error strong {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*弹出框，支线选择*/
+.branch-line {
+	display: none;
+	border-top: 1px solid #bdc3c7;
+	overflow: auto;
+}
+
+	.branch-line b, .branch-line i {
+		display: block;
+		width: 22px;
+		height: 22px;
+		background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite.png);
+		background-repeat: no-repeat;
+	}
+
+	.branch-line b {
+		float: left;
+		border-right: 1px solid #bdc3c7;
+		background-position: -297px -265px;
+	}
+
+		.branch-line b.canclick {
+			background-position: -321px -265px;
+			cursor: pointer;
+		}
+
+	.branch-line i {
+		float: right;
+		border-left: 1px solid #bdc3c7;
+		background-position: -297px -297px;
+	}
+
+		.branch-line i.canclick {
+			background-position: -321px -297px;
+			cursor: pointer;
+		}
+
+	.branch-line div {
+		float: left;
+		width: 688px;
+		overflow: hidden;
+	}
+
+	.branch-line ul {
+		width: 10000px;
+		overflow: auto;
+	}
+
+	.branch-line li {
+		float: left;
+		height: 22px;
+		line-height: 22px;
+		padding: 0 3px;
+		color: #889097;
+		border-right: 1px solid #bdc3c7;
+		cursor: pointer;
+	}
+
+		.branch-line li.now {
+			background-color: #f8f9fa;
+		}
+
+		.branch-line li:hover {
+			background-color: #f8f9fa;
+		}
+
+
+/*/////////////////////////*/
+/*供JS调用生成HTML的模板*/
+.js_tpl {
+	display: none;
+}
+
+
+
+
+
+.reg-main,.log-main {
+	margin-left: 136px;
+}
+
+.log-main {
+	margin-top: 80px;
+}
+table.log-main {
+	margin: 0;
+}
+
+.form-data, .other-info {
+	float: left;
+}
+
+.form-data {
+	width: 522px;
+}
+#register-submit-btn {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+	.form-data li {
+		margin-bottom: 6px;
+	}
+
+		.form-data li.log-btn {
+			margin-top: 10px;
+			margin-left: 1px;
+			/*background: url(/bundles/zuoweb/images/btn_style1_l.png) no-repeat;*/
+		}
+			.form-data li.log-btn p {
+				_margin-top: -12px;
+				width: 302px;
+				/*background: url(/bundles/zuoweb/images/btn_style1_r.png) no-repeat right 0;*/
+			}
+		.form-data li.log-funcs {
+			position: relative;
+			margin-top: 10px;
+			padding: 0 18px;
+			color: #535353;
+			font-size: 14px;
+		}
+			.form-data li.log-funcs span {
+				padding-left: 20px;
+				background: url(/bundles/zuoweb/images/input_radio_1.jpg) no-repeat 0 4px;
+				_background-position: 0 0;
+				cursor: pointer;
+			}
+				.form-data li.log-funcs span.selected {
+					background-image: url(/bundles/zuoweb/images/input_radio_2.jpg);
+				}
+			.form-data li.log-funcs a {
+				position: absolute;
+				display: block;
+				left: 231px;
+				top: 0;
+				color: #448aca;
+			}
+			.form-data li.log-btn input {
+				display: block;
+				height: 40px;
+				line-height: 40px;
+				width: 300px;
+				/*background: url(/bundles/zuoweb/images/btn_style1_m.jpg) repeat-x;*/
+				border: 1px solid #5288b9;
+				border-width: 0 1px 4px;
+				background-color: #67aae7;
+				color: #fff;
+				font-size: 18px;
+				font-weight: bold;
+				letter-spacing: 5px;
+				cursor: pointer;
+			}
+				.form-data li.log-btn input:hover {
+					background-color: #559ad8;
+				}
+				.form-data li.log-btn input:active {
+					border-width: 3px 1px 1px;
+				}
+
+		.form-data li.tip {
+			color: #bdc3c7;
+		}
+
+		.form-data li.tip2 {
+			height: 40px;
+			line-height: 40px;
+			font-size: 18px;
+			color: #889097;
+		}
+			.form-data li.tip2 span {
+				color: #535353;
+			}
+
+			.form-data li.tip2 a {
+				color: #448aca;
+			}
+
+		.form-data li.send-email button,.form-data .send-newpass button{
+			display: block;
+			width: 193px;
+			height: 54px;
+			margin: 20px auto;
+			line-height: 52px;
+			text-align: center;
+			font-size: 22px;
+			font-weight: bold;
+			color: #747A80;
+			text-shadow: 0 1px 0px white;
+			letter-spacing: 3px;
+			border: 0;
+			background: url(/bundles/zuoweb/images/icon_bg_css_sprite_2.png) no-repeat;
+			cursor: pointer;
+		}
+			.form-data li.send-email button.ok2,.form-data .send-newpass button.ok2 {
+				color: #448aca;
+				background-position: -220px 0;
+			}
+
+		.form-data li.warn {
+			margin: 10px 0 0 1px;
+			padding-left: 40px;
+			width: 260px;
+			height: 28px;
+			line-height: 28px;
+			font-size: 14px;
+			color: #eb6877;
+			background: #f8f9fa url(/bundles/zuoweb/images/icon_warn.jpg) no-repeat 14px 7px;
+			border: 1px solid #dbe1e5;
+		}
+			.form-data li.warn a {
+				color: #448aca;
+			}
+	
+		.form-data li h3 {
+			padding-bottom: 4px;
+			font-size: 20px;
+			color: #535353;
+		}
+
+		.form-data li b, .form-data li i {
+			display: block;
+			float: left;
+			width: 5px;
+			height: 54px;
+			background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite.png);
+			background-repeat: no-repeat;
+		}
+
+		.form-data li b {
+			background-position: -184px -480px;
+		}
+
+		.form-data li i {
+			background-position: -176px -480px;
+		}
+
+	.form-data div p {
+		position: relative;
+		float: left;
+		width: 294px;
+		height: 54px;
+		_margin-top: 1px;
+		background: url(/bundles/zuoweb/images/repeat_x_2.png) repeat-x 0 -101px;
+	}
+
+	.form-data div input {
+		position: absolute;
+		padding: 13px 0 13px 5px;
+		padding-left: 5px;
+		width: 255px;
+		height: 25px;
+		line-height: 25px;
+		border: 0;
+		font-size: 20px;
+		color: #606060;
+		background: none;
+	}
+
+.log-main .form-data div input {
+	padding-left: 40px;
+	width: 215px;
+	background-position: 12px 16px;
+	background-repeat: no-repeat;
+}
+.log-main .form-data .email input {
+	background-image: url(/bundles/zuoweb/images/input_icon_uname.jpg);
+}
+.log-main .form-data .password_re input {
+	background-image: url(/bundles/zuoweb/images/input_icon_pass.jpg);
+}
+
+	.form-data div label {
+		position: absolute;
+		padding-left: 5px;
+		line-height: 51px;
+		color: #a0a0a0;
+		font-size: 20px;
+		z-index: 10;
+		cursor: text;
+	}
+
+.log-main .form-data div label {
+	left: 38px;
+}
+	.log-main .form-data div label.active {
+		color: #888;
+	}
+	
+	.form-data div p em {
+		position: absolute;
+		display: none;
+		width: 18px;
+		height: 18px;
+		right: 12px;
+		top: 17px;
+		background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite.png);
+		background-repeat: no-repeat;
+	}
+
+		.form-data div p em.wrong {
+			background-position: 0 -579px;
+		}
+
+		.form-data div p em.ok {
+			background-position: -24px -579px;
+		}
+
+		.form-data div p em.change {
+			background-position: -48px -579px;
+		}
+
+	.form-data li .male, .form-data li .female {
+		_position: relative;
+		float: left;
+	}
+
+		.form-data li .male span, .form-data li .female span {
+			display: block;
+			width: 152px;
+			height: 44px;
+			background-image: url(/bundles/zuoweb/images/icon_bg_css_sprite_2.png);
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			cursor: pointer;
+		}
+
+	.form-data li .city-select {
+		cursor: pointer;
+	}
+
+	.form-data li .tips {
+		display: none;
+		float: left;
+		width: 190px;
+		margin-top: 6px;
+		margin-left: 8px;
+		font-size: 14px;
+		color: #448aca;
+		line-height: 20px;
+	}
+
+	.form-data li .error {
+		color: #eb6877;
+	}
+
+	.form-data li .male i, .form-data li .female i {
+		display: none;
+		_position: absolute;
+		_display: block;
+		_top: 0;
+		_left: 0;
+		_width: 152px;
+		_height: 44px;
+		_background: #fff;
+		_filter: alpha(opacity=50);
+		_z-index: 10;
+	}
+
+	.form-data li .male span {
+		background-position: 0 -168px;
+		_background-position: 0 -72px;
+	}
+
+	.form-data li .female span {
+		background-position: 0 -216px;
+		_background-position: 0 -120px;
+	}
+
+	.form-data li .male .active {
+		background-position: 0 -72px;
+	}
+
+	.form-data li .female .active {
+		background-position: 0 -120px;
+	}
+
+	.form-data li .city {
+		font-size: 16px;
+		line-height: 51px;
+		text-align: center;
+		color: #707070;
+	}
+
+		.form-data li .city em {
+			display: block;
+			cursor: pointer;
+		}
+
+.other-info .block {
+	width: 140px;
+	margin-bottom: 15px;
+	border: 1px solid #e5e5e5;
+	color: #a0a0a0;
+	border-radius: 3px;
+}
+
+.other-info h3 {
+	line-height: 24px;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+}
+
+.other-info .block div span {
+	display: block;
+	width: 140px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #448aca;
+}
+
+.other-info .block ul {
+	padding-bottom: 9px;
+}
+
+.other-info .block li {
+	_display: inline;
+	float: left;
+	margin: 8px 4px 0 9px;
+}
+
+	.other-info .block li img {
+		display: block;
+		border-radius: 5px;
+	}
+
+.other-info .line-info {
+	padding-top: 6px;
+	padding-bottom: 5px;
+}
+
+	.other-info .line-info p {
+		line-height: 24px;
+		margin-left: 13px;
+	}
+
+		.other-info .line-info p b {
+			margin: 0 3px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #448aca;
+			color: #535353;
+		}
+
+.next-btn strong {
+	display: block;
+	line-height: 52px;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #747a80;
+	text-shadow: 0 1px 0px #fff;
+	letter-spacing: 3px;
+}
+
+	.next-btn strong.active {
+		color: #448aca;
+	}
+
+
+
+
+
+
+
+
+#lines-wrap {
+	width: 792px;
+	margin: 17px auto 0;
+}
+
+	#lines-wrap .had-in, #lines-wrap .search-part, #lines-wrap .suggest {
+		position: relative;
+		float: left;
+		width: 252px;
+		height: 379px;
+	}
+
+	#lines-wrap .had-in {
+		border: 1px solid #dbe1e5;
+		background: url(/bundles/zuoweb/images/reg_box_bg.png) repeat;
+	}
+
+	#lines-wrap .search-part {
+		width: 258px;
+	}
+
+	#lines-wrap .suggest {
+		position: relative;
+		border: 1px solid #dbe1e5;
+		background: url(/bundles/zuoweb/images/reg_box_bg.png) repeat;
+	}
+
+		#lines-wrap .suggest .stations-box {
+			position: relative;
+			padding: 0;
+			margin: 9px 0 7px 8px;
+			overflow: hidden;
+		}
+
+		#lines-wrap .suggest .sub-and-bus {
+			height: 174px;
+		}
+
+		#lines-wrap .suggest .plane-and-train {
+			height: 116px;
+		}
+
+	#lines-wrap .search-part {
+		margin: 0 13px;
+	}
+
+	#lines-wrap .search-input {
+		_position: relative;
+	}
+
+		#lines-wrap .search-input b {
+			_position: absolute;
+			_left: 0;
+			_top: 0;
+			_z-index: 2;
+			width: 66px;
+			height: 54px;
+			line-height: 54px;
+			font-size: 18px;
+			font-weight: bold;
+			color: #fff;
+			background: url(/bundles/zuoweb/images/reg_search_bg_tip.png) no-repeat;
+			text-indent: 0;
+			text-align: center;
+			text-shadow: 0 1px 1px #23649e;
+		}
+
+		#lines-wrap .search-input p {
+			_display: inline;
+			_margin-left: 66px;
+			_margin-top: 1px;
+			width: 187px;
+		}
+
+			#lines-wrap .search-input p input {
+				position: static;
+				width: 160px;
+				padding-left: 2px;
+				font-size: 16px;
+			}
+
+			#lines-wrap .search-input p label {
+				width: 160px;
+				left: 2px;
+				font-size: 14px;
+			}
+
+
+	#lines-wrap .search-input p strong {
+		position: absolute;
+		left: 165px;
+		top: 0;
+		margin: 0;
+		width: auto;
+		cursor: pointer;
+	}
+	#lines-wrap .long-name .search-input b {
+		width: 88px;
+		background-image: url(/bundles/zuoweb/images/reg_search_bg_tip2.png);
+	}
+
+	#lines-wrap .long-name .search-input p {
+		width: 165px;
+	}
+	#lines-wrap .long-name .search-input p input {
+		width: 138px;
+	}
+	#lines-wrap .long-name .search-input p label{
+		width: 138px;
+	}
+	#lines-wrap .long-name .search-input p strong{
+		left: 143px;
+	}
+
+		#lines-wrap .search-input p strong em {
+			margin: 17px 3px 0;
+		}
+
+	#lines-wrap .search-result {
+		margin-top: 13px;
+	}
+
+		#lines-wrap .search-result s {
+			width: 254px;
+			height: 9px;
+			margin: 0px auto 0;
+			display: block;
+			background: url(/bundles/zuoweb/images/search_top_bg.png) no-repeat;
+			_overflow: hidden;
+		}
+
+		#lines-wrap .search-result .wrap {
+			width: 252px;
+			height: 304px;
+			margin: 0 auto;
+			background: url(/bundles/zuoweb/images/reg_box_bg.png) repeat;
+			border: 1px solid #dbe1e5;
+			border-top: 0;
+		}
+
+	#lines-wrap h2 {
+		height: 30px;
+		line-height: 30px;
+		padding-left: 12px;
+		font-weight: bold;
+		font-size: 14px;
+		color: #535353;
+		background: url(/bundles/zuoweb/images/reg_title_bg.gif) repeat-x 0 28px;
+	}
+
+		#lines-wrap h2 span {
+			font-size: 12px;
+			font-weight: normal;
+			color: #666;
+		}
+
+	#lines-wrap .if-empty {
+		position: absolute;
+		width: 254px;
+		top: 100px;
+	}
+
+		#lines-wrap .if-empty em {
+			display: block;
+			width: 50px;
+			height: 51px;
+			margin-left: 100px;
+			margin-top: 33px;
+			background: url(/bundles/zuoweb/images/reg_box_icon_bg.png) no-repeat;
+		}
+
+		#lines-wrap .if-empty p {
+			margin-bottom: 18px;
+			font-size: 16px;
+			color: #bdc3c7;
+			text-align: center;
+		}
+
+	#lines-wrap .suggest h2.btm {
+		border-top: 1px solid #dbe1e5;
+	}
+
+	#lines-wrap .stations-box li {
+		margin-bottom: 4px;
+		float: none;
+	}
+
+	#lines-wrap .search-result li {
+		float: none;
+	}
+
+
+
+
+/*注册第三步*/
+.pic-intro {
+	margin: 0 auto;
+	width: 684px;
+	height: 130px;
+	background: url(/bundles/zuoweb/images/reg_3_top.png) no-repeat;
+}
+.pic-intro li {
+	float: left;
+	margin-right: 26px;
+}
+
+	.pic-intro li p {
+		line-height: 22px;
+		text-align: center;
+		color: #535353;
+	}
+
+		.pic-intro li p span {
+			color: #a0a0a0;
+		}
+
+	.pic-intro li img {
+		margin-bottom: 10px;
+	}
+
+.tags-area {
+	width: 648px;
+	padding: 13px 0 0 0px;
+	margin: 40px auto 0;
+	border: 1px solid #dbe1e5;
+	background-color: #FBFCFC;
+}
+
+	.tags-area h3 {
+		margin-bottom: 15px;
+		margin-left: 13px;
+		color: #535353;
+		font-size: 14px;
+	}
+
+		.tags-area h3 span {
+			padding-left: 10px;
+			color: #a0a0a0;
+			font-size: 12px;
+		}
+
+	.tags-area .label-holder {
+		margin-left: 13px;
+		margin-bottom: 30px;
+	}
+	.tags-area .loading {
+	}
+	.tags-area .loading em {
+		display: block;
+		width: 21px;
+		height: 30px;
+		text-indent: -9999px;
+		background: url(/bundles/zuoweb/images/loading_1.gif) no-repeat 5px 13px;
+	}
+	/*
+	.tags-area li {
+		position: relative;
+		*display: inline;
+		*white-space: nowrap;
+		float: left;
+		margin-right: 3px;
+		margin-bottom: 10px;
+		height: 30px;
+		line-height: 28px;
+		padding: 0 4px 0 20px;
+		background: url(/bundles/zuoweb/images/tag_interest_bg_m1.jpg) repeat-x;
+		color: #889097;
+		cursor: pointer;
+	}
+
+		.tags-area li.active {
+			background-image: url(/bundles/zuoweb/images/tag_interest_bg_m2.jpg);
+			color: #fff;
+		}
+
+		.tags-area li b {
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 30px;
+			background: url(/bundles/zuoweb/images/tag_interest_bg_l_3.jpg) no-repeat;
+		}
+
+		.tags-area li.active b {
+			background-image: url(/bundles/zuoweb/images/tag_interest_bg_l_4.jpg);
+		}
+
+		.tags-area li span {
+			display: block;
+			float: left;
+			*display: inline-block;
+			*float: none;
+			word-break: keep-all;
+		}
+
+		.tags-area li .name {
+			padding: 0 10px;
+			background: url(/bundles/zuoweb/images/tag_interest_bg_b1.jpg) no-repeat right 0px;
+			_background-position: right -1px;
+		}
+
+		.tags-area li.active .name {
+			background-image: url(/bundles/zuoweb/images/tag_interest_bg_b2.jpg);
+		}
+
+		.tags-area li .num {
+			min-width: 28px;
+			_width: 28px;
+			padding: 0 3px;
+			background: url(/bundles/zuoweb/images/tag_interest_bg_m_2_2.jpg) repeat-x;
+			text-align: center;
+		}
+
+		.tags-area li.active .num {
+			background-image: url(/bundles/zuoweb/images/tag_interest_bg_m_2_1.jpg);
+		}
+			.tags-area li.active .num .close {
+				display: block;
+				margin: 0 auto;
+				width: 10px;
+				height: 30px;
+				background: url(/bundles/zuoweb/images/label_close.gif) no-repeat 0 9px;
+			}
+			.tags-area li.active .num .hover {
+				background-image: url(/bundles/zuoweb/images/label_close_hover.gif);
+			}
+		.tags-area li .loading strong {
+			display: block;
+			width: 21px;
+			text-indent: -9999px;
+			background: url(/bundles/zuoweb/images/loading_1.gif) no-repeat 5px 13px;
+		}
+
+		.tags-area li i {
+			position: absolute;
+			display: block;
+			top: 0;
+			right: 0;
+			width: 4px;
+			height: 30px;
+			background: url(/bundles/zuoweb/images/tag_interest_bg_r2.jpg) no-repeat;
+		}
+
+		.tags-area li.active i {
+			background-image: url(/bundles/zuoweb/images/tag_interest_bg_r1.jpg);
+		}
+		*/
+
+	.tags-area .add-custom {
+		padding: 15px 0;
+		background-color: #eff1f2;
+		border-top: 1px solid #dbe1e5;
+		color: #889097;
+		font-size: 12px;
+	}
+
+.add-custom span, .add-custom p, .add-custom button {
+	display: block;
+	float: left;
+}
+
+.add-custom span {
+	display: inline;
+	margin-left: 183px;
+	margin-right: 15px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.add-custom p {
+	position: relative;
+	*margin-top: -1px;
+	border-bottom: 1px solid #fff;
+}
+
+	.add-custom p label {
+		position: absolute;
+		top: 7px;
+		*top: 9px;
+		_top: 11px;
+		left: 7px;
+		cursor: text;
+	}
+
+	.add-custom p input {
+		width: 100px;
+		height: 28px;
+		*line-height: 28px;
+		padding-left: 5px;
+		border: 1px solid #dbe1e5;
+		border-right: 0;
+		background: white url(/bundles/zuoweb/images/reply_box_repeat.jpg) repeat-x;
+		color: #535353;
+	}
+
+.add-custom button {
+	width: 50px;
+	height: 30px;
+	text-indent: -9999px;
+	background: url(/bundles/zuoweb/images/add_btn.jpg) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+/*--------------------------------------悬浮登录框------------------------------------*/
+.pop-log {
+	position: absolute;
+	display: none;
+	/*top: 100px;
+	left: 600px;*/
+	background-color: #edf0f2;
+	border: 1px solid #bdc3c7;
+	box-shadow: 0 0 30px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	z-index: 100;
+}
+	.pop-log h2 {
+		padding-left: 20px;
+		height: 50px;
+		width: 512px;
+		line-height: 50px;
+		background-color: #fff;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		font-size: 16px;
+		color: #535353;
+		border-bottom: 1px solid #bdc3c7;
+	}
+	.pop-log .form-data, .pop-log .other-info {
+		float: none;
+	}
+	.pop-log .form-data {
+		margin:20px 20px 0 20px;
+		width: 304px;
+	}
+
+	.pop-log .other-info {
+		margin-top: 20px;
+	}
+	
+	.pop-log .other-info .block {
+		margin-bottom: 0;
+		border: 0;
+		border-bottom: 1px solid #dbe1e5;
+		border-top: 1px solid #f6f8f9;
+	}
+		.pop-log .other-info .reg {
+			border-top: 0;
+		}
+
+			.pop-log .other-info .reg a {
+				display: block;
+				padding-bottom: 15px;
+				font-size: 14px;
+				color: #448aca;
+			}
+
+		.pop-log .other-info .block h3 {
+			margin-top: 10px;
+		}
+
+		.pop-log .other-info .line-info {
+			border-bottom: 0;
+		}
+	
+	.pop-log table {
+		border-collapse: separate;
+	}
+	.pop-log td {
+		padding-bottom: 20px;
+		vertical-align: top;
+	}
+		.pop-log td.left {
+			border-right: 1px solid #dbe1e5;
+		}
+		.pop-log td.right {
+			padding-left: 20px;
+			padding-right: 20px;
+			border-left: 1px solid #f6f8f9;
+		}
+
+	.pop-log .close-btn {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		display: block;
+		width: 40px;
+		height: 40px;
+		background: url(/bundles/zuoweb/images/close_style3.jpg) no-repeat 11px 11px;
+		cursor: pointer;
+	}
+	
+	
+	/*---------------------------找回密码----------------------------*/
+.find-pass {
+	padding-top: 30px;
+	width: 664px;
+	margin: 50px auto 0;
+	border: 1px solid #dbe1e5;
+	border-radius: 3px;
+	background-color: rgba(237,240,242,0.3);
+	background-color: rgb(237,240,242)\9;
+}
+	.find-pass .form-data {
+		float: none;
+		width: auto;
+		margin-left: 180px;
+	}
+	.find-pass h3 {
+		padding-left: 20px;
+		background: url(/bundles/zuoweb/images/input_icon_pass.png) no-repeat 0 5px;
+		_background-position: 0 0;
+	}
+
+		.find-pass h3.write {
+			padding-left: 30px;
+			background-image: url(/bundles/zuoweb/images/input_icon_write.png);
+		}
+
+	.find-pass .sended-tip {
+		margin-top: 65px;
+		margin-bottom: 80px;
+	}
+	
+
+
+
+
+
+/*注册第1.5步 ，查看验证邮箱*/
+.check-email {
+	padding-top: 20px;
+}
+.check-email h3 {
+	margin: 0 auto;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 50px;
+	font-size: 30px;
+	color: #535353;
+	text-align: center;
+	background: url(/bundles/zuoweb/images/check_mail.gif) no-repeat;
+}
+	.check-email .note {
+		text-align: center;
+		line-height: 75px;
+		color: #a0a0a0;
+	}
+		.check-email .note b {
+			color: #535353;
+		}
+#checkid {/*找回密码页*/
+	margin-left: 0;
+}
+	.check-email .check-btn{
+		margin: 0 auto 35px;
+		width: 180px;
+		text-align: center;
+		border: 1px solid #32910f;
+		border-radius: 5px;
+	}
+		.check-email .check-btn a {
+			display: block;
+			height: 60px;
+			border-top: 1px solid #84c660;
+			border-radius: 4px;
+			background-color: #53b647;
+		}
+			.check-email .check-btn a:hover {
+				border-top: 1px solid #9ed888;
+				background-color: #77c55d;
+			}
+		.check-email .check-btn strong {
+			display: block;
+			padding-top: 8px;
+			font-size: 20px;
+			color: #fff;
+		}
+		.check-email .check-btn span {
+			display: block;
+			line-height: 20px;
+			color: #b6f0a3;
+		}
+	.check-email dl {
+		margin: 0 auto;
+		width: 400px;
+		line-height: 26px;
+	}
+	.check-email dt {
+		font-size: 14px;
+		font-weight: bold;
+		color: #74c15a;
+	}
+	.check-email dd {
+		color: #a0a0a0;
+	}
+		.check-email dd a {
+			padding: 0 3px;
+			color: #448aca;
+		}
+			.check-email dd a:hover {
+				color: #fff;
+				background-color: #448aca;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+/*使用协议*/
+.agreement1{
+	margin-left: 98px;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #a0a0a0;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	_background-position: 0 0;
+	margin-bottom:30px;
+}
+	.agreement1 label {
+		padding-left: 5px;
+	}
+	.agreement1 input {
+		float: left;
+		margin-top: 4px;
+	}
+	.agreement1 a{
+		color: #a0a0a0;
+	}
+	
+	
+#agreeid {
+	margin-left: 430px;
+	padding: 0;
+	width: auto;
+}
+	#agreeid input {
+		position: static;
+		width: auto;
+		height: auto;
+		line-height: normal;
+	}
+	#agreeid label {
+		position: static;
+		font-size: 12px;
+		line-height: normal;
+	}
+	
+	
+	
+	
+	/*跨城线路 -- 护照*/
+#passport {
+	position: absolute;
+	width: 735px;
+	padding-right: 5px;
+	background: #fff url(/bundles/zuoweb/images/passport_bg1.gif) repeat-y 0 0;
+	border-top: 1px solid #bdc3c7;
+	border-bottom: 1px solid #bdc3c7;
+	color: #535353;
+	font-size: 14px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+	z-index: 60;
+}
+	#passport h3 {
+		float: left;
+		padding-left: 20px;
+		height: 50px;
+		line-height: 50px;
+	}
+	#passport .close {
+		display: block;
+		float: right;
+		margin: 17px 21px 0 0;
+		width: 18px;
+		height: 18px;
+		background: url(/bundles/zuoweb/images/close_style3.jpg) no-repeat;
+		cursor: pointer;
+	}
+		#passport h3 a {
+			color: #448aca;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+	#passport .storage-box {
+		height: 208px;
+		padding: 25px 0 0px 45px;
+		background: #edf0f2 url(/bundles/zuoweb/images/passport_bg2.gif) repeat-y 0 0;
+		border-top: 1px solid #bdc3c7;
+		border-bottom: 1px solid #bdc3c7;
+		color: #6186ae;
+		font-weight: bold;
+		text-align: center;
+		overflow: auto;
+	}
+
+		#passport .storage-box div {
+			float: left;
+			width: 120px;
+			margin-right: 42px;
+			padding-bottom: 25px;
+			background-image: url(/bundles/zuoweb/images/stamp.gif);
+			background-repeat: no-repeat;
+		}
+
+		#passport .storage-box .right {
+			margin-right: 0;
+			margin-left: 43px;
+		}
+
+	#passport .go-stamp{
+		padding-top: 49px;
+		height: 30px;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+		cursor: pointer;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		-moz-user-select: none;
+	}
+		#passport .go-stamp:hover {
+			opacity: 1;
+			filter: alpha(opacity=100);
+		}
+		
+	#passport .stamp {
+		position: relative;
+		padding-top: 35px;
+		height: 44px;
+		background-position: 0 -129px;
+	}
+
+		#passport .stamp .del {
+			position: absolute;
+			display: none;
+			top: -10px;
+			right: -10px;
+			width: 22px;
+			height: 22px;
+			background: url(/bundles/zuoweb/images/close_style5.gif) no-repeat;
+			cursor: pointer;
+		}
+
+	#passport .options {
+		padding: 0 20px;
+	}
+
+	#passport .options p {
+		float: left;
+		padding-left: 40px;
+		height: 64px;
+		line-height: 64px;
+		background: url(/bundles/zuoweb/images/light.gif) no-repeat 0 18px;
+		color: #a0a0a0;
+	}
+		#passport .options a {
+			float: right;
+			margin-top: 15px;
+			text-align: center;
+		}
+		#passport .options .save, #passport .options .quit {
+			width: 98px;
+			height: 30px;
+			line-height: 30px;
+			border-style: solid;
+			border-width: 1px;
+			border-top-width: 0;
+			border-bottom-width: 4px;
+			font-weight: bold;
+		}
+			#passport .options .save:active, #passport .options .quit:active {
+				border-top-width: 3px;
+				border-bottom-width: 1px;
+			}
+
+		#passport .options .save {
+			background-color: #67aae7;
+			border-color: #5288b9;
+			color: #fff;
+			font-size: 16px;
+			letter-spacing: 3px;
+		}
+			#passport .options .save:hover {
+				background-color: #559ad8;
+			}
+		#passport .options .quit {
+			border-color: #dbe1e5;
+			color: #eb6877;
+			font-size: 14px;
+		}
+			#passport .options .quit:hover {
+				background-color: #f8f9fa;
+			}
+		
+		#passport .options .cancel {
+			margin: 25px 16px 0;
+			font-size: 12px;
+			color: #448aca;
+		}
+			#passport .options .cancel:hover {
+				background-color: #448aca;
+				color: #fff;
+			}
+
+/*-- 注册第四步--上传头像 BEGIN --*/
+.upload-container {
+	width: 265px;
+	height: 385px;
+	margin: 0 auto;
+	color:#535353;
+}
+
+.upload-title {
+	height: 30px;
+	line-height: 30px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.upload-main {
+	height: 350px;
+	/*padding: 0 40px;*/
+	background: url(/bundles/zuoweb/images/upload_main_bg.png) no-repeat;
+	color: #a0a0a0;
+	text-align: center;
+}
+
+.upload-main-title {
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+}
+
+
+#avatar-edit {
+	width:160px;
+	margin:0 auto;
+}
+
+
+.upload-main-btn {
+	padding-top: 20px;
+}
+
+	.upload-main-btn a {
+		display: block;
+		width: 98px;
+		height: 30px;
+		line-height: 30px;
+		margin: 0 auto;
+		text-align: center;
+		background-color: #67AAE7;
+		border: 1px solid #5288B9;
+		border-top-width: 0;
+		border-bottom-width: 4px;
+		font-size: 16px;
+		font-weight: bold;
+		color: white;
+		text-decoration: none;
+	}
+
+		.upload-main-btn a:hover {
+			background-color: #559AD8;
+			text-decoration: none;
+		}
+
+		.upload-main-btn a:active {
+			border-top-width: 3px;
+			border-bottom-width: 1px;
+		}
+
+.upload-main-tips {
+	padding: 20px 40px 0;
+	font-size: 12px;
+}
+/*-- 注册第四步--上传头像 END --*/

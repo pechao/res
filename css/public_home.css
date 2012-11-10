@@ -1,0 +1,170 @@
+.container {
+	position: relative;
+	width: 959px;
+	margin: 5px auto 0;
+}
+	.container .top {
+		height: 372px;
+		background: url(/bundles/zuoweb/images/pub_home_top.gif) no-repeat;	
+	}
+		.container .top .op1 {
+			padding: 251px 0 0 211px;
+		}
+			.container .top .op1 a {
+				display: block;
+			}
+				.container .top .op1 a.zuo {
+					float: left;
+					width: 118px;
+					height: 26px;
+					margin-top: 11px;
+					line-height: 23px;
+					text-align: center;
+					text-indent: -9999em;
+					font-size: 18px;
+					background: #fff url(/bundles/zuoweb/images/pub_zuo.png) no-repeat;
+				}
+					.container .top .op1 a.zuo:hover {
+						background-image: url(/bundles/zuoweb/images/pub_zuo_hover.png);
+					}
+				.container .top .op1 a.reg-now {
+					float: right;
+					width: 173px;
+					height: 38px;
+					background: url(/bundles/zuoweb/images/pub_home_reg_hover.gif) no-repeat;
+					text-indent: -9999em;
+				}
+					.container .top .op1 a.reg-now:hover {
+						background-image: url(/bundles/zuoweb/images/pub_home_reg.gif);
+					}
+
+#pub-city-change {
+	position: relative;
+}
+					
+		.container .top .op2 {
+			padding: 27px 0 0 177px;
+		}
+			.container .top .op2 a.city {
+				display: block;
+				float: left;
+				padding: 4px 24px 5px 4px;
+				width: 74px; 
+				height: 28px;
+				line-height: 28px;
+				text-align: center;
+				color: #889097;
+				font-size: 14px;
+				background: #fff url(/bundles/zuoweb/images/pub_home_city.gif) no-repeat;
+			}
+				.container .top .op2 a.city:hover {
+					background: url(/bundles/zuoweb/images/pub_home_city_hover.gif);
+				}
+		.container .top .op2 .suggest-area {
+			position: relative;
+			float: left;
+			margin-left: 7px;
+			padding-left: 7px;
+			width: 487px;
+			height: 41px;
+			background: url(/bundles/zuoweb/images/pub_home_search_t.gif) no-repeat;
+		}
+			.container .top .op2 .suggest-area label {
+				position: absolute;
+				top: 8px;
+				left:22px;
+				font-size: 20px;
+				color: #bdc3c7;
+				cursor: text;
+			}
+			.container .top .op2 .suggest-area input{
+				float: left;
+				margin: 2px 0 0 10px;
+				padding: 0 3px;
+				width: 426px;
+				height: 39px;
+				line-height: 39px\9;
+				border: 0;
+				color: #535353;
+				font-size: 18px;
+				background: none;
+			}
+			.container .top .op2 .suggest-area button {
+				display: block;
+				float: left;
+				width: 32px;
+				height: 40px;
+				border: 0;
+				background: none;
+				cursor: pointer;
+			}
+			.container .top .op2 .suggest-area .result-wrap {
+				padding-bottom: 11px;
+				background: url(/bundles/zuoweb/images/pub_home_search_b.png) no-repeat 0 bottom;
+			}
+
+	.container .poster {
+		margin: 30px auto 50px;
+		width: 884px;
+		height: 130px;
+		background: url(/bundles/zuoweb/images/reg_3_pub.png) no-repeat;
+	}
+			
+			.result-wrap .pull-down {
+				position: static;
+			}
+.result-wrap .pull-down .inner2 {
+	padding: 0 5px;
+	width: 469px;
+	background-color: #fff;
+	border-left: 1px solid #dbe1e5;
+	border-right: 1px solid #dbe1e5;
+	background: #fff;
+}
+	.result-wrap .pull-down .inner2 h3,.result-wrap .pull-down .inner2 .result-item {
+		padding: 0 10px;
+		border: 1px solid #edf0f2;
+		border-bottom: 0;
+	}
+	.result-wrap .pull-down .inner2 h3 {
+		line-height: 22px;
+		color: #889097;
+		background-color: #EDF0F2;
+	}
+		.result-wrap .pull-down .inner2 h3 b {
+			color: #448ACA;
+		}
+	.result-wrap .pull-down .inner2 .result-item {
+		padding: 0;
+		height: 40px;
+		line-height: 40px;
+		background-color: #fff;
+		cursor: pointer;
+	}
+	.result-wrap .pull-down .inner2 .empty {
+		padding-left: 10px;
+		color: #a0a0a0;
+	}
+		.result-wrap .pull-down .inner2 .result-item a {
+			padding: 0 10px;
+			display: block;
+		}
+	.result-wrap .pull-down .inner2 .result-item a:hover,.result-wrap .pull-down .inner2 .active a {
+		background-color: #f9fafa;
+	}
+
+.result-wrap .result-item .icon-here {
+	float: left;
+	margin: 12px 10px 0 0;
+}
+.result-wrap .result-item .line-name {
+	padding-right: 10px;
+	font-size: 14px;
+	color: #535353;
+}
+	.result-wrap .result-item .line-name b.match {
+		color: #448ACA;
+	}
+.result-wrap .result-item .gray {
+	color: #a0a0a0;
+}

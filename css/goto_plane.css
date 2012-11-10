@@ -1,0 +1,181 @@
+.main-part {
+	position: relative;
+	margin: 10px 0 0 70px;
+	width: 535px;
+}
+
+	.main-part .icon30 {
+		position: absolute;
+		left: -50px;
+		top: 10px;
+		background: url(/bundles/zuoweb/images/icon_fri_2.png) no-repeat;
+	}
+
+	.main-part a {
+		color: #448aca;
+	}
+
+.page-title {
+	margin: 10px 0;
+}
+
+	.page-title h3, .page-title p {
+		float: left;
+	}
+
+	.page-title h3 {
+		color: #535353;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+
+	.page-title .groups {
+		position: relative;
+		float: left;
+		margin-top: 10px;
+		margin-left: 15px;
+		font-size: 14px;
+	}
+
+		.page-title .groups span {
+			padding-right: 10px;
+			color: #535353;
+			position: relative;
+			cursor: pointer;
+		}
+
+			.page-title .groups span b {
+				position: absolute;
+				top: -10px;
+				left: 72px;
+				display: block;
+				padding-left: 3px;
+				height: 19px;
+				font-weight: normal;
+				background: url(/bundles/zuoweb/images/plane_num_l.jpg) no-repeat;
+			}
+
+			.page-title .groups span i {
+				display: block;
+				_display: inline-block;
+				height: 16px;
+				padding-right: 3px;
+				line-height: 16px;
+				font-style: normal;
+				color: #fff;
+				background: #eb6877 url(/bundles/zuoweb/images/plane_num_r.jpg) no-repeat right 0;
+			}
+
+.big-title {
+	position: relative;
+	margin-top: 15px;
+}
+
+	.big-title h3 {
+		height: 28px;
+		line-height: 30px;
+		border: 1px solid #DBE1E5;
+		border-bottom: 0;
+		background: url(/bundles/zuoweb/images/repeat_x_2.png) repeat-x 0 0;
+		color: #448ACA;
+		font-size: 14px;
+		font-weight: bold;
+		padding-left: 10px;
+	}
+
+	.big-title b.arrow {
+		position: absolute;
+		display: block;
+		width: 14px;
+		height: 8px;
+		top: -7px;
+		left: 40px;
+		background: url(/bundles/zuoweb/images/arrow_bigTitle.jpg) no-repeat;
+		z-index: 2;
+	}
+.news-wrapper {
+	background-color: #fff;
+	border: 1px solid #dbe1e5;
+	margin-bottom: 10px;
+}
+.news-wrapper .msg-wrap {
+	margin-top: 0;
+	padding-top: 17px;
+}
+.msg-info .msg-txt {
+	width: 420px;
+	padding-right: 0;
+}
+
+.notification {
+	height: 58px;
+	_height: 43px;
+	line-height: 58px;
+	margin-top: 10px;
+	_padding-top: 15px;
+	border: 1px solid #dbe1e5;
+	background: url(/bundles/zuoweb/images/plane_notification.jpg) repeat-x;
+	text-align: center;
+	color: #889097;
+	font-size: 14px;
+}
+	/*.notification p {
+		float: left;
+	}
+	.notification b {
+		display: block;
+		float: left;
+	}*/
+	.notification a {
+		padding: 0 3px;
+		font-weight: bold;
+		color: #448aca;
+	}
+	.notification b {
+		display: inline-block;
+		line-height: 30px;
+		height: 30px;
+		width: 90px;
+		margin-left: 20px;
+		background: url(/bundles/zuoweb/images/write_mail.png) no-repeat;
+		color: #eb6877;
+		font-weight: bold;
+		cursor: pointer;
+		text-shadow: 0 1px 0 #fff;
+	}
+
+.replies {
+	margin-top: 10px;
+}
+.replies .pinglun {
+	margin-top: 0;
+}
+
+.invite {
+	padding: 20px 0 20px 130px;
+	margin-top: 10px;
+	border: 1px solid #dbe1e5;
+	background-color: #f8f9fa;
+}
+
+.photo {
+	float: left;
+}
+
+.plane-help, .share-weibo {
+	margin-bottom: 10px;
+	text-align: center;
+}
+.plane-help a, .share-weibo a{
+	display: block;
+	height: 88px;
+	line-height: 90px;
+	_line-height: 88px;
+	width: 198px;
+	border: 1px solid #dbe1e5;
+	border-radius: 3px;
+	background: url(/bundles/zuoweb/images/title_bg_2.jpg) repeat-x;
+	color: #448aca;
+	font-size: 14px;
+}

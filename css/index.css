@@ -1,0 +1,206 @@
+.banner-login{
+	height:280px;
+	background-color:#e0e0e0;
+}
+.banner{
+	float:left;
+	
+	width:670px;
+	height:280px;
+	background-color:#75BBC8;
+}
+.login-side{
+	float:right;
+	
+	width:290px;
+	/*padding:0 20px;*/
+}
+.login-side .top-part{
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #333;
+}
+.login-side .top-part,.login-side .btm-part{
+	padding-left:20px;
+}
+.login-side h2{
+	padding:10px 0;
+	
+	font-size:18px;
+	text-align:center;
+}
+.login-side .reg-now a{
+	display:block;
+	
+	width:240px;
+	line-height:40px;
+	background-color:#E88124;
+	
+	color:#fff;
+	font-size:14px;
+	text-align:center;
+}
+.login-side .input-text{
+	width:230px;
+	height:30px;
+	line-height:30px\9;
+	margin-bottom:10px;
+	padding-left:10px;
+	
+	font-size:14px;
+	color:#666;
+}
+.login-side .login-btn{
+	display:block;
+	float:left;
+	
+	width:120px;
+	height:30px;
+	line-height:30px;
+	background-color:#E88124;
+	border:none;
+	
+	text-align:center;
+	color:#fff;
+	cursor:pointer;
+}
+.login-side .forgot-pwd{
+	line-height:30px;
+	padding-left:20px;
+}
+.login-side .other-log{	
+	margin-top:10px;
+}
+.login-side .other-log a{
+	display:block;
+	float:left;
+	
+	margin-right:10px;
+	width:40px;
+	height:30px;
+	line-height:30px;
+	
+	text-align:center;
+	color:#fff;
+	background-color:#E88124;
+}
+
+.sel-driver{
+	height:90px;
+}
+.sel-driver span,.sel-driver b,.sel-driver input{
+	display:block;
+	float:left;
+}
+.sel-driver span{
+	margin-left:180px;
+	_margin-left:90px;
+	font-size:24px;
+	line-height:90px;
+	
+	/*_font-family:'Microsoft Yahei',simhei;*/
+}
+.sel-driver b{
+	width:50px;
+	height:50px;
+	margin:20px 0px 0 10px;
+	background-color:#FC9;
+}
+.sel-driver .input-text{
+	width:510px;
+	height:46px;
+	margin-top:20px;
+	padding-left:5px;
+	line-height:50px\9;
+	
+	font-size:20px;
+	color:#666;
+	font-family:'Microsoft Yahei',simhei,arial;
+}
+
+.on-the-way{
+	background-color:#C8E0F9;
+}
+.on-the-way .train{
+	padding-bottom:20px;
+}
+.on-the-way h3{
+	padding-left:5px;
+	border-bottom:1px solid #666;
+	
+	font-size:18px;
+	line-height:40px;
+}
+.train-outer{
+	/*height:200px;*/
+}
+.train-outer .each-station{
+	float:left;
+	
+	width:320px;
+}
+
+.each-station .prompt{
+	height:90px;
+}
+.each-station .prompt .user-info{
+	width:200px;
+	height:40px;
+	border:1px solid #333;
+	background-color:#fff;
+}
+.each-station .users{
+	height:40px;	
+}
+.each-station .users li{
+	float:left;
+	
+	width:20px;
+	height:20px;
+	margin-top:20px;
+	margin-right:1px;
+	background-color:#BAAEF9;
+}
+.each-station .users li.big{
+	width:40px;
+	height:40px;
+	margin-top:0;
+}
+.station li{
+	float:left;
+	
+	width:80px;
+	background-color:#C7FAC8;
+	line-height:20px;
+	
+	text-align:center;
+}
+.line{
+	background-color:#9ED9F5;
+	line-height:20px;
+	
+	text-align:center;
+}
+.sales{
+	padding:5px 0 5px 5px;
+}
+.sales .each-sale{
+	display:inline;
+	float:left;
+	
+	width:150px;
+	margin-right:5px;
+/*	margin:4px;*/
+	
+	border:1px solid #333;
+}
+.sales .pic{
+	height:110px;
+	
+	border-bottom:1px solid #333;
+}
+.sales .txt-info{
+	height:40px;
+	line-height:18px;
+	text-align:center;
+}
